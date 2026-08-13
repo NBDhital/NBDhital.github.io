@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Courses &amp; Research Students | Narayan Babu Dhital</title>
+<title>Courses &amp; Research Students | Narayan Babu Dhital, Ph.D.</title>
 <meta name="description" content="Courses taught and M.Sc./B.Sc. research students supervised by Narayan Babu Dhital, Ph.D., Department of Environmental Science, Patan Multiple Campus, Tribhuvan University.">
 <link rel="icon" type="image/png" href="/images/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -62,11 +62,21 @@
     </div>
 
     <div class="tabs reveal" data-tab-group="students">
-      <button class="tab-btn active" data-tab="msc-students">M.Sc. Students</button>
-      <button class="tab-btn" data-tab="bsc-students">B.Sc. Students</button>
+      <button class="tab-btn" data-tab="phd-students">Ph.D.</button>
+      <button class="tab-btn active" data-tab="msc-students">M.Sc.</button>
+      <button class="tab-btn" data-tab="bsc-students">B.Sc.</button>
     </div>
 
-    <div data-tab-group="students">
+    <div data-tab-panels="students">
+      <!-- ===== Ph.D. students ===== -->
+      <div class="tab-panel" id="phd-students">
+        <div class="grid grid--3">
+          <div class="card student-card reveal">
+            <p style="color:var(--color-text-muted);">No Ph.D. students currently listed.</p>
+          </div>
+        </div>
+      </div>
+
       <!-- ===== M.Sc. students ===== -->
       <div class="tab-panel active" id="msc-students">
         <div class="grid grid--3">
@@ -150,11 +160,7 @@
       </div>
     </div>
 
-    <p class="reveal" style="text-align:center;color:var(--color-text-muted);max-width:680px;margin:30px auto 0;font-size:0.9rem;">
-      To add a new student in future: copy one of the <code>&lt;div class="card student-card"&gt;</code>
-      blocks above in <code>courses.html</code>, paste it inside the matching M.Sc. or B.Sc. panel,
-      and edit the name, topic, funding and status.
-    </p>
+    <!-- Editor note: instructions for adding new students live in README.md, not on this page. -->
   </div>
 </section>
 
