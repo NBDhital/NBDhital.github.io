@@ -258,7 +258,7 @@ ul { list-style: none; }
   width: 260px; height: 260px;
   object-fit: cover;
   border-radius: 50%;
-  border: 5px solid var(--color-gold);
+  border: 2px solid var(--color-gold);
   box-shadow: var(--shadow-strong);
 }
 .hero-btns { margin-top: 26px; display: flex; gap: 14px; flex-wrap: wrap; }
