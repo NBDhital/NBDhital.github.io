@@ -383,12 +383,16 @@ ul { list-style: none; }
 .profile-links a.brand-linkedin:hover { background: #0A66C2; border-color: #0A66C2; color: #fff; }
 
 /* Google Scholar — true multi-colour "Google" style lettering */
-.profile-links a.brand-scholar .g-blue   { color: #4285F4; }
-.profile-links a.brand-scholar .g-red    { color: #EA4335; }
-.profile-links a.brand-scholar .g-yellow { color: #FBBC05; }
-.profile-links a.brand-scholar .g-green  { color: #34A853; }
+.google-gradient-text {
+  background: linear-gradient(90deg, #4285F4, #EA4335, #FBBC05, #4285F4, #34A853, #EA4335);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-weight: 700;
+}
 .profile-links a.brand-scholar { color: var(--color-navy-dark); }
-.profile-links a.brand-scholar:hover { border-color: #4285F4; }
+.profile-links a.brand-scholar:hover { background: #c5cdd9; border-color: #4285F4; }
 
 /* ---------------------------------------------------------------------- */
 /* TIMELINE (education / experience)                                     */
