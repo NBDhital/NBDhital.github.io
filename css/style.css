@@ -382,15 +382,6 @@ ul { list-style: none; }
 .profile-links a.brand-linkedin       { color: #0A66C2; }
 .profile-links a.brand-linkedin:hover { background: #0A66C2; border-color: #0A66C2; color: #fff; }
 
-/* Google Scholar — true multi-colour "Google" style lettering */
-.google-gradient-text {
-  background: linear-gradient(90deg, #4285F4, #EA4335, #FBBC05, #4285F4, #34A853, #EA4335);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  font-weight: 700;
-}
 .profile-links a.brand-scholar { color: var(--color-navy-dark); }
 .profile-links a.brand-scholar:hover { background: #c5cdd9; border-color: #4285F4; }
 
