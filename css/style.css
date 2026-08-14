@@ -366,6 +366,24 @@ ul { list-style: none; }
   transform: translateY(-2px);
 }
 .profile-links img { width: 18px; height: 18px; }
+/* Brand-colored profile buttons */
+.profile-links a.brand-scopus     { border-left: 4px solid #E9711C; }
+.profile-links a.brand-scopus:hover     { color: #E9711C; border-color: #E9711C; }
+
+.profile-links a.brand-wos        { border-left: 4px solid #1B365D; }
+.profile-links a.brand-wos:hover        { color: #1B365D; border-color: #1B365D; }
+
+.profile-links a.brand-orcid      { border-left: 4px solid #A6CE39; }
+.profile-links a.brand-orcid:hover      { color: #6B8E23; border-color: #A6CE39; }
+
+.profile-links a.brand-scholar    { border-left: 4px solid #4285F4; }
+.profile-links a.brand-scholar:hover    { color: #4285F4; border-color: #4285F4; }
+
+.profile-links a.brand-researchgate { border-left: 4px solid #00CCBB; }
+.profile-links a.brand-researchgate:hover { color: #00A99A; border-color: #00CCBB; }
+
+.profile-links a.brand-linkedin   { border-left: 4px solid #0A66C2; }
+.profile-links a.brand-linkedin:hover   { color: #0A66C2; border-color: #0A66C2; }
 
 /* ---------------------------------------------------------------------- */
 /* TIMELINE (education / experience)                                     */
