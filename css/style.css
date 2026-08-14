@@ -366,24 +366,29 @@ ul { list-style: none; }
   transform: translateY(-2px);
 }
 .profile-links img { width: 18px; height: 18px; }
-/* Brand-colored profile buttons */
-.profile-links a.brand-scopus     { border-left: 4px solid #E9711C; }
-.profile-links a.brand-scopus:hover     { color: #E9711C; border-color: #E9711C; }
+/* Brand-colored profile button text */
+.profile-links a.brand-scopus       { color: #E9711C; }
+.profile-links a.brand-scopus:hover { background: #E9711C; border-color: #E9711C; color: #fff; }
 
-.profile-links a.brand-wos        { border-left: 4px solid #1B365D; }
-.profile-links a.brand-wos:hover        { color: #1B365D; border-color: #1B365D; }
+.profile-links a.brand-wos          { color: #1B365D; }
+.profile-links a.brand-wos:hover    { background: #1B365D; border-color: #1B365D; color: #fff; }
 
-.profile-links a.brand-orcid      { border-left: 4px solid #A6CE39; }
-.profile-links a.brand-orcid:hover      { color: #6B8E23; border-color: #A6CE39; }
+.profile-links a.brand-orcid        { color: #6B8E23; }
+.profile-links a.brand-orcid:hover  { background: #A6CE39; border-color: #A6CE39; color: #1c2b3a; }
 
-.profile-links a.brand-scholar    { border-left: 4px solid #4285F4; }
-.profile-links a.brand-scholar:hover    { color: #4285F4; border-color: #4285F4; }
+.profile-links a.brand-researchgate       { color: #00A99A; }
+.profile-links a.brand-researchgate:hover { background: #00CCBB; border-color: #00CCBB; color: #fff; }
 
-.profile-links a.brand-researchgate { border-left: 4px solid #00CCBB; }
-.profile-links a.brand-researchgate:hover { color: #00A99A; border-color: #00CCBB; }
+.profile-links a.brand-linkedin       { color: #0A66C2; }
+.profile-links a.brand-linkedin:hover { background: #0A66C2; border-color: #0A66C2; color: #fff; }
 
-.profile-links a.brand-linkedin   { border-left: 4px solid #0A66C2; }
-.profile-links a.brand-linkedin:hover   { color: #0A66C2; border-color: #0A66C2; }
+/* Google Scholar — true multi-colour "Google" style lettering */
+.profile-links a.brand-scholar .g-blue   { color: #4285F4; }
+.profile-links a.brand-scholar .g-red    { color: #EA4335; }
+.profile-links a.brand-scholar .g-yellow { color: #FBBC05; }
+.profile-links a.brand-scholar .g-green  { color: #34A853; }
+.profile-links a.brand-scholar { color: var(--color-navy-dark); }
+.profile-links a.brand-scholar:hover { border-color: #4285F4; }
 
 /* ---------------------------------------------------------------------- */
 /* TIMELINE (education / experience)                                     */
