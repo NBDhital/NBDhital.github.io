@@ -255,10 +255,11 @@ ul { list-style: none; }
   justify-self: center;
 }
 .hero-photo img {
-  width: 300px; height: 380px;
+  width: 260px; height: 260px;
   object-fit: cover;
-  border-radius: var(--radius);
-  box-shadow: 0 0 0 1px rgba(15,36,56,0.15), var(--shadow-strong);
+  border-radius: 50%;
+  border: 5px solid var(--color-gold);
+  box-shadow: var(--shadow-strong);
 }
 .hero-btns { margin-top: 26px; display: flex; gap: 14px; flex-wrap: wrap; }
 
