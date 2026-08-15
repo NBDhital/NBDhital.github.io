@@ -383,7 +383,7 @@ ul { list-style: none; }
 .profile-links a.brand-linkedin:hover { background: #0A66C2; border-color: #0A66C2; color: #fff; }
 
 .profile-links a.brand-scholar { color: #4285F4; }
-.profile-links a.brand-scholar:hover { background: #fff; border-color: #4285F4; }
+.profile-links a.brand-scholar:hover { background: #4285F4; border-color: #4285F4; color: #fff; }
 
 /* ---------------------------------------------------------------------- */
 /* TIMELINE (education / experience)                                     */
