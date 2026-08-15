@@ -43,11 +43,11 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   color: var(--color-text-dark);
-  background: #ffffff;
+  background: var(--color-navy-dark);
   line-height: 1.7;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
-   padding-top: 78px;
+   padding-top: 72px;
 }
 
 img { max-width: 100%; display: block; }
