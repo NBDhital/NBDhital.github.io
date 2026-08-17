@@ -2,11 +2,6 @@
    include.js
    Loads includes/header.html and includes/footer.html into every page
    so you only ever have to edit the menu / footer in ONE place.
-   Works once the site is hosted (GitHub Pages / any web server).
-   It will NOT work if you just double-click an HTML file on your own
-   computer (browsers block that for security) — always test by
-   running a local server, or simply push to GitHub and view the
-   live site. See README.md for a one-line local preview command.
 --------------------------------------------------------------------- */
 (function () {
   function loadInclude(selectorId, url, callback) {
