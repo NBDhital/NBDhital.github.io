@@ -121,17 +121,17 @@ ul { list-style: none; }
 /* ---------------------------------------------------------------------- */
 /* HEADER / NAVIGATION                                                    */
 /* ---------------------------------------------------------------------- */
+#site-header-placeholder {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 .site-header {
   position: relative;
   z-index: 999;
   background: var(--color-navy-dark);
   box-shadow: var(--shadow-soft);
-}
-
-#site-header-placeholder {
-  position: sticky;
-  top: 0;
-  z-index: 999;
 }
 
 .nav-wrap {
