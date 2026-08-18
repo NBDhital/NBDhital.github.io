@@ -221,7 +221,7 @@ ul { list-style: none; }
 .hero {
   background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 60%, #1d4265 100%);
   color: var(--color-text-light);
-  padding: 90px 0 100px;
+  padding: 60px 0 60px;
 }
 .hero-wrap {
   display: grid;
