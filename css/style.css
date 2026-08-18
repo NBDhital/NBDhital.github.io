@@ -130,8 +130,10 @@ ul { list-style: none; }
 .site-header {
   position: relative;
   z-index: 999;
-  background: var(--color-navy-dark);
+  background: rgba(15, 36, 56, 0.92);
   box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .nav-wrap {
@@ -691,7 +693,7 @@ form.contact-form textarea:focus {
 
 
 /* =========================================================
-   PAGE — SECTION NAVIGATION
+   PAGE — SECTION NAVIGATION; background opacity is 70%
    ========================================================= */
 
 .page-nav {
@@ -699,7 +701,7 @@ form.contact-form textarea:focus {
   top: var(--header-height);
   z-index: 90;
 
-  background: rgba(255, 255, 255, 0.50);
+  background: rgba(255, 255, 255, 0.70);
   border-bottom: 1px solid rgba(30, 52, 72, 0.10);
   box-shadow: 0 4px 18px rgba(20, 35, 50, 0.045);
 
