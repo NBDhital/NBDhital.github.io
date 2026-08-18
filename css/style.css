@@ -119,7 +119,7 @@ ul { list-style: none; }
 }
 
 /* ---------------------------------------------------------------------- */
-/* HEADER / NAVIGATION; bg opacity changed to 85%                         */
+/* HEADER / NAVIGATION; bg changed (original background: var(--color-navy-dark);  */
 /* ---------------------------------------------------------------------- */
 #site-header-placeholder {
   position: sticky;
@@ -130,7 +130,7 @@ ul { list-style: none; }
 .site-header {
   position: relative;
   z-index: 999;
-  background: rgba(15, 36, 56, 0.85);
+  background: rgba(15, 36, 56, 0.50);
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
