@@ -81,3 +81,23 @@
     }
   });
 })();
+
+
+/* For two sticky headers; getting header height */
+
+
+function updateHeaderHeight() {
+  const header = document.querySelector('.site-header');
+
+  if (!header) return;
+
+  const height = header.offsetHeight;
+
+  document.documentElement.style.setProperty(
+    '--header-height',
+    `${height}px`
+  );
+}
+
+window.addEventListener('load', updateHeaderHeight);
+window.addEventListener('resize', updateHeaderHeight);
