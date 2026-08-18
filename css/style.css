@@ -1,8 +1,6 @@
 /* =========================================================================
    NARAYAN BABU DHITAL — ACADEMIC PORTFOLIO
    MAIN STYLESHEET
-
-   HOW TO CHANGE THE LOOK OF THE WHOLE SITE (for a non-technical editor):
    Everything below in the ":root" block is a "variable". Change a value
    here ONCE and it updates on every single page automatically.
    For example, to change the gold accent colour, just edit --color-gold.
@@ -674,7 +672,7 @@ form.contact-form textarea:focus {
 .page-banner {
   background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
   color: #fff;
-  padding: 10px 0 10px;
+  padding: 20px 0 20px;
   text-align: center;
 }
 .page-banner h1 { color: #fff; }
