@@ -744,7 +744,7 @@ form.contact-form textarea:focus {
 
 /* vertical separators */
 
-.page-nav__item + .research-nav__item::before {
+.page-nav__item + .page-nav__item::before {
   content: "";
   position: absolute;
   left: 0;
@@ -793,7 +793,7 @@ form.contact-form textarea:focus {
   color: var(--color-navy);
 }
 
-.page-nav__item:hover .research-nav__number {
+.page-nav__item:hover .page-nav__number {
   transform: translateY(-1px);
 }
 
