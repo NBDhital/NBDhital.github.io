@@ -699,7 +699,7 @@ form.contact-form textarea:focus {
   top: var(--header-height);
   z-index: 90;
 
-  background: rgba(255, 255, 255, 0.80);
+  background: rgba(255, 255, 255, 0.50);
   border-bottom: 1px solid rgba(30, 52, 72, 0.10);
   box-shadow: 0 4px 18px rgba(20, 35, 50, 0.045);
 
