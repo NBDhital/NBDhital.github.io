@@ -130,7 +130,7 @@ ul { list-style: none; }
 .site-header {
   position: relative;
   z-index: 999;
-  background: rgba(15, 36, 56, 0.99);
+  background: rgba(15, 36, 56, 0.90);
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
