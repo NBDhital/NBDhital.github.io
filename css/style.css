@@ -674,7 +674,7 @@ form.contact-form textarea:focus {
 .page-banner {
   background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
   color: #fff;
-  padding: 30px 0 25px;
+  padding: 10px 0 10px;
   text-align: center;
 }
 .page-banner h1 { color: #fff; }
