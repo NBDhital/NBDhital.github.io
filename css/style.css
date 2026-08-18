@@ -716,7 +716,7 @@ form.contact-form textarea:focus {
   display: block;
   padding: 8px 14px;
   color: var(--color-text-muted);
-  font-size: 0.82rem;
+  font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
