@@ -1,34 +1,23 @@
 /* =========================================================================
-   NARAYAN BABU DHITAL — ACADEMIC PORTFOLIO
+   NARAYAN BABU DHITAL â€” ACADEMIC PORTFOLIO
    MAIN STYLESHEET
    Everything below in the ":root" block is a "variable". Change a value
    here ONCE and it updates on every single page automatically.
    For example, to change the gold accent colour, just edit --color-gold.
-
-   THEME: light / ivory academic theme, built around the existing gold
-   accent. Header, footer, hero and page banners are now light (previously
-   solid navy) and use a warm ivory + navy-text + gold-trim palette for an
-   elegant, understated look. A single deep-navy accent is kept for
-   ".section--dark" and a couple of small active/contrast states, so the
-   page still has tonal variety instead of being flat white throughout.
    ========================================================================= */
 
 :root {
-  /* ---- COLOUR PALETTE (ivory + navy text + gold accent) ---- */
-  --color-navy-dark:    #16293D;  /* deep navy — reserved for .section--dark, active tab, timeline/badge accents */
-  --color-navy:         #1F3A57;  /* secondary navy — body links, outline-button text */
-  --color-cream:        #FFFFFF;  /* page background — warm ivory */
-  --color-cream-muted:  #f4f4f2;  /* muted / alternate section background — soft gold-tinted ivory */
-  --color-panel:        #FFFFFF; /* card / panel background */
-  --color-header-bg:    #FEFCF7; /* header background — near-white */
-  --color-footer-bg:    #EFE3C4; /* footer background — warm parchment */
-  --color-gold:         #C9A227; /* primary gold accent (unchanged) */
-  --color-gold-light:   #E6C565; /* lighter gold — hover states, backgrounds */
-  --color-gold-dark:    #93721A; /* deeper gold — used for gold TEXT so it stays legible on light backgrounds */
-  --color-text-dark:    #1C2B3A; /* main body text on light bg */
-  --color-text-light:   #FBF8F2; /* text on dark accent sections/buttons */
-  --color-text-muted:   #5B6B7A; /* secondary / caption text */
-  --color-border:       #E4D9BC; /* warm gold-tinted border */
+  /* ---- COLOUR PALETTE (muted academic blue + gold) ---- */
+  --color-navy-dark:   #16293D;   /* header / footer background (original #0f2438)*/
+  --color-navy:        #16324f;  /* secondary dark blue */
+  --color-blue-muted:  #f4f4f2;  /* light section background (was pale blue #eef2f6 â€” now light gray) */
+  --color-blue-panel:  #e6e6e3;  /* card / panel background (was pale blue #dfe7ee â€” now light gray) */
+  --color-gold:        #c9a227;  /* primary gold accent */
+  --color-gold-light:  #e6c565;  /* lighter gold for hover states */
+  --color-text-dark:   #1c2b3a;  /* main body text on light bg */
+  --color-text-light:  #f4f0e6;  /* main text on dark bg */
+  --color-text-muted:  #52667a;  /* secondary / caption text */
+  --color-border:      #d3d3cf;
   --header-height: 72px;
 
   /* ---- FONTS ---- */
@@ -38,8 +27,8 @@
   /* ---- LAYOUT ---- */
   --max-width: 1120px;
   --radius: 10px;
-  --shadow-soft: 0 4px 18px rgba(28, 43, 58, 0.08);
-  --shadow-strong: 0 10px 30px rgba(28, 43, 58, 0.16);
+  --shadow-soft: 0 4px 18px rgba(15, 36, 56, 0.08);
+  --shadow-strong: 0 10px 30px rgba(15, 36, 56, 0.18);
   --transition: 0.25s ease;
 }
 
@@ -53,7 +42,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   color: var(--color-text-dark);
-  background: var(--color-cream);
+  background: #ffffff;
   line-height: 1.7;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
@@ -62,7 +51,7 @@ body {
 img { max-width: 100%; display: block; }
 
 a { color: var(--color-navy); text-decoration: none; transition: color var(--transition); }
-a:hover { color: var(--color-gold-dark); }
+a:hover { color: var(--color-gold); }
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
@@ -88,14 +77,14 @@ ul { list-style: none; }
 .section {
   padding: 70px 0;
 }
-.section--muted { background: var(--color-cream-muted); }
+.section--muted { background: var(--color-blue-muted); }
 .section--dark  { background: var(--color-navy-dark); color: var(--color-text-light); }
 .section--dark h2, .section--dark h3 { color: var(--color-text-light); }
 
 .section-eyebrow {
   display: inline-block;
   font-family: var(--font-heading);
-  color: var(--color-gold-dark);
+  color: var(--color-gold);
   letter-spacing: 2px;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -130,7 +119,7 @@ ul { list-style: none; }
 }
 
 /* ---------------------------------------------------------------------- */
-/* HEADER / NAVIGATION — light, near-white with a fine gold-tinted edge  */
+/* HEADER / NAVIGATION; bg changed (original background: var(--color-navy-dark);  */
 /* ---------------------------------------------------------------------- */
 #site-header-placeholder {
   position: sticky;
@@ -142,15 +131,14 @@ ul { list-style: none; }
   position: relative;
   z-index: 999;
 
-  background: var(--color-header-bg);
-  border-bottom: 1px solid var(--color-border);
+  background: var(--color-navy-dark);
   box-shadow: var(--shadow-soft);
 
   transition: background 0.3s ease;
 }
 
 .site-header.is-scrolled {
-  background: rgba(254, 252, 247, 0.86);
+  background: rgba(15, 36, 56, 0.80);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -168,7 +156,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
 }
 .brand img {
   width: 44px; height: 44px;
@@ -185,11 +173,11 @@ ul { list-style: none; }
   display: block;
   font-family: var(--font-body);
   font-size: 0.72rem;
-  color: var(--color-gold-dark);
+  color: var(--color-gold-light);
   letter-spacing: 1px;
   font-weight: 400;
 }
-.brand:hover { color: var(--color-text-dark); }
+.brand:hover { color: var(--color-text-light); }
 
 .nav-links {
   display: flex;
@@ -197,7 +185,7 @@ ul { list-style: none; }
   align-items: center;
 }
 .nav-links a {
-  color: var(--color-navy-dark);
+  color: var(--color-text-light);
   padding: 8px 14px;
   font-size: 0.95rem;
   border-radius: 6px;
@@ -221,7 +209,7 @@ ul { list-style: none; }
 }
 .nav-toggle span {
   width: 26px; height: 2px;
-  background: var(--color-navy-dark);
+  background: var(--color-gold);
   border-radius: 2px;
 }
 
@@ -231,9 +219,7 @@ ul { list-style: none; }
     position: absolute;
     top: 100%;
     left: 0; right: 0;
-    background: var(--color-header-bg);
-    border-top: 1px solid var(--color-border);
-    box-shadow: var(--shadow-soft);
+    background: var(--color-navy-dark);
     flex-direction: column;
     align-items: stretch;
     padding: 8px 20px 18px;
@@ -245,11 +231,11 @@ ul { list-style: none; }
 }
 
 /* ---------------------------------------------------------------------- */
-/* HERO — light ivory-to-gold gradient                                    */
+/* HERO                                                                    */
 /* ---------------------------------------------------------------------- */
 .hero {
-  background: linear-gradient(155deg, var(--color-cream) 0%, var(--color-cream-muted) 55%, #EDE0BE 100%);
-  color: var(--color-text-dark);
+  background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 60%, #1d4265 100%);
+  color: var(--color-text-light);
   padding: 60px 0 60px;
 }
 .hero-wrap {
@@ -259,22 +245,22 @@ ul { list-style: none; }
   align-items: center;
 }
 .hero-eyebrow {
-  color: var(--color-gold-dark);
+  color: var(--color-gold-light);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.85rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.hero h1 { color: var(--color-navy-dark); margin-bottom: 10px; }
+.hero h1 { color: #fff; margin-bottom: 10px; }
 .hero .hero-role {
   font-size: 1.15rem;
-  color: var(--color-gold-dark);
+  color: var(--color-gold-light);
   font-family: var(--font-heading);
   margin-bottom: 20px;
 }
 .hero p.hero-lead {
-  color: var(--color-text-muted);
+  color: #dde6ef;
   font-size: 1.05rem;
   max-width: 60ch;
 }
@@ -318,7 +304,7 @@ ul { list-style: none; }
 .btn--gold:hover { background: var(--color-gold-light); color: var(--color-navy-dark); }
 .btn--outline {
   border-color: var(--color-gold);
-  color: var(--color-navy);
+  color: var(--color-text-light);
 }
 .btn--outline:hover { background: var(--color-gold); color: var(--color-navy-dark); }
 .btn--navy {
@@ -345,7 +331,7 @@ ul { list-style: none; }
 }
 
 .card {
-  background: var(--color-panel);
+  background: #fff;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   padding: 26px;
@@ -378,7 +364,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 8px;
-  background: var(--color-panel);
+  background: #fff;
   border: 1px solid var(--color-border);
   padding: 10px 18px;
   border-radius: 40px;
@@ -389,7 +375,7 @@ ul { list-style: none; }
 }
 .profile-links a:hover {
   border-color: var(--color-gold);
-  color: var(--color-gold-dark);
+  color: var(--color-gold);
   transform: translateY(-2px);
 }
 .profile-links img { width: 18px; height: 18px; }
@@ -432,11 +418,11 @@ ul { list-style: none; }
   width: 14px; height: 14px;
   background: var(--color-gold);
   border-radius: 50%;
-  border: 3px solid var(--color-panel);
+  border: 3px solid #fff;
   box-shadow: 0 0 0 2px var(--color-gold);
 }
 .timeline-item .date {
-  color: var(--color-gold-dark);
+  color: var(--color-gold);
   font-weight: 700;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -450,23 +436,23 @@ ul { list-style: none; }
 /* ---------------------------------------------------------------------- */
 .pub-year {
   font-family: var(--font-heading);
-  color: var(--color-gold-dark);
+  color: var(--color-gold);
   font-size: 1.4rem;
   margin: 34px 0 14px;
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-blue-panel);
   padding-bottom: 6px;
 }
 .pub-year:first-of-type { margin-top: 0; }
 .pub-list { margin-bottom: 6px; }
 .pub-item {
   padding: 14px 18px;
-  border-left: 3px solid var(--color-border);
+  border-left: 3px solid var(--color-blue-panel);
   margin-bottom: 10px;
-  background: var(--color-cream-muted);
+  background: var(--color-blue-muted);
   border-radius: 0 8px 8px 0;
   transition: border-color var(--transition), background var(--transition);
 }
-.pub-item:hover { border-color: var(--color-gold); background: var(--color-panel); box-shadow: var(--shadow-soft); }
+.pub-item:hover { border-color: var(--color-gold); background: #fff; box-shadow: var(--shadow-soft); }
 .pub-item a { font-weight: 600; }
 
 /* Tabs (used for filtering publications, or courses) */
@@ -480,8 +466,8 @@ ul { list-style: none; }
 .tab-btn {
   padding: 9px 20px;
   border-radius: 30px;
-  border: 2px solid var(--color-border);
-  background: var(--color-panel);
+  border: 2px solid var(--color-blue-panel);
+  background: #fff;
   font-weight: 700;
   font-size: 0.88rem;
   cursor: pointer;
@@ -506,7 +492,7 @@ ul { list-style: none; }
   display: inline-block;
   padding: 3px 12px;
   border-radius: 20px;
-  background: var(--color-cream-muted);
+  background: var(--color-blue-panel);
   color: var(--color-navy-dark);
   font-size: 0.75rem;
   font-weight: 700;
@@ -531,7 +517,7 @@ ul { list-style: none; }
   min-height: 160px;
 }
 .blog-post-card .post-date {
-  color: var(--color-gold-dark);
+  color: var(--color-gold);
   font-size: 0.82rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -562,7 +548,7 @@ ul { list-style: none; }
   padding: 10px 20px;
   margin: 20px 0;
   font-style: italic;
-  background: var(--color-cream-muted);
+  background: var(--color-blue-muted);
   border-radius: 0 8px 8px 0;
 }
 
@@ -610,7 +596,7 @@ form.contact-form textarea {
   margin-bottom: 18px;
   font-family: var(--font-body);
   font-size: 0.98rem;
-  background: var(--color-panel);
+  background: #fff;
 }
 form.contact-form input:focus,
 form.contact-form textarea:focus {
@@ -628,11 +614,11 @@ form.contact-form textarea:focus {
 .form-note { font-size: 0.85rem; color: var(--color-text-muted); margin-top: -6px; }
 
 /* ---------------------------------------------------------------------- */
-/* FOOTER — warm parchment, navy text, gold trim                          */
+/* FOOTER                                                                  */
 /* ---------------------------------------------------------------------- */
 .site-footer {
-  background: var(--color-footer-bg);
-  color: var(--color-navy);
+  background: var(--color-navy-dark);
+  color: #c8d3de;
   padding: 50px 0 22px;
 }
 .footer-wrap {
@@ -643,13 +629,13 @@ form.contact-form textarea:focus {
 }
 @media (max-width: 700px) { .footer-wrap { grid-template-columns: 1fr; } }
 .site-footer h4 {
-  color: var(--color-navy-dark);
+  color: var(--color-gold-light);
   font-family: var(--font-heading);
   margin-bottom: 14px;
   font-size: 1.05rem;
 }
-.site-footer a { color: var(--color-navy); }
-.site-footer a:hover { color: var(--color-gold-dark); }
+.site-footer a { color: #c8d3de; }
+.site-footer a:hover { color: var(--color-gold-light); }
 .site-footer ul li { margin-bottom: 8px; }
 .footer-social {
   display: flex;
@@ -658,7 +644,7 @@ form.contact-form textarea:focus {
 }
 .footer-social a {
   width: 38px; height: 38px;
-  border: 1px solid var(--color-border);
+  border: 1px solid #33526e;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -668,11 +654,11 @@ form.contact-form textarea:focus {
 }
 .footer-social a:hover { border-color: var(--color-gold); background: var(--color-gold); color: var(--color-navy-dark); }
 .footer-bottom {
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid #223e58;
   padding-top: 18px;
   text-align: center;
   font-size: 0.85rem;
-  color: var(--color-text-muted);
+  color: #8ea1b3;
 }
 
 /* Back to top button */
@@ -697,25 +683,24 @@ form.contact-form textarea:focus {
 }
 #back-to-top.show { display: flex; }
 
-/* Page header banner (used on inner pages) — light gradient, gold rule */
+/* Page header banner (used on inner pages) */
 .page-banner {
-  background: linear-gradient(155deg, var(--color-cream) 0%, var(--color-cream-muted) 60%, #EDE0BE 100%);
-  color: var(--color-text-dark);
-  border-bottom: 0.1px solid var(--color-gold);
+  background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
+  color: #fff;
   padding: 30px 0 30px;
   text-align: center;
 }
-.page-banner h1 { color: var(--color-navy-dark); }
-.page-banner p { color: var(--color-gold-dark); font-family: var(--font-heading); font-size: 1.1rem; }
-.breadcrumb { font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 10px; }
-.breadcrumb a { color: var(--color-text-muted); }
-.breadcrumb a:hover { color: var(--color-gold-dark); }
+.page-banner h1 { color: #fff; }
+.page-banner p { color: var(--color-gold-light); font-family: var(--font-heading); font-size: 1.1rem; }
+.breadcrumb { font-size: 0.85rem; color: #9db3c6; margin-bottom: 10px; }
+.breadcrumb a { color: #9db3c6; }
+.breadcrumb a:hover { color: var(--color-gold); }
 
 
 
 
 /* =========================================================
-   PAGE — SECTION NAVIGATION; background opacity is 75%
+   PAGE â€” SECTION NAVIGATION; background opacity is 70%
    ========================================================= */
 
 .page-nav {
@@ -723,9 +708,9 @@ form.contact-form textarea:focus {
   top: var(--header-height);
   z-index: 90;
 
-  background: rgba(255, 255, 255, 0.75);
-  border-bottom: 1px solid var(--color-border);
-  box-shadow: 0 4px 18px rgba(28, 43, 58, 0.045);
+  background: rgba(255, 255, 255, 0.70);
+  border-bottom: 1px solid rgba(30, 52, 72, 0.10);
+  box-shadow: 0 4px 18px rgba(20, 35, 50, 0.045);
 
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -756,7 +741,7 @@ form.contact-form textarea:focus {
 
   padding: 0 17px;
 
-  color: var(--color-gold-dark);
+  color: var(--color-gold);
   text-decoration: none;
 
   font-size: 0.95rem;
@@ -780,7 +765,7 @@ form.contact-form textarea:focus {
   bottom: 22px;
 
   width: 1px;
-  background: var(--color-border);
+  background: rgba(30, 52, 72, 0.10);
 }
 
 /* section numbers */
