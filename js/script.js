@@ -77,6 +77,9 @@
           if (metricEls.i10Index && data.i10Index != null) {
             metricEls.i10Index.textContent = data.i10Index;
           }
+           if (metricEls.numpubscopus && data.numpubscopus != null) {
+              metricEls.numpubscopus.textContent = data.i10Index;
+           }
         })
         .catch(function () { /* keep static fallback numbers already in the HTML */ });
     }
