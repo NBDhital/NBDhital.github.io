@@ -701,7 +701,7 @@ form.contact-form textarea:focus {
 .page-banner {
   background: linear-gradient(155deg, var(--color-cream) 0%, var(--color-cream-muted) 60%, #EDE0BE 100%);
   color: var(--color-text-dark);
-  border-bottom: 1px solid var(--color-gold);
+  border-bottom: 0.1px solid var(--color-gold);
   padding: 30px 0 30px;
   text-align: center;
 }
