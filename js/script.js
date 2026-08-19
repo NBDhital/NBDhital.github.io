@@ -59,10 +59,10 @@
        HTML stay exactly as they are, so nothing ever breaks or shows
        blank. */
     var metricEls = {
-      citations: document.getElementById('metric-citations'),
-      hIndex:    document.getElementById('metric-hindex'),
-      i10Index:  document.getElementById('metric-i10index'),
-       numpubscopus:  document.getElementById('metric-numpubscopus')
+      citations:     document.getElementById('metric-citations'),
+      hIndex:        document.getElementById('metric-hindex'),
+      i10Index:      document.getElementById('metric-i10index'),
+      numpubscopus:  document.getElementById('metric-numpubscopus')
     };
     if (metricEls.citations || metricEls.hIndex || metricEls.i10Index) {
       fetch('/data/metrics.json')
@@ -77,9 +77,9 @@
           if (metricEls.i10Index && data.i10Index != null) {
             metricEls.i10Index.textContent = data.i10Index;
           }
-           if (metricEls.numpubscopus && data.numpubscopus != null) {
-              metricEls.numpubscopus.textContent = data.numpubscopus;
-           }
+          if (metricEls.numpubscopus && data.numpubscopus != null) {
+            metricEls.numpubscopus.textContent = data.numpubscopus;
+          }
         })
         .catch(function () { /* keep static fallback numbers already in the HTML */ });
     }
