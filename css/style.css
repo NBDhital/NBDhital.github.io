@@ -7,17 +7,17 @@
    ========================================================================= */
 
 :root {
-  /* ---- COLOUR PALETTE (muted academic blue + gold) ---- */
-  --color-navy-dark:   #16293D;   /* header / footer background (original #0f2438)*/
-  --color-navy:        #16324f;  /* secondary dark blue */
-  --color-blue-muted:  #f4f4f2;  /* light section background (was pale blue #eef2f6 — now light gray) */
-  --color-blue-panel:  #e6e6e3;  /* card / panel background (was pale blue #dfe7ee — now light gray) */
-  --color-gold:        #c9a227;  /* primary gold accent */
-  --color-gold-light:  #e6c565;  /* lighter gold for hover states */
-  --color-text-dark:   #1c2b3a;  /* main body text on light bg */
-  --color-text-light:  #f4f0e6;  /* main text on dark bg */
-  --color-text-muted:  #52667a;  /* secondary / caption text */
-  --color-border:      #d3d3cf;
+  /* ---- COLOUR PALETTE (refined light academic) ---- */
+  --color-navy-dark:   #fafafa;   /* Header / Footer bg (clean, ultra-light neutral) */
+  --color-navy:        #1e293b;   /* Main headings & hero text (slate navy) */
+  --color-blue-muted:  #f8fafc;   /* Light section background (soft cool off-white) */
+  --color-blue-panel:  #ffffff;   /* Card / Panel background (pure white with subtle shadow) */
+  --color-gold:        #b8973e;   /* Primary gold accent (muted warm brass) */
+  --color-gold-light:  #d4b255;   /* Lighter gold for hover states */
+  --color-text-dark:   #334155;   /* Main body text (charcoal slate) */
+  --color-text-light:  #1e293b;   /* Text on light header/footer */
+  --color-text-muted:  #64748b;   /* Secondary / caption text */
+  --color-border:      #e2e8f0;   /* Light, crisp borders */
   --header-height: 72px;
 
   /* ---- FONTS ---- */
@@ -26,10 +26,10 @@
 
   /* ---- LAYOUT ---- */
   --max-width: 1120px;
-  --radius: 10px;
-  --shadow-soft: 0 4px 18px rgba(15, 36, 56, 0.08);
-  --shadow-strong: 0 10px 30px rgba(15, 36, 56, 0.18);
-  --transition: 0.25s ease;
+  --radius: 8px;                  /* Slightly tighter radius for a crisp academic feel */
+  --shadow-soft: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+  --shadow-strong: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  --transition: 0.2s ease-in-out;
 }
 
 /* ---------------------------------------------------------------------- */
