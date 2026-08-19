@@ -79,6 +79,7 @@
           }
           if (metricEls.numpubscopus && data.numpubscopus != null) {
             metricEls.numpubscopus.textContent = data.numpubscopus;
+          }
         })
         .catch(function () { /* keep static fallback numbers already in the HTML */ });
     }
