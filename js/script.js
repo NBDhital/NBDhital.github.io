@@ -101,3 +101,16 @@ function updateHeaderHeight() {
 
 window.addEventListener('load', updateHeaderHeight);
 window.addEventListener('resize', updateHeaderHeight);
+
+
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".site-header");
+
+  if (!header) return;
+
+  if (window.scrollY > 50) {
+    header.classList.add("is-scrolled");
+  } else {
+    header.classList.remove("is-scrolled");
+  }
+});
