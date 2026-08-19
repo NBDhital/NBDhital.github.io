@@ -51,40 +51,59 @@
       });
     });
 
-    /* Load manually-updated site variables (currently: research metrics)
-       from a single plain data file, and fill them into the page. To
-       update these numbers in the future, edit ONLY /data/metrics.json -
-       never this file or the HTML. If the data file is ever missing or
-       fails to load, the static fallback numbers already written in the
-       HTML stay exactly as they are, so nothing ever breaks or shows
-       blank. */
-    var metricEls = {
-      citations: document.getElementById('metric-citations'),
-      hIndex:    document.getElementById('metric-hindex'),
-      i10Index:  document.getElementById('metric-i10index')
-    };
-    if (metricEls.citations || metricEls.hIndex || metricEls.i10Index) {
-      fetch('/data/metrics.json')
-        .then(function (res) { return res.json(); })
-        .then(function (data) {
-          if (metricEls.citations && data.citations != null) {
-            metricEls.citations.textContent = data.citations;
-          }
-          if (metricEls.hIndex && data.hIndex != null) {
-            metricEls.hIndex.textContent = data.hIndex;
-          }
-          if (metricEls.i10Index && data.i10Index != null) {
-            metricEls.i10Index.textContent = data.i10Index;
-          }
-        })
-        .catch(function () { /* keep static fallback numbers already in the HTML */ });
-    }
-  });
-})();
+/* Load manually-updated site variables (currently: research metrics)
+   from a single plain data file, and fill them into the page. To
+   update these numbers in the future, edit ONLY /data/metrics.json -
+   never this file or the HTML. If the data file is ever missing or
+   fails to load, the static fallback numbers already written in the
+   HTML stay exactly as they are, so nothing ever breaks or shows
+   blank. */
+     
+var metricEls = {
+  citations:    document.getElementById('metric-citations'),
+  hIndex:       document.getElementById('metric-hindex'),
+  i10Index:     document.getElementById('metric-i10index'),
+  numscopuspub: document.getElementById('metric-numscopuspub')
+};
 
+if (
+  metricEls.citations ||
+  metricEls.hIndex ||
+  metricEls.i10Index ||
+  metricEls.numscopuspub
+) {
+  fetch('/data/metrics.json')
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
+
+      if (metricEls.citations && data.citations != null) {
+        metricEls.citations.textContent = data.citations;
+      }
+
+      if (metricEls.hIndex && data.hIndex != null) {
+        metricEls.hIndex.textContent = data.hIndex;
+      }
+
+      if (metricEls.i10Index && data.i10Index != null) {
+        metricEls.i10Index.textContent = data.i10Index;
+      }
+
+      if (metricEls.numscopuspub && data.numscopuspub != null) {
+        metricEls.numscopuspub.textContent = data.numscopuspub;
+      }
+
+    })
+    .catch(function () {
+      /* Keep static fallback numbers already in the HTML */
+    });
+}
+
+
+     
 
 /* For two sticky headers; getting header height */
-
 
 function updateHeaderHeight() {
   const header = document.querySelector('.site-header');
