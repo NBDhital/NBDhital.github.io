@@ -18,6 +18,7 @@
   --color-text-light:  #f4f0e6;  /* main text on dark bg */
   --color-text-muted:  #52667a;  /* secondary / caption text */
   --color-border:      #d3d3cf;
+  --color-header-bg:    #FEFCF7; /* header background — near-white */
   --header-height: 72px;
 
   /* ---- FONTS ---- */
@@ -131,14 +132,14 @@ ul { list-style: none; }
   position: relative;
   z-index: 999;
 
-  background: var(--color-navy-dark);
+  background: var(--color-header-bg);
   box-shadow: var(--shadow-soft);
 
   transition: background 0.3s ease;
 }
 
 .site-header.is-scrolled {
-  background: rgba(15, 36, 56, 0.80);
+  background: rgba(254, 252, 247, 0.86);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
