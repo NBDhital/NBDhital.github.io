@@ -8,8 +8,8 @@
 
 :root {
   /* ---- COLOUR PALETTE (muted academic blue + gold) ---- */
-  --color-navy-dark:   #E6E6E6;   /* header / footer background (original #0f2438)*/
-  --color-navy:        #16324f;  /* secondary dark blue */
+  --color-navy-dark:   #3B6B9C;   /* header / footer background (original #0f2438)*/
+  --color-navy:        #3B7DBF;  /* secondary dark blue */
   --color-blue-muted:  #f4f4f2;  /* light section background (was pale blue #eef2f6 â€” now light gray) */
   --color-blue-panel:  #e6e6e3;  /* card / panel background (was pale blue #dfe7ee â€” now light gray) */
   --color-gold:        #c9a227;  /* primary gold accent */
