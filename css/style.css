@@ -130,8 +130,15 @@ ul { list-style: none; }
 .site-header {
   position: relative;
   z-index: 999;
-  background: rgba(15, 36, 56, 0.95);
+
+  background: var(--color-navy-dark);
   box-shadow: var(--shadow-soft);
+
+  transition: background 0.3s ease;
+}
+
+.site-header.is-scrolled {
+  background: rgba(15, 36, 56, 0.80);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
