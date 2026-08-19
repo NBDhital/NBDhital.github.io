@@ -61,7 +61,8 @@
     var metricEls = {
       citations: document.getElementById('metric-citations'),
       hIndex:    document.getElementById('metric-hindex'),
-      i10Index:  document.getElementById('metric-i10index')
+      i10Index:  document.getElementById('metric-i10index'),
+       i10Index:  document.getElementById('metric-i10index')
     };
     if (metricEls.citations || metricEls.hIndex || metricEls.i10Index) {
       fetch('/data/metrics.json')
