@@ -10,6 +10,8 @@
      #aqi-desc
      #aqi-updated
      #aqi-location-btn
+   
+   Source: https://open-meteo.com/en/docs/air-quality-api
    ========================================================================= */
 
 (function () {
