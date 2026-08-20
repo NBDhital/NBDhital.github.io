@@ -19,7 +19,7 @@
   --color-text-light:  #f4f0e6;  /* reserved for any remaining dark surfaces */
   --color-text-muted:  #52667a;  /* secondary / caption text */
   --color-border:      #d3dbe3;  /* cool neutral border tone */
-  --color-aqi-bg:      #FAFAED; /* background for AQI widget */
+  --color-aqi-bg:      #ffffff; /* background for AQI widget */
   --header-height: 72px;
 
   /* ---- FONTS ---- */
