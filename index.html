@@ -119,9 +119,49 @@
   </div>
 </section>
 
+
+<!-- ============================== AQI WIDGET ============================== -->
+<section class="aqi-widget-wrap">
+  <div class="container">
+    <div class="aqi-widget" id="aqi-widget">
+      <!-- Location -->
+      <div class="aqi-widget__intro">
+        <div class="aqi-widget__eyebrow">AIR QUALITY INDEX</div>
+        <div class="aqi-widget__location" id="aqi-label">
+          Kathmandu
+        </div>
+      </div>
+      <!-- AQI reading -->
+      <div class="aqi-widget__reading">
+        <span class="aqi-widget__value" id="aqi-value">
+          &hellip;
+        </span>
+        <span class="aqi-widget__desc" id="aqi-desc">
+          Loading
+        </span>
+      </div>
+      <!-- Update information + location button -->
+      <div class="aqi-widget__meta">
+        <span class="aqi-widget__updated" id="aqi-updated">
+          Updating&hellip;
+        </span>
+        <button
+          type="button"
+          class="aqi-widget__location-btn"
+          id="aqi-location-btn">
+          <span class="aqi-widget__location-icon">⌖</span>
+          Current Location
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+ <!-- ============================== END OF AQI WIDGET ============================== -->
+
 <div id="site-footer-placeholder"></div>
 
 <script src="/js/include.js"></script>
 <script src="/js/script.js"></script>
+<script src="/js/aqi-widget.js"></script>
 </body>
 </html>
