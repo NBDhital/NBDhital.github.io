@@ -8,16 +8,17 @@
 
 :root {
   /* ---- COLOUR PALETTE (muted academic blue + gold) ---- */
-  --color-navy-dark:   #16293D;   /* header / footer background (original #0f2438)*/
-  --color-navy:        #16324f;  /* secondary dark blue */
-  --color-blue-muted:  #f4f4f2;  /* light section background (was pale blue #eef2f6 — now light gray) */
-  --color-blue-panel:  #e6e6e3;  /* card / panel background (was pale blue #dfe7ee — now light gray) */
-  --color-gold:        #c9a227;  /* primary gold accent */
+  --color-navy-dark:   #16293D;   /* used as an ACCENT / text colour (headings, header/footer text) rather than a big background field */
+  --color-navy:        #16324f;  /* secondary navy - links, hover states */
+  --color-cream:        #f8fafc; /* main page background - cool near-white with a faint blue cast */
+  --color-blue-muted:  #eef2f6;  /* cool pale blue-gray panel bg for "muted" sections */
+  --color-blue-panel:  #e1e8ef;  /* deeper cool blue-gray panel - card/badge/border accents */
+  --color-gold:        #c9a227;  /* primary gold accent - the one warm note against the cool palette */
   --color-gold-light:  #e6c565;  /* lighter gold for hover states */
   --color-text-dark:   #1c2b3a;  /* main body text on light bg */
-  --color-text-light:  #f4f0e6;  /* main text on dark bg */
+  --color-text-light:  #f4f0e6;  /* reserved for any remaining dark surfaces */
   --color-text-muted:  #52667a;  /* secondary / caption text */
-  --color-border:      #d3d3cf;
+  --color-border:      #d3dbe3;  /* cool neutral border tone */
   --header-height: 72px;
 
   /* ---- FONTS ---- */
@@ -42,7 +43,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-body);
   color: var(--color-text-dark);
-  background: #ffffff;
+  background: var(--color-cream);
   line-height: 1.7;
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
@@ -131,14 +132,15 @@ ul { list-style: none; }
   position: relative;
   z-index: 999;
 
-  background: var(--color-navy-dark);
+  background: var(--color-cream);
+  border-bottom: 1px solid var(--color-border);
   box-shadow: var(--shadow-soft);
 
   transition: background 0.3s ease;
 }
 
 .site-header.is-scrolled {
-  background: rgba(15, 36, 56, 0.80);
+  background: rgba(248, 250, 252, 0.88);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -156,7 +158,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 12px;
-  color: var(--color-text-light);
+  color: var(--color-navy-dark);
 }
 .brand img {
   width: 44px; height: 44px;
@@ -173,11 +175,11 @@ ul { list-style: none; }
   display: block;
   font-family: var(--font-body);
   font-size: 0.72rem;
-  color: var(--color-gold-light);
+  color: var(--color-gold);
   letter-spacing: 1px;
   font-weight: 400;
 }
-.brand:hover { color: var(--color-text-light); }
+.brand:hover { color: var(--color-gold); }
 
 .nav-links {
   display: flex;
@@ -185,7 +187,7 @@ ul { list-style: none; }
   align-items: center;
 }
 .nav-links a {
-  color: var(--color-text-light);
+  color: var(--color-navy-dark);
   padding: 8px 14px;
   font-size: 0.95rem;
   border-radius: 6px;
@@ -219,7 +221,9 @@ ul { list-style: none; }
     position: absolute;
     top: 100%;
     left: 0; right: 0;
-    background: var(--color-navy-dark);
+    background: var(--color-cream);
+    border-top: 1px solid var(--color-border);
+    box-shadow: var(--shadow-soft);
     flex-direction: column;
     align-items: stretch;
     padding: 8px 20px 18px;
@@ -234,9 +238,10 @@ ul { list-style: none; }
 /* HERO                                                                    */
 /* ---------------------------------------------------------------------- */
 .hero {
-  background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 60%, #1d4265 100%);
-  color: var(--color-text-light);
+  background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
+  color: #c3ccd6;
   padding: 60px 0 60px;
+  border-bottom: 2px solid var(--color-gold);
 }
 .hero-wrap {
   display: grid;
@@ -260,7 +265,7 @@ ul { list-style: none; }
   margin-bottom: 20px;
 }
 .hero p.hero-lead {
-  color: #dde6ef;
+  color: #c3ccd6;
   font-size: 1.05rem;
   max-width: 60ch;
 }
@@ -617,9 +622,10 @@ form.contact-form textarea:focus {
 /* FOOTER                                                                  */
 /* ---------------------------------------------------------------------- */
 .site-footer {
-  background: var(--color-navy-dark);
-  color: #c8d3de;
-  padding: 50px 0 22px;
+  background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
+  color: #c3ccd6;
+  padding: 60px 0 26px;
+  border-top: 2px solid var(--color-gold);
 }
 .footer-wrap {
   display: grid;
@@ -634,7 +640,7 @@ form.contact-form textarea:focus {
   margin-bottom: 14px;
   font-size: 1.05rem;
 }
-.site-footer a { color: #c8d3de; }
+.site-footer a { color: #c3ccd6; }
 .site-footer a:hover { color: var(--color-gold-light); }
 .site-footer ul li { margin-bottom: 8px; }
 .footer-social {
@@ -644,7 +650,7 @@ form.contact-form textarea:focus {
 }
 .footer-social a {
   width: 38px; height: 38px;
-  border: 1px solid #33526e;
+  border: 1px solid rgba(255,255,255,0.18);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -654,11 +660,11 @@ form.contact-form textarea:focus {
 }
 .footer-social a:hover { border-color: var(--color-gold); background: var(--color-gold); color: var(--color-navy-dark); }
 .footer-bottom {
-  border-top: 1px solid #223e58;
+  border-top: 1px solid rgba(255,255,255,0.12);
   padding-top: 18px;
   text-align: center;
   font-size: 0.85rem;
-  color: #8ea1b3;
+  color: rgba(255,255,255,0.55);
 }
 
 /* Back to top button */
@@ -686,15 +692,16 @@ form.contact-form textarea:focus {
 /* Page header banner (used on inner pages) */
 .page-banner {
   background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
-  color: #fff;
+  color: #c3ccd6;
   padding: 30px 0 30px;
   text-align: center;
+  border-bottom: 2px solid var(--color-gold);
 }
 .page-banner h1 { color: #fff; }
 .page-banner p { color: var(--color-gold-light); font-family: var(--font-heading); font-size: 1.1rem; }
-.breadcrumb { font-size: 0.85rem; color: #9db3c6; margin-bottom: 10px; }
-.breadcrumb a { color: #9db3c6; }
-.breadcrumb a:hover { color: var(--color-gold); }
+.breadcrumb { font-size: 0.85rem; color: #c3ccd6; margin-bottom: 10px; }
+.breadcrumb a { color: #c3ccd6; }
+.breadcrumb a:hover { color: var(--color-gold-light); }
 
 
 
@@ -708,7 +715,7 @@ form.contact-form textarea:focus {
   top: var(--header-height);
   z-index: 90;
 
-  background: rgba(255, 255, 255, 0.70);
+  background: rgba(248, 250, 252, 0.85);
   border-bottom: 1px solid rgba(30, 52, 72, 0.10);
   box-shadow: 0 4px 18px rgba(20, 35, 50, 0.045);
 
