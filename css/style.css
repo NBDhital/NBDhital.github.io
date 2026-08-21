@@ -1372,3 +1372,22 @@ form.contact-form textarea:focus {
   }
 
 }
+
+
+/* --------------------------------------------------------------------------
+   Text style for links in general text (e.g., learn more about AQI)
+   -------------------------------------------------------------------------- */
+
+.general-text-link {
+  color: var(--color-navy-dark);
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.general-text-link:hover {
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+}
