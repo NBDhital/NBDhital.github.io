@@ -19,53 +19,14 @@
   // -----------------------------------------------------------------------
   // SETTINGS
   // -----------------------------------------------------------------------
+  // Shared constants/helpers (KATHMANDU, AQI_LEVELS, levelFor, buildFeedUrl)
+  // now live in js/aqi-common.js, which must be loaded before this file.
 
-  const KATHMANDU = {
-    lat: 27.707461,
-    lon: 85.315024,
-    label: "In Kathmandu, Nepal"
-  };
+  const KATHMANDU = window.AQICommon.KATHMANDU;
+  const levelFor = window.AQICommon.levelFor;
+  const buildFeedUrl = window.AQICommon.buildFeedUrl;
 
   const REFRESH_MS = 30 * 60 * 1000; // 30 minutes
-
-
-  // -----------------------------------------------------------------------
-  // AQI LEVELS — US EPA
-  // -----------------------------------------------------------------------
-
-  const AQI_LEVELS = [
-    { max: 50,  label: "Good",                           color: "#4CA64C" },
-    { max: 100, label: "Moderate",                       color: "#C9A227" },
-    { max: 150, label: "Unhealthy for Sensitive Groups", color: "#E07B39" },
-    { max: 200, label: "Unhealthy",                      color: "#C0392B" },
-    { max: 300, label: "Very Unhealthy",                 color: "#7D3C98" },
-    { max: Infinity, label: "Hazardous",                 color: "#5C2A2A" }
-  ];
-
-
-  function levelFor(aqi) {
-    return (
-      AQI_LEVELS.find(level => aqi <= level.max) ||
-      AQI_LEVELS[AQI_LEVELS.length - 1]
-    );
-  }
-
-
-  // -----------------------------------------------------------------------
-  // API URL
-  // -----------------------------------------------------------------------
-
-  function buildFeedUrl(lat, lon) {
-
-    const params = new URLSearchParams({
-      latitude: lat,
-      longitude: lon,
-      current: "us_aqi,pm2_5,pm10",
-      timezone: "auto"
-    });
-
-    return `https://air-quality-api.open-meteo.com/v1/air-quality?${params}`;
-  }
 
 
   // -----------------------------------------------------------------------
@@ -75,7 +36,7 @@
   const state = {
     lat: KATHMANDU.lat,
     lon: KATHMANDU.lon,
-    label: KATHMANDU.label
+    label: "In " + KATHMANDU.label
   };
 
   let refreshTimer = null;
@@ -302,7 +263,7 @@
     // ALWAYS START WITH KATHMANDU
     state.lat = KATHMANDU.lat;
     state.lon = KATHMANDU.lon;
-    state.label = KATHMANDU.label;
+    state.label = "In " + KATHMANDU.label;
 
     fetchAndRender();
 
