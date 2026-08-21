@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Quality | Narayan Babu Dhital</title>
+<meta name="description" content="Live air quality (AQI, PM2.5, PM10) for Kathmandu or your current location, what the AQI scale means, and where the data comes from — including Nepal's official government monitoring network.">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body data-page="air-quality">
+
+<div id="site-header-placeholder"></div>
+
+<!-- ============================== PAGE BANNER ============================== -->
+<section class="page-banner">
+  <div class="container">
+    <div class="breadcrumb"><a href="/index.html">Home</a> &rsaquo; Air Quality</div>
+    <h1>Air Quality Status</h1>
+    <p>Live Data &middot; Data Source &middot; What AQI Means</p>
+  </div>
+</section>
+
+<!-- ============================== LIVE READING ============================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="section-eyebrow">LIVE DATA</div>
+      <h2>Current Air Quality</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="aqi-detail-live reveal">
+      <div class="aqi-detail-live__location" id="aqid-place">
+        Kathmandu, Nepal
+        <span class="aqi-detail-live__updated" id="aqid-updated">Updating&hellip;</span>
+      </div>
+      <button type="button" class="aqi-widget__location-btn" id="aqid-location-btn">
+        <span class="aqi-widget__location-icon">⌖</span>
+        Use Current Location
+      </button>
+    </div>
+
+    <div class="grid grid--4 reveal" style="max-width:980px;margin:0 auto;">
+      <div class="card aqi-stat-card">
+        <div class="aqi-stat-card__label">AQI (US)</div>
+        <div class="aqi-stat-card__value" id="aqid-aqi">&hellip;</div>
+        <div class="aqi-stat-card__sub" id="aqid-aqi-desc">Loading</div>
+      </div>
+      <div class="card aqi-stat-card">
+        <div class="aqi-stat-card__label">PM<sub>2.5</sub></div>
+        <div class="aqi-stat-card__value" id="aqid-pm25">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+        <div class="aqi-stat-card__sub">Fine particulate matter</div>
+      </div>
+      <div class="card aqi-stat-card">
+        <div class="aqi-stat-card__label">PM<sub>10</sub></div>
+        <div class="aqi-stat-card__value" id="aqid-pm10">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+        <div class="aqi-stat-card__sub">Coarse particulate matter</div>
+      </div>
+      <div class="card aqi-stat-card">
+        <div class="aqi-stat-card__label">Category</div>
+        <div class="aqi-stat-card__value" id="aqid-category" style="font-size:1.3rem;">&hellip;</div>
+        <div class="aqi-stat-card__sub">US EPA AQI scale</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== DATA SOURCE ============================== -->
+<section class="section section--muted">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="section-eyebrow">DATA SOURCE</div>
+      <h2>Where These Data Come From</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="reveal" style="max-width:980px;margin:0 auto 18px;">
+      <p style="text-align:center;">
+        The live reading above comes from the 
+        <strong><a href="https://open-meteo.com/en/docs/air-quality-api" target="_blank" rel="noopener">
+          Open-Meteo Air Quality API
+        </a></strong>,
+        which combines outputs from atmospheric models (including CAMS &ndash; the Copernicus
+        Atmosphere Monitoring Service) with ground-based observations to estimate air pollutant 
+        concentrations at any location, updated hourly. Please note that it is a
+        modeled estimate, not a direct observation. The AQI value is based on 
+        the PM<sub>2.5</sub> concentration. 
+      </p>
+    </div>
+
+    <div class="gov-source-box reveal">
+      <p>
+        For Nepal's <strong>official</strong> air quality monitoring data,
+        visit the <strong>Department of Environment</strong>'s real-time monitoring portal.
+      </p>
+      <a href="https://pollution.gov.np" target="_blank" rel="noopener" class="btn btn--gold">
+        Live Data from Government of Nepal
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== UNDERSTANDING AQI ============================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="section-eyebrow">Air Quality Index</div>
+      <h2>Understanding the AQI</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="reveal" style="max-width:980px;margin:0 auto 34px;">
+      <p style="text-align:center;">
+        The <strong>Air Quality Index (AQI)</strong> is a standardized scale, used widely around 
+        the world, that translates air pollutant concentrations into a single number from 
+        0 to 500&plus;, making it easy to understand whether the air is healthy. 
+        A higher AQI means a greater level of air pollution and a greater health concern. 
+        The scale is built from six categories, each linked to a PM<sub>2.5</sub> 
+        concentration range and a health message. Your current category is 
+        highlighted below.
+      </p>
+    </div>
+
+    <div class="aqi-scale reveal" id="aqid-scale">
+      <div class="aqi-scale__row" data-max="50">
+        <div class="aqi-scale__swatch" style="background:#4CA64C;"></div>
+        <div class="aqi-scale__range">0&ndash;50<span>PM2.5: 0.0&ndash;9.0 &micro;g/m&sup3;</span></div>
+        <div class="aqi-scale__label" style="color:#4CA64C;">Good</div>
+        <div class="aqi-scale__badge">Current AQI</div>
+        <div class="aqi-scale__health">Air quality is satisfactory and poses little or no risk.</div>
+      </div>
+      <div class="aqi-scale__row" data-max="100">
+        <div class="aqi-scale__swatch" style="background:#C9A227;"></div>
+        <div class="aqi-scale__range">51&ndash;100<span>PM2.5: 9.1&ndash;35.4 &micro;g/m&sup3;</span></div>
+        <div class="aqi-scale__label" style="color:#C9A227;">Moderate</div>
+        <div class="aqi-scale__badge">Current AQI</div>
+        <div class="aqi-scale__health">Acceptable air quality; unusually sensitive people should consider limiting prolonged outdoor exertion.</div>
+      </div>
+      <div class="aqi-scale__row" data-max="150">
+        <div class="aqi-scale__swatch" style="background:#E07B39;"></div>
+        <div class="aqi-scale__range">101&ndash;150<span>PM2.5: 35.5&ndash;55.4 &micro;g/m&sup3;</span></div>
+        <div class="aqi-scale__label" style="color:#E07B39;">Unhealthy for Sensitive Groups</div>
+        <div class="aqi-scale__badge">Current AQI</div>
+        <div class="aqi-scale__health">Children, older adults, and people with heart or lung disease may experience health effects.</div>
+      </div>
+      <div class="aqi-scale__row" data-max="200">
+        <div class="aqi-scale__swatch" style="background:#C0392B;"></div>
+        <div class="aqi-scale__range">151&ndash;200<span>PM2.5: 55.5&ndash;125.4 &micro;g/m&sup3;</span></div>
+        <div class="aqi-scale__label" style="color:#C0392B;">Unhealthy</div>
+        <div class="aqi-scale__badge">Current AQI</div>
+        <div class="aqi-scale__health">Everyone may begin to experience health effects; sensitive groups may experience more serious effects.</div>
+      </div>
+      <div class="aqi-scale__row" data-max="300">
+        <div class="aqi-scale__swatch" style="background:#7D3C98;"></div>
+        <div class="aqi-scale__range">201&ndash;300<span>PM2.5: 125.5&ndash;225.4 &micro;g/m&sup3;</span></div>
+        <div class="aqi-scale__label" style="color:#7D3C98;">Very Unhealthy</div>
+        <div class="aqi-scale__badge">Current AQI</div>
+        <div class="aqi-scale__health">Health alert &ndash; the risk of health effects is increased for everyone.</div>
+      </div>
+      <div class="aqi-scale__row" data-max="9999">
+        <div class="aqi-scale__swatch" style="background:#5C2A2A;"></div>
+        <div class="aqi-scale__range">301&ndash;500&plus;<span>PM2.5: 225.5&micro;g/m&sup3; and above</span></div>
+        <div class="aqi-scale__label" style="color:#5C2A2A;">Hazardous</div>
+        <div class="aqi-scale__badge">Current AQI</div>
+        <div class="aqi-scale__health">Health warning of emergency conditions &ndash; the entire population is more likely to be affected.</div>
+      </div>
+    </div>
+
+    <p class="data-source-note">
+      Breakpoints follow the US EPA's Air Quality Index for PM2.5, revised May 2024.
+    </p>
+  </div>
+</section>
+
+<div id="site-footer-placeholder"></div>
+
+<script src="/js/include.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/aqi-common.js"></script>
+<script src="/js/aqi-detail.js"></script>
+</body>
+</html>
