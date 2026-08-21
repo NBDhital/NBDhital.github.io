@@ -1317,11 +1317,58 @@ form.contact-form textarea:focus {
   display: block;
 }
 
+
+
+
+
+
 @media (max-width: 700px) {
+
   .aqi-scale__row {
     grid-template-columns: 8px 1fr auto;
+    grid-template-rows: auto auto auto;
+
     row-gap: 4px;
   }
-  .aqi-scale__range span { display: inline; margin-left: 6px; }
-  .aqi-scale__health { padding-left: 0; }
+
+  /* Colour swatch */
+  .aqi-scale__swatch {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  /* AQI range */
+  .aqi-scale__range {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* Good / Moderate / Unhealthy etc. */
+  .aqi-scale__label {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  /* Current AQI badge */
+  .aqi-scale__badge {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: end;
+  }
+
+  /* Health message */
+  .aqi-scale__health {
+    grid-column: 1 / -1;
+    grid-row: 3;
+
+    padding-left: 0;
+    margin-top: 4px;
+  }
+
+  .aqi-scale__range span {
+    display: inline;
+    margin-left: 6px;
+  }
+
 }
