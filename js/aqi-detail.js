@@ -385,7 +385,7 @@
       highlightScale(aqi);
       const dominantLabel = renderPollutantTable(current, aqi);
       if (dominantEl) {
-        dominantEl.textContent = dominantLabel ? `AQI &middot; Main pollutant ${dominantLabel}` : "";
+        dominantEl.textContent = dominantLabel ? `AQI | Main pollutant ${dominantLabel}` : "";
       }
 
     } catch (error) {
