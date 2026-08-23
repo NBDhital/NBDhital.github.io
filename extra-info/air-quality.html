@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 <body data-page="air-quality">
 
@@ -23,101 +24,149 @@
   </div>
 </section>
 
-<!-- ==============================  OVERALL AQI ============================== -->
-<section class="section", id="overall-aqi">
+<!-- ============================== AIR QUALITY OVERVIEW ============================== -->
+<section class="section" id="overall-aqi">
   <div class="container">
     <div class="section-heading reveal">
-      <div class="section-eyebrow">AQI</div>
-      <h2>Overall Air Quality Index</h2>
+      <div class="section-eyebrow">Air Quality Overview</div>
+      <h2>Air Quality Index & Concentrations</h2>
       <div class="rule"></div>
     </div>
 
-    <div class="aqi-detail-live reveal">
-      <div class="aqi-detail-live__location" id="aqid-place">
-        Kathmandu, Nepal
-        <span class="aqi-detail-live__updated" id="aqid-updated">Updating&hellip;</span>
+    <div class="aqi-overview reveal">
+
+      <!-- Overall AQI headline -->
+      <div class="aqi-detail-live aqi-overview__headline">
+        <div class="aqi-detail-live__location" id="aqid-place">
+          Kathmandu, Nepal
+          <span class="aqi-detail-live__updated" id="aqid-updated">Updating&hellip;</span>
+        </div>
+
+        <div class="aqi-detail-live__aqi">
+          <span class="aqi-detail-live__aqi-value" id="aqid-aqi">&hellip;</span>
+          <span class="aqi-detail-live__aqi-desc" id="aqid-aqi-desc">Loading</span>
+          <span class="aqi-detail-live__dominant" id="aqid-dominant"></span>
+        </div>
+
+        <a href="#custom-location" class="aqi-widget__location-btn" id="aqid-location-btn">
+          <span class="aqi-widget__location-icon">⌖</span>
+          Select Custom Location
+        </a>
       </div>
 
-      <div class="aqi-detail-live__aqi">
-        <span class="aqi-detail-live__aqi-value" id="aqid-aqi">&hellip;</span>
-        <span class="aqi-detail-live__aqi-desc" id="aqid-aqi-desc">Loading</span>
-        <span class="aqi-detail-live__dominant" id="aqid-dominant"></span>
+      <!-- Live concentration readings -->
+      <div class="aqi-overview__concentrations">
+        <div class="aqi-overview__conc-heading">Live Concentration Readings</div>
+
+        <div class="grid grid--4 aqi-overview__grid">
+          <div class="card aqi-stat-card">
+            <div class="aqi-stat-card__label">PM<sub>2.5</sub></div>
+            <div class="aqi-stat-card__value" id="aqid-c-pm25">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+            <div class="aqi-stat-card__sub">Fine particulate matter</div>
+          </div>
+          <div class="card aqi-stat-card">
+            <div class="aqi-stat-card__label">PM<sub>10</sub></div>
+            <div class="aqi-stat-card__value" id="aqid-c-pm10">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+            <div class="aqi-stat-card__sub">Coarse particulate matter</div>
+          </div>
+          <div class="card aqi-stat-card">
+            <div class="aqi-stat-card__label">CO</div>
+            <div class="aqi-stat-card__value" id="aqid-c-co">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+            <div class="aqi-stat-card__sub">Carbon monoxide</div>
+          </div>
+          <div class="card aqi-stat-card">
+            <div class="aqi-stat-card__label">NO<sub>2</sub></div>
+            <div class="aqi-stat-card__value" id="aqid-c-no2">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+            <div class="aqi-stat-card__sub">Nitrogen dioxide</div>
+          </div>
+          <div class="card aqi-stat-card">
+            <div class="aqi-stat-card__label">SO<sub>2</sub></div>
+            <div class="aqi-stat-card__value" id="aqid-c-so2">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+            <div class="aqi-stat-card__sub">Sulfur dioxide</div>
+          </div>
+          <div class="card aqi-stat-card">
+            <div class="aqi-stat-card__label">O<sub>3</sub></div>
+            <div class="aqi-stat-card__value" id="aqid-c-o3">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+            <div class="aqi-stat-card__sub">Ground-level ozone</div>
+          </div>
+          <div class="card aqi-stat-card">
+            <div class="aqi-stat-card__label">CO<sub>2</sub></div>
+            <div class="aqi-stat-card__value" id="aqid-c-co2">&hellip;<span class="aqi-stat-card__unit">ppm</span></div>
+            <div class="aqi-stat-card__sub">Carbon dioxide</div>
+          </div>
+          <div class="card aqi-stat-card">
+            <div class="aqi-stat-card__label">AOD</div>
+            <div class="aqi-stat-card__value" id="aqid-c-aod">&hellip;</div>
+            <div class="aqi-stat-card__sub">Aerosol optical depth</div>
+          </div>
+        </div>
+
+        <p class="aqi-overview__conc-meta">
+          <span id="aqid-conc-place">Kathmandu, Nepal</span>
+          &middot; <a href="#custom-location" id="aqid-conc-locate-link" class="general-text-link">View at Custom Location</a>
+          &middot; <span id="aqid-conc-updated">Updating&hellip;</span>
+        </p>
       </div>
 
-      <button type="button" class="aqi-widget__location-btn" id="aqid-location-btn">
-        <span class="aqi-widget__location-icon">⌖</span>
-        Use Current Location
-      </button>
-      
     </div>
+
     <p style="text-align:center; margin:20px 0 0; font-size:0.82rem; letter-spacing:0.2px;">
       <a href="#understanding-aqi" class="general-text-link">What is AQI?</a>
+      &middot;
+      <a href="#data-source" class="general-text-link">Where are these data coming from?</a>
     </p>
   </div>
 </section>
 
 
-<!-- ============================== LIVE CONCENTRATION READING ============================== -->
-<section class="section section--muted" id="live-concentration">
+<!-- ============================== CUSTOM LOCATION ============================== -->
+<section class="section section--muted" id="custom-location">
   <div class="container">
     <div class="section-heading reveal">
-      <div class="section-eyebrow">LIVE DATA</div>
-      <h2>Live Concentration Readings</h2>
+      <div class="section-eyebrow">CUSTOM LOCATION</div>
+      <h2>Check Air Quality Anywhere</h2>
       <div class="rule"></div>
     </div>
 
-    <div class="grid grid--4 reveal" style="max-width:980px;margin:0 auto;">
-      <div class="card aqi-stat-card">
-        <div class="aqi-stat-card__label">PM<sub>2.5</sub></div>
-        <div class="aqi-stat-card__value" id="aqid-c-pm25">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
-        <div class="aqi-stat-card__sub">Fine particulate matter</div>
+    <div class="aqi-custom-wrap reveal">
+
+      <!-- Controls column -->
+      <div class="aqi-custom-controls">
+
+        <button type="button" class="aqi-custom-locate-btn" id="aqid-custom-locate-btn">
+          <span class="aqi-widget__location-icon">⌖</span>
+          Get Data at Current Location
+        </button>
+
+        <div class="aqi-latlon-row">
+          <div class="aqi-latlon-field">
+            <label for="aqid-custom-lat">Latitude</label>
+            <input type="text" inputmode="decimal" id="aqid-custom-lat" value="27.707461" autocomplete="off" spellcheck="false">
+          </div>
+          <div class="aqi-latlon-field">
+            <label for="aqid-custom-lon">Longitude</label>
+            <input type="text" inputmode="decimal" id="aqid-custom-lon" value="85.315024" autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+
+        <p class="aqi-custom-error" id="aqid-custom-error"></p>
+
+        <button type="button" class="btn btn--gold aqi-custom-fetch-btn" id="aqid-custom-fetch-btn">
+          Get Data Now
+        </button>
+
+        <p class="aqi-custom-instruction">
+          Select current location, enter latitude/longitude values, or select from the map &mdash; then click &ldquo;Get Data Here&rdquo;.
+        </p>
       </div>
-      <div class="card aqi-stat-card">
-        <div class="aqi-stat-card__label">PM<sub>10</sub></div>
-        <div class="aqi-stat-card__value" id="aqid-c-pm10">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
-        <div class="aqi-stat-card__sub">Coarse particulate matter</div>
+
+      <!-- Map column -->
+      <div class="aqi-custom-map-col">
+        <div id="aqi-map"></div>
+        <p class="aqi-map-hint" id="aqid-map-hint">Click anywhere on the map to select a location.</p>
       </div>
-      <div class="card aqi-stat-card">
-        <div class="aqi-stat-card__label">CO</div>
-        <div class="aqi-stat-card__value" id="aqid-c-co">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
-        <div class="aqi-stat-card__sub">Carbon monoxide</div>
-      </div>
-      <div class="card aqi-stat-card">
-        <div class="aqi-stat-card__label">NO<sub>2</sub></div>
-        <div class="aqi-stat-card__value" id="aqid-c-no2">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
-        <div class="aqi-stat-card__sub">Nitrogen dioxide</div>
-      </div>
-      <div class="card aqi-stat-card">
-        <div class="aqi-stat-card__label">SO<sub>2</sub></div>
-        <div class="aqi-stat-card__value" id="aqid-c-so2">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
-        <div class="aqi-stat-card__sub">Sulfur dioxide</div>
-      </div>
-      <div class="card aqi-stat-card">
-        <div class="aqi-stat-card__label">O<sub>3</sub></div>
-        <div class="aqi-stat-card__value" id="aqid-c-o3">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
-        <div class="aqi-stat-card__sub">Ground-level ozone</div>
-      </div>
-      <div class="card aqi-stat-card">
-        <div class="aqi-stat-card__label">CO<sub>2</sub></div>
-        <div class="aqi-stat-card__value" id="aqid-c-co2">&hellip;<span class="aqi-stat-card__unit">ppm</span></div>
-        <div class="aqi-stat-card__sub">Carbon dioxide</div>
-      </div>
-      <div class="card aqi-stat-card">
-        <div class="aqi-stat-card__label">AOD</div>
-        <div class="aqi-stat-card__value" id="aqid-c-aod">&hellip;</div>
-        <div class="aqi-stat-card__sub">Aerosol optical depth</div>
-      </div>
+
     </div>
-
-    <p class="aqi-conc-meta" style="text-align:center; margin:18px 0 0; font-size:0.85rem; color:var(--color-text-muted);">
-      <span id="aqid-conc-place">Kathmandu, Nepal</span> 
-      &middot; <a href="#" id="aqid-conc-locate-link" class="general-text-link">Show at my location</a>
-      &middot; <span id="aqid-conc-updated">Updating&hellip;</span>
-    </p>
-
-    <p style="text-align:center; margin:8px 0 0; font-size:0.82rem; letter-spacing:0.2px;">
-      <a href="#data-source" class="general-text-link">Where are these data coming from?</a>
-    </p>
 
   </div>
 </section>
@@ -246,6 +295,7 @@
 
 <script src="/js/include.js"></script>
 <script src="/js/script.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="/js/aqi-common.js"></script>
 <script src="/js/aqi-detail.js"></script>
 </body>
