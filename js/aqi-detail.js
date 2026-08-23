@@ -254,7 +254,7 @@
       writeCustomLatLon(lat, lon);
 
       if (hintEl) {
-        hintEl.innerHTML = `Selected <strong>${lat.toFixed(3)}, ${lon.toFixed(3)}</strong> &mdash; filled in on the left. Click &ldquo;Get Data Here&rdquo; to load air quality there.`;
+        hintEl.innerHTML = `Selected <strong>${lat.toFixed(3)}, ${lon.toFixed(3)}</strong>. Now, click &ldquo;Get Data&rdquo; button.`;
       }
     });
   }
