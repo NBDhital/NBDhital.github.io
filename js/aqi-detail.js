@@ -31,9 +31,9 @@
     label: KATHMANDU.label
   };
 
-
   // -----------------------------------------------------------------------
-  // POLLUTANT BREAKDOWN TABLE
+  // NOTE: The HTML table has been removed, but this function is still required
+  // to calculate and return the dominant pollutant driving the overall AQI.
   // -----------------------------------------------------------------------
   // Renders one row per pollutant: name (+ concentration), its own US AQI
   // sub-index (or "Not applicable" for CO2 / Aerosol Optical Depth, since
@@ -41,24 +41,25 @@
   // reference. The row whose own sub-index equals the overall AQI is the
   // "dominant pollutant" driving the current reading, and gets highlighted.
 
-  function renderPollutantTable(current, overallAqi) {
+ function renderPollutantTable(current, overallAqi) {
+  const tbody = document.getElementById("aqid-pollutant-tbody");
+  if (!POLLUTANTS) return null;
 
-    const tbody = document.getElementById("aqid-pollutant-tbody");
-    if (!tbody || !POLLUTANTS) return null;
-
+  if (tbody) {
     tbody.innerHTML = "";
+  }
 
-    // Track which pollutant's own sub-index matches the overall AQI — that's
-    // the one actually driving the reading (the "max of six sub-indices" rule).
-    let dominantLabel = null;
+  // Track which pollutant's own sub-index matches the overall AQI
+  let dominantLabel = null;
 
-    POLLUTANTS.forEach(function (pollutant) {
+  POLLUTANTS.forEach(function (pollutant) {
+    const concentration = current[pollutant.key];
+    const subIndex = pollutant.aqiKey ? current[pollutant.aqiKey] : null;
+    const isDominant = typeof subIndex === "number" && Math.round(subIndex) === overallAqi;
+    if (isDominant && dominantLabel === null) dominantLabel = pollutant.label;
 
-      const concentration = current[pollutant.key];
-      const subIndex = pollutant.aqiKey ? current[pollutant.aqiKey] : null;
-      const isDominant = typeof subIndex === "number" && Math.round(subIndex) === overallAqi;
-      if (isDominant && dominantLabel === null) dominantLabel = pollutant.label;
-
+    // Only construct and append DOM nodes if the table exists
+    if (tbody) {
       const row = document.createElement("tr");
       if (isDominant) row.className = "is-dominant";
 
@@ -92,16 +93,11 @@
       row.appendChild(subIndexCell);
       row.appendChild(overallCell);
       tbody.appendChild(row);
-    });
+    }
+  });
 
-    return dominantLabel;
-  }
-
-  function clearPollutantTable() {
-    const tbody = document.getElementById("aqid-pollutant-tbody");
-    if (!tbody) return;
-    tbody.innerHTML = '<tr><td colspan="3" class="aqi-pollutant-table__na">Unable to retrieve pollutant data.</td></tr>';
-  }
+  return dominantLabel;
+}
 
 
   // -----------------------------------------------------------------------
