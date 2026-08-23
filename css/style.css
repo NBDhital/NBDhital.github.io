@@ -1195,6 +1195,70 @@ form.contact-form textarea:focus {
 }
 
 /* --------------------------------------------------------------------------
+   AIR QUALITY OVERVIEW — merged "Overall AQI" + "Live Concentration
+   Readings" card. The headline (AQI value) and the concentration grid
+   share one card, separated by a background/border shift so the two
+   parts stay visually distinct while reading as a single section.
+   -------------------------------------------------------------------------- */
+
+.aqi-overview {
+  max-width: 980px;
+  margin: 0 auto;
+
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+/* The AQI headline reuses .aqi-detail-live for its layout/typography,
+   but sheds the standalone card chrome since .aqi-overview supplies it. */
+.aqi-overview__headline.aqi-detail-live {
+  max-width: none;
+  margin: 0;
+  padding: 26px 28px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.aqi-overview__concentrations {
+  padding: 26px 28px 30px;
+  background: var(--color-blue-muted);
+  border-top: 1px solid var(--color-border);
+}
+
+.aqi-overview__conc-heading {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.02rem;
+  letter-spacing: 0.2px;
+  color: var(--color-navy-dark);
+  margin-bottom: 20px;
+}
+
+.aqi-overview__grid {
+  margin: 0 auto;
+}
+
+.aqi-overview__conc-meta {
+  text-align: center;
+  margin: 20px 0 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+@media (max-width: 560px) {
+  .aqi-overview__headline.aqi-detail-live,
+  .aqi-overview__concentrations {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+/* --------------------------------------------------------------------------
    STAT CARDS — AQI / PM2.5 / PM10 / category
    -------------------------------------------------------------------------- */
 
@@ -1274,6 +1338,200 @@ form.contact-form textarea:focus {
   font-size: 0.88rem;
   color: var(--color-text-muted);
   text-align: center;
+}
+
+/* --------------------------------------------------------------------------
+   CUSTOM LOCATION — two-column layout: controls on the left, a compact,
+   near-square map on the right. Stacks to a single column on tablets
+   and phones (controls first, map below).
+   -------------------------------------------------------------------------- */
+
+.aqi-custom-wrap {
+  max-width: 980px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+
+/* ---- Controls column ---- */
+
+.aqi-custom-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 26px 24px;
+}
+
+.aqi-custom-locate-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+
+  padding: 13px 16px;
+
+  background: var(--color-gold);
+  border: 2px solid var(--color-gold);
+  border-radius: 8px;
+
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--color-navy-dark);
+
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.aqi-custom-locate-btn:hover {
+  background: var(--color-gold-light);
+  border-color: var(--color-gold-light);
+}
+
+.aqi-custom-locate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.aqi-custom-locate-btn .aqi-widget__location-icon {
+  font-size: 1.05rem;
+}
+
+.aqi-latlon-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.aqi-latlon-field label {
+  display: block;
+  margin-bottom: 6px;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.aqi-latlon-field input {
+  width: 100%;
+  padding: 10px 12px;
+
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+
+  background: #fbfcfd;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.aqi-latlon-field input:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.18);
+}
+
+.aqi-latlon-field input.is-invalid {
+  border-color: #C0392B;
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
+}
+
+.aqi-custom-error {
+  margin: -4px 0 0;
+  min-height: 1em;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #C0392B;
+
+  display: none;
+}
+
+.aqi-custom-error.is-visible {
+  display: block;
+}
+
+.aqi-custom-fetch-btn {
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.aqi-custom-instruction {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+/* ---- Map column ---- */
+
+.aqi-custom-map-col {
+  min-width: 0;
+}
+
+#aqi-map {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-height: 420px;
+
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-soft);
+  /* Leaflet needs an explicit sized container, and z-index kept low so
+     the map's internal panes never sit above the sticky header. */
+  z-index: 1;
+}
+
+.aqi-map-hint {
+  text-align: center;
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.aqi-map-hint strong {
+  color: var(--color-navy-dark);
+}
+
+/* Leaflet's popup default font doesn't inherit the site's body font by
+   default in every browser - set it explicitly for consistency. */
+.leaflet-popup-content,
+.leaflet-popup-content-wrapper {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--color-text-dark);
+}
+
+@media (max-width: 800px) {
+  .aqi-custom-wrap {
+    grid-template-columns: 1fr;
+  }
+  .aqi-custom-map-col {
+    max-width: 420px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .aqi-latlon-row {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* --------------------------------------------------------------------------
