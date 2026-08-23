@@ -23,12 +23,12 @@
   </div>
 </section>
 
-<!-- ============================== LIVE READING ============================== -->
-<section class="section">
+<!-- ==============================  OVERALL AQI ============================== -->
+<section class="section", id="overall-aqi">
   <div class="container">
     <div class="section-heading reveal">
-      <div class="section-eyebrow">LIVE DATA</div>
-      <h2>Current Air Quality</h2>
+      <div class="section-eyebrow">AQI</div>
+      <h2>Overall Air Quality Index</h2>
       <div class="rule"></div>
     </div>
 
@@ -37,44 +37,94 @@
         Kathmandu, Nepal
         <span class="aqi-detail-live__updated" id="aqid-updated">Updating&hellip;</span>
       </div>
+
+      <div class="aqi-detail-live__aqi">
+        <span class="aqi-detail-live__aqi-value" id="aqid-aqi">&hellip;</span>
+        <span class="aqi-detail-live__aqi-desc" id="aqid-aqi-desc">Loading</span>
+        <span class="aqi-detail-live__dominant" id="aqid-dominant"></span>
+      </div>
+
       <button type="button" class="aqi-widget__location-btn" id="aqid-location-btn">
         <span class="aqi-widget__location-icon">⌖</span>
         Use Current Location
       </button>
+      
+    </div>
+    <p style="text-align:center; margin:20px 0 0; font-size:0.82rem; letter-spacing:0.2px;">
+      <a href="#understanding-aqi" class="general-text-link">What is AQI?</a>
+    </p>
+  </div>
+</section>
+
+
+<!-- ============================== LIVE CONCENTRATION READING ============================== -->
+<section class="section section--muted" id="live-concentration">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="section-eyebrow">LIVE DATA</div>
+      <h2>Live Concentration Readings</h2>
+      <div class="rule"></div>
     </div>
 
     <div class="grid grid--4 reveal" style="max-width:980px;margin:0 auto;">
       <div class="card aqi-stat-card">
-        <div class="aqi-stat-card__label">AQI (US)</div>
-        <div class="aqi-stat-card__value" id="aqid-aqi">&hellip;</div>
-        <div class="aqi-stat-card__sub" id="aqid-aqi-desc">Loading</div>
-      </div>
-      <div class="card aqi-stat-card">
         <div class="aqi-stat-card__label">PM<sub>2.5</sub></div>
-        <div class="aqi-stat-card__value" id="aqid-pm25">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+        <div class="aqi-stat-card__value" id="aqid-c-pm25">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
         <div class="aqi-stat-card__sub">Fine particulate matter</div>
       </div>
       <div class="card aqi-stat-card">
         <div class="aqi-stat-card__label">PM<sub>10</sub></div>
-        <div class="aqi-stat-card__value" id="aqid-pm10">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+        <div class="aqi-stat-card__value" id="aqid-c-pm10">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
         <div class="aqi-stat-card__sub">Coarse particulate matter</div>
       </div>
       <div class="card aqi-stat-card">
-        <div class="aqi-stat-card__label">Category</div>
-        <div class="aqi-stat-card__value" id="aqid-category" style="font-size:1.3rem;">&hellip;</div>
-        <div class="aqi-stat-card__sub">US EPA AQI scale</div>
+        <div class="aqi-stat-card__label">CO</div>
+        <div class="aqi-stat-card__value" id="aqid-c-co">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+        <div class="aqi-stat-card__sub">Carbon monoxide</div>
+      </div>
+      <div class="card aqi-stat-card">
+        <div class="aqi-stat-card__label">NO<sub>2</sub></div>
+        <div class="aqi-stat-card__value" id="aqid-c-no2">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+        <div class="aqi-stat-card__sub">Nitrogen dioxide</div>
+      </div>
+      <div class="card aqi-stat-card">
+        <div class="aqi-stat-card__label">SO<sub>2</sub></div>
+        <div class="aqi-stat-card__value" id="aqid-c-so2">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+        <div class="aqi-stat-card__sub">Sulfur dioxide</div>
+      </div>
+      <div class="card aqi-stat-card">
+        <div class="aqi-stat-card__label">O<sub>3</sub></div>
+        <div class="aqi-stat-card__value" id="aqid-c-o3">&hellip;<span class="aqi-stat-card__unit">&micro;g/m&sup3;</span></div>
+        <div class="aqi-stat-card__sub">Ground-level ozone</div>
+      </div>
+      <div class="card aqi-stat-card">
+        <div class="aqi-stat-card__label">CO<sub>2</sub></div>
+        <div class="aqi-stat-card__value" id="aqid-c-co2">&hellip;<span class="aqi-stat-card__unit">ppm</span></div>
+        <div class="aqi-stat-card__sub">Carbon dioxide</div>
+      </div>
+      <div class="card aqi-stat-card">
+        <div class="aqi-stat-card__label">AOD</div>
+        <div class="aqi-stat-card__value" id="aqid-c-aod">&hellip;</div>
+        <div class="aqi-stat-card__sub">Aerosol optical depth</div>
       </div>
     </div>
-    
-    <p style="text-align:center; margin:20px 0 0; font-size:0.82rem; letter-spacing:0.2px;">
-      <a href="#understanding-aqi" class="general-text-link">What do AQI values mean?</a>
+
+    <p class="aqi-conc-meta" style="text-align:center; margin:18px 0 0; font-size:0.85rem; color:var(--color-text-muted);">
+      <span id="aqid-conc-place">Kathmandu, Nepal</span> 
+      &middot; <a href="#" id="aqid-conc-locate-link" class="general-text-link">Show at my location</a>
+      &middot; <span id="aqid-conc-updated">Updating&hellip;</span>
     </p>
-    
+
+    <p style="text-align:center; margin:8px 0 0; font-size:0.82rem; letter-spacing:0.2px;">
+      <a href="#data-source" class="general-text-link">Where are these data coming from?</a>
+    </p>
+
   </div>
 </section>
 
+
 <!-- ============================== DATA SOURCE ============================== -->
-<section class="section section--muted">
+<section class="section section" id="data-source">
   <div class="container">
     <div class="section-heading reveal">
       <div class="section-eyebrow">DATA SOURCE</div>
@@ -83,22 +133,25 @@
     </div>
 
     <div class="reveal" style="max-width:980px;margin:0 auto 18px;">
-      <p style="text-align:center;">
-        The live reading above comes from the 
+      <p style="text-align:left;">
+        The live readings displayed above come from the 
         <strong><a href="https://open-meteo.com/en/docs/air-quality-api" target="_blank" rel="noopener">
-          Open-Meteo Air Quality API
-        </a></strong>,
-        which combines outputs from atmospheric models (including CAMS &ndash; the Copernicus
-        Atmosphere Monitoring Service) with ground-based observations to estimate air pollutant 
+          Open-Meteo</a></strong> air quality API,
+        which uses outputs from atmospheric models, such as the Copernicus
+        Atmosphere Monitoring Service, to estimate air pollutant 
         concentrations at any location, updated hourly. Please note that it is a
-        modeled estimate, not a direct observation. The AQI value is based on 
-        the PM<sub>2.5</sub> concentration. 
+        modeled estimate, not a direct observation. Accuracy is not guaranteed.
+        Visit the 
+        <a href="https://open-meteo.com/en/docs/air-quality-api" target="_blank" rel="noopener">
+          <strong>webpage of Open-Meteo</strong>
+        </a> for more information about the data source.
+        
       </p>
     </div>
 
     <div class="gov-source-box reveal">
       <p>
-        For <strong>Nepal's official</strong> air quality monitoring data,
+        For Nepal's official air quality monitoring data,
         visit the <strong>Department of Environment</strong>'s real-time monitoring portal.
       </p>
       <a href="https://pollution.gov.np" target="_blank" rel="noopener" class="btn btn--gold">
@@ -109,7 +162,7 @@
 </section>
 
 <!-- ============================== UNDERSTANDING AQI ============================== -->
-<section class="section" id="understanding-aqi">
+<section class="section section--muted" id="understanding-aqi">
   <div class="container">
     <div class="section-heading reveal">
       <div class="section-eyebrow">Air Quality Index</div>
@@ -118,10 +171,13 @@
     </div>
 
     <div class="reveal" style="max-width:980px;margin:0 auto 34px;">
-      <p style="text-align:center;">
+      <p style="text-align:left">
         The <strong>Air Quality Index (AQI)</strong> is a standardized scale, used widely around 
         the world, that translates air pollutant concentrations into a single number from 
         0 to 500&plus;, making it easy to understand whether the air is healthy. 
+        <strong>The overall AQI shown above is the 
+        worst of six individual pollutant sub-indices </strong> 
+        (PM<sub>2.5</sub>, PM<sub>10</sub>, CO, NO<sub>2</sub>, SO<sub>2</sub>, and O<sub>3</sub>). 
         A higher AQI means a greater level of air pollution and a greater health concern. 
         The AQI is classified into six categories, each defined by a specific 
         pollutant concentration range and accompanied by a corresponding health advisory.
