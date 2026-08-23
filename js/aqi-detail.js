@@ -10,7 +10,9 @@
 
    Required HTML elements:
      #aqid-place, #aqid-updated, #aqid-location-btn,
-     #aqid-aqi, #aqid-aqi-desc, #aqid-pm25, #aqid-pm10, #aqid-category,
+     #aqid-aqi, #aqid-aqi-desc, #aqid-dominant,
+     #aqid-c-pm10, #aqid-c-pm25, #aqid-c-co, #aqid-c-no2, #aqid-c-so2, #aqid-c-o3,
+     #aqid-c-co2, #aqid-c-aod,
      #aqid-scale (containing .aqi-scale__row[data-max] children)
 
    Source: https://open-meteo.com/en/docs/air-quality-api
@@ -21,12 +23,85 @@
   const KATHMANDU = window.AQICommon.KATHMANDU;
   const levelFor = window.AQICommon.levelFor;
   const buildFeedUrl = window.AQICommon.buildFeedUrl;
+  const POLLUTANTS = window.AQICommon.POLLUTANTS;
 
   const state = {
     lat: KATHMANDU.lat,
     lon: KATHMANDU.lon,
     label: KATHMANDU.label
   };
+
+
+  // -----------------------------------------------------------------------
+  // POLLUTANT BREAKDOWN TABLE
+  // -----------------------------------------------------------------------
+  // Renders one row per pollutant: name (+ concentration), its own US AQI
+  // sub-index (or "Not applicable" for CO2 / Aerosol Optical Depth, since
+  // neither has a US EPA AQI sub-index), and the overall US AQI for
+  // reference. The row whose own sub-index equals the overall AQI is the
+  // "dominant pollutant" driving the current reading, and gets highlighted.
+
+  function renderPollutantTable(current, overallAqi) {
+
+    const tbody = document.getElementById("aqid-pollutant-tbody");
+    if (!tbody || !POLLUTANTS) return null;
+
+    tbody.innerHTML = "";
+
+    // Track which pollutant's own sub-index matches the overall AQI — that's
+    // the one actually driving the reading (the "max of six sub-indices" rule).
+    let dominantLabel = null;
+
+    POLLUTANTS.forEach(function (pollutant) {
+
+      const concentration = current[pollutant.key];
+      const subIndex = pollutant.aqiKey ? current[pollutant.aqiKey] : null;
+      const isDominant = typeof subIndex === "number" && Math.round(subIndex) === overallAqi;
+      if (isDominant && dominantLabel === null) dominantLabel = pollutant.label;
+
+      const row = document.createElement("tr");
+      if (isDominant) row.className = "is-dominant";
+
+      const concentrationText = (typeof concentration === "number" && pollutant.unit)
+        ? ` (${Math.round(concentration * 10) / 10} ${pollutant.unit})`
+        : "";
+
+      const nameCell = document.createElement("td");
+      nameCell.innerHTML = `${pollutant.label}<span class="aqi-pollutant-table__conc">${concentrationText}</span>`;
+
+      const subIndexCell = document.createElement("td");
+      if (pollutant.aqiKey === null) {
+        subIndexCell.textContent = "Not applicable";
+        subIndexCell.className = "aqi-pollutant-table__na";
+      } else if (typeof subIndex === "number") {
+        subIndexCell.textContent = Math.round(subIndex);
+        const level = levelFor(Math.round(subIndex));
+        subIndexCell.style.color = level.color;
+        subIndexCell.style.fontWeight = "700";
+      } else {
+        subIndexCell.textContent = "\u2014";
+      }
+
+      const overallCell = document.createElement("td");
+      overallCell.textContent = typeof overallAqi === "number" ? overallAqi : "\u2014";
+      if (isDominant) {
+        overallCell.innerHTML += ' <span class="aqi-pollutant-table__badge">Dominant</span>';
+      }
+
+      row.appendChild(nameCell);
+      row.appendChild(subIndexCell);
+      row.appendChild(overallCell);
+      tbody.appendChild(row);
+    });
+
+    return dominantLabel;
+  }
+
+  function clearPollutantTable() {
+    const tbody = document.getElementById("aqid-pollutant-tbody");
+    if (!tbody) return;
+    tbody.innerHTML = '<tr><td colspan="3" class="aqi-pollutant-table__na">Unable to retrieve pollutant data.</td></tr>';
+  }
 
 
   // -----------------------------------------------------------------------
@@ -67,9 +142,21 @@
     const updatedEl = document.getElementById("aqid-updated");
     const aqiEl = document.getElementById("aqid-aqi");
     const aqiDescEl = document.getElementById("aqid-aqi-desc");
-    const pm25El = document.getElementById("aqid-pm25");
-    const pm10El = document.getElementById("aqid-pm10");
-    const categoryEl = document.getElementById("aqid-category");
+    const dominantEl = document.getElementById("aqid-dominant");
+    const concPlaceEl = document.getElementById("aqid-conc-place");
+    const concUpdatedEl = document.getElementById("aqid-conc-updated");
+
+    // Concentration cards (raw values, not AQI)
+    const concEls = {
+      pm10: document.getElementById("aqid-c-pm10"),
+      pm2_5: document.getElementById("aqid-c-pm25"),
+      carbon_monoxide: document.getElementById("aqid-c-co"),
+      nitrogen_dioxide: document.getElementById("aqid-c-no2"),
+      sulphur_dioxide: document.getElementById("aqid-c-so2"),
+      ozone: document.getElementById("aqid-c-o3"),
+      carbon_dioxide: document.getElementById("aqid-c-co2"),
+      aerosol_optical_depth: document.getElementById("aqid-c-aod")
+    };
 
     if (!placeEl || !aqiEl) {
       console.warn("AQI detail page: required HTML elements not found.");
@@ -79,12 +166,18 @@
     // Show the place name immediately; keep the "Last updated" span inside it.
     placeEl.childNodes[0].textContent = state.label + " ";
     if (updatedEl) updatedEl.textContent = "Updating…";
+    if (concPlaceEl) concPlaceEl.textContent = state.label;
+    if (concUpdatedEl) concUpdatedEl.textContent = "Updating…";
 
     aqiEl.textContent = "…";
     if (aqiDescEl) aqiDescEl.textContent = "Loading";
-    if (pm25El) pm25El.firstChild.textContent = "…";
-    if (pm10El) pm10El.firstChild.textContent = "…";
-    if (categoryEl) categoryEl.textContent = "…";
+    if (dominantEl) dominantEl.textContent = "";
+
+    Object.keys(concEls).forEach(function (key) {
+      const el = concEls[key];
+      if (el && el.firstChild) el.firstChild.textContent = "…";
+      else if (el) el.textContent = "…";
+    });
 
     try {
 
@@ -100,7 +193,8 @@
         throw new Error("AQI data not available in API response.");
       }
 
-      const aqi = Math.round(data.current.us_aqi);
+      const current = data.current;
+      const aqi = Math.round(current.us_aqi);
       const level = levelFor(aqi);
 
       aqiEl.textContent = aqi;
@@ -111,29 +205,37 @@
         aqiDescEl.style.color = level.color;
       }
 
-      if (categoryEl) {
-        categoryEl.textContent = level.label;
-        categoryEl.style.color = level.color;
-      }
-
-      if (pm25El && typeof data.current.pm2_5 === "number") {
-        pm25El.firstChild.textContent = Math.round(data.current.pm2_5 * 10) / 10;
-      }
-
-      if (pm10El && typeof data.current.pm10 === "number") {
-        pm10El.firstChild.textContent = Math.round(data.current.pm10 * 10) / 10;
-      }
+      // Fill each concentration card with the raw current-hour reading
+      Object.keys(concEls).forEach(function (key) {
+        const el = concEls[key];
+        if (!el) return;
+        const value = current[key];
+        const text = typeof value === "number"
+          ? (key === "aerosol_optical_depth" ? Math.round(value * 100) / 100 : Math.round(value * 10) / 10)
+          : "—";
+        if (el.firstChild) {
+          el.firstChild.textContent = text;
+        } else {
+          el.textContent = text;
+        }
+      });
 
       if (updatedEl) {
-        const updatedTime = data.current.time ? new Date(data.current.time) : new Date();
-        updatedEl.textContent =
-          `Last updated ${updatedTime.toLocaleString([], {
-            year: "numeric", month: "short", day: "numeric",
-            hour: "2-digit", minute: "2-digit"
-          })}`;
+        const updatedTime = current.time ? new Date(current.time) : new Date();
+        const updatedText = `Last updated ${updatedTime.toLocaleString([], {
+          year: "numeric", month: "short", day: "numeric",
+          hour: "2-digit", minute: "2-digit"
+        })}`;
+        updatedEl.textContent = updatedText;
+        if (concUpdatedEl) concUpdatedEl.textContent = updatedText;
       }
+      if (concPlaceEl) concPlaceEl.textContent = state.label;
 
       highlightScale(aqi);
+      const dominantLabel = renderPollutantTable(current, aqi);
+      if (dominantEl) {
+        dominantEl.textContent = dominantLabel ? `Driven by ${dominantLabel}` : "";
+      }
 
     } catch (error) {
 
@@ -141,10 +243,17 @@
 
       aqiEl.textContent = "—";
       if (aqiDescEl) aqiDescEl.textContent = "Unavailable";
-      if (categoryEl) categoryEl.textContent = "—";
-      if (pm25El) pm25El.firstChild.textContent = "—";
-      if (pm10El) pm10El.firstChild.textContent = "—";
+      if (dominantEl) dominantEl.textContent = "";
+      if (concPlaceEl) concPlaceEl.textContent = state.label;
+      if (concUpdatedEl) concUpdatedEl.textContent = "Unable to retrieve data";
+      Object.keys(concEls).forEach(function (key) {
+        const el = concEls[key];
+        if (!el) return;
+        if (el.firstChild) el.firstChild.textContent = "—";
+        else el.textContent = "—";
+      });
       if (updatedEl) updatedEl.textContent = "Unable to retrieve AQI data";
+      clearPollutantTable();
     }
   }
 
@@ -176,7 +285,7 @@
 
         state.lat = position.coords.latitude;
         state.lon = position.coords.longitude;
-        state.label = "Your current location";
+        state.label = "Data shown for your current location";
 
         fetchAndRender().finally(function () {
           btn.disabled = false;
@@ -222,6 +331,14 @@
       btn.addEventListener("click", useCurrentLocation);
     }
 
+    const concLocateLink = document.getElementById("aqid-conc-locate-link");
+    if (concLocateLink) {
+      concLocateLink.addEventListener("click", function (event) {
+        event.preventDefault();
+        useCurrentLocation();
+      });
+    }
+
     fetchAndRender();
   }
 
@@ -232,3 +349,5 @@
   }
 
 })();
+
+
