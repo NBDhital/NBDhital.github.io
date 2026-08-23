@@ -50,6 +50,26 @@ window.AQICommon = (function () {
 
 
   // -----------------------------------------------------------------------
+  // POLLUTANT TABLE CONFIG
+  // -----------------------------------------------------------------------
+  // Used to build the "Pollutant Breakdown" table on the detail page.
+  // "key" = the raw concentration field in the API response.
+  // "aqiKey" = the matching US AQI sub-index field, or null if that
+  //            pollutant has no US EPA AQI sub-index (CO2, AOD).
+
+  const POLLUTANTS = [
+    { key: "pm10",                  aqiKey: "us_aqi_pm10",             label: "PM10",                    unit: "\u00B5g/m\u00B3" },
+    { key: "pm2_5",                 aqiKey: "us_aqi_pm2_5",            label: "PM2.5",                   unit: "\u00B5g/m\u00B3" },
+    { key: "carbon_monoxide",       aqiKey: "us_aqi_carbon_monoxide",  label: "CO",                      unit: "\u00B5g/m\u00B3" },
+    { key: "nitrogen_dioxide",      aqiKey: "us_aqi_nitrogen_dioxide", label: "NO\u2082",                unit: "\u00B5g/m\u00B3" },
+    { key: "sulphur_dioxide",       aqiKey: "us_aqi_sulphur_dioxide",  label: "SO\u2082",                unit: "\u00B5g/m\u00B3" },
+    { key: "ozone",                 aqiKey: "us_aqi_ozone",            label: "O\u2083",                 unit: "\u00B5g/m\u00B3" },
+    { key: "carbon_dioxide",        aqiKey: null,                      label: "CO\u2082",                unit: "ppm" },
+    { key: "aerosol_optical_depth", aqiKey: null,                      label: "Aerosol Optical Depth",   unit: "" }
+  ];
+
+
+  // -----------------------------------------------------------------------
   // API URL
   // -----------------------------------------------------------------------
 
@@ -58,7 +78,17 @@ window.AQICommon = (function () {
     const params = new URLSearchParams({
       latitude: lat,
       longitude: lon,
-      current: "us_aqi,pm2_5,pm10",
+      current: [
+        "us_aqi",
+        "pm10", "us_aqi_pm10",
+        "pm2_5", "us_aqi_pm2_5",
+        "carbon_monoxide", "us_aqi_carbon_monoxide",
+        "nitrogen_dioxide", "us_aqi_nitrogen_dioxide",
+        "sulphur_dioxide", "us_aqi_sulphur_dioxide",
+        "ozone", "us_aqi_ozone",
+        "carbon_dioxide",
+        "aerosol_optical_depth"
+      ].join(","),
       timezone: "auto"
     });
 
@@ -73,6 +103,7 @@ window.AQICommon = (function () {
   return {
     KATHMANDU: KATHMANDU,
     AQI_LEVELS: AQI_LEVELS,
+    POLLUTANTS: POLLUTANTS,
     levelFor: levelFor,
     buildFeedUrl: buildFeedUrl
   };
