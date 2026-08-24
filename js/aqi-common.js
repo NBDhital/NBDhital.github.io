@@ -3,13 +3,7 @@
    -------------------------------------------------------------------------
    Shared constants + helper functions used by:
      - js/aqi-widget.js   (the small AQI bar shown on the homepage)
-     - js/aqi-detail.js   (the full page at /extra-info/air-quality.html)
-
-   Keeping this in one file means both places always agree on the AQI
-   category colours/labels and the PM2.5 breakpoints, and any future
-   page in /extra-info/ can reuse it too.
-
-   Source: https://open-meteo.com/en/docs/air-quality-api
+     - js/aqi-detail.js   (the full page at /air-quality.html)
    ========================================================================= */
 
 window.AQICommon = (function () {
