@@ -1107,7 +1107,7 @@ form.contact-form textarea:focus {
 
 
 /* ==========================================================================
-   AQI DETAIL PAGE  (/extra-info/air-quality.html and similar pages)
+   AQI DETAIL PAGE  (/air-quality.html and similar pages)
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
@@ -1697,7 +1697,7 @@ form.contact-form textarea:focus {
 }
 
 /* --------------------------------------------------------------------------
-   POLLUTANT BREAKDOWN TABLE  (/extra-info/air-quality.html)
+   POLLUTANT BREAKDOWN TABLE  (/air-quality.html)
    -------------------------------------------------------------------------- */
 
 .aqi-pollutant-table-wrap {
