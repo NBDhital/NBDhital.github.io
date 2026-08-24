@@ -1,7 +1,7 @@
 /* =========================================================================
    AQI DETAIL PAGE
    -------------------------------------------------------------------------
-   Powers /extra-info/air-quality.html:
+   Powers /air-quality.html:
      - live AQI / PM2.5 / PM10 stat cards (merged "Air Quality Overview"
        section — headline reading + concentration grid in one card)
      - Custom Location section: "Use Current Location" button, latitude/
