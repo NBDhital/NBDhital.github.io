@@ -87,8 +87,13 @@
 })();
 
 
-/* For two sticky headers; getting header height */
-
+/* For two sticky headers; getting header height.
+   NOTE: this function is called from include.js right after the header
+   is actually injected into the page (and again once web fonts finish
+   loading) - NOT from window's "load" event. "load" does not wait for
+   the header's fetch() to finish, so it could fire before the header
+   even existed in the DOM, silently skipping the update and leaving a
+   gap between the header and the page's sticky sub-navigation bar. */
 
 function updateHeaderHeight() {
   const header = document.querySelector('.site-header');
@@ -103,7 +108,6 @@ function updateHeaderHeight() {
   );
 }
 
-window.addEventListener('load', updateHeaderHeight);
 window.addEventListener('resize', updateHeaderHeight);
 
 
