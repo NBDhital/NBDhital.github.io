@@ -36,6 +36,21 @@
           a.addEventListener('click', function () { links.classList.remove('open'); });
         });
       }
+
+      // The header now actually exists in the DOM - measure its real
+      // height right now, rather than relying on window's "load" event
+      // (which does not wait for this fetch() and can fire before OR
+      // after the header is injected depending on network/cache timing -
+      // this was the cause of an intermittent gap between the header
+      // and the page's sticky sub-navigation bar). Re-measure again once
+      // web fonts finish loading too, since a font swap can very
+      // slightly change the header's rendered height.
+      if (typeof updateHeaderHeight === 'function') {
+        updateHeaderHeight();
+        if (document.fonts && document.fonts.ready) {
+          document.fonts.ready.then(updateHeaderHeight);
+        }
+      }
     });
 
     loadInclude('site-footer-placeholder', '/includes/footer.html', function () {
