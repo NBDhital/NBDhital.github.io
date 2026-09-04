@@ -78,6 +78,7 @@ ul { list-style: none; }
 
 .section {
   padding: 70px 0;
+  scroll-margin-top: calc(var(--header-height) + 40px);
 }
 .section--muted { background: var(--color-blue-muted); }
 .section--dark  { background: var(--color-navy-dark); color: var(--color-text-light); }
