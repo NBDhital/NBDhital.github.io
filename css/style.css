@@ -20,6 +20,7 @@
   --color-text-muted:  #52667a;  /* secondary / caption text */
   --color-border:      #d3dbe3;  /* cool neutral border tone */
   --color-aqi-bg:      #ffffff; /* background for AQI widget */
+  --color-doi:         #c9a227; /* DOI link colour */
   --header-height: 72px;
 
   /* ---- FONTS ---- */
@@ -446,21 +447,47 @@ ul { list-style: none; }
   color: var(--color-gold);
   font-size: 1.4rem;
   margin: 34px 0 14px;
-  border-bottom: 2px solid var(--color-blue-panel);
+  border-bottom: 1px solid var(--color-gold-light);
   padding-bottom: 6px;
+  padding-left: 10px;
+  border-radius: 0px 0px 0px 8px;
 }
 .pub-year:first-of-type { margin-top: 0; }
+
 .pub-list { margin-bottom: 6px; }
+
 .pub-item {
-  padding: 14px 18px;
-  border-left: 3px solid var(--color-blue-panel);
-  margin-bottom: 10px;
+  display: block;
+  padding: 15px 10px;
+  border-left: 1.5px solid var(--color-blue-panel);
+  margin-bottom: 5px;
   background: var(--color-blue-muted);
-  border-radius: 8px 8px 8px 8px;
+  border-radius: 8px;
+  text-decoration: none;
   transition: border-color var(--transition), background var(--transition);
 }
-.pub-item:hover { border-color: var(--color-gold); background: #fff; box-shadow: var(--shadow-soft); }
-.pub-item a { font-weight: 600; }
+.pub-item:hover {
+  border-color: var(--color-gold);
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+}
+
+.pub-item__title {
+  display: block;
+  color: var(--color-text-dark);
+  font-weight: 600;
+}
+
+.pub-item__meta {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.pub-item__doi {
+  color: var(--color-doi);
+}
 
 /* Tabs (used for filtering publications, or courses) */
 .tabs {
