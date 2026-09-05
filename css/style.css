@@ -456,7 +456,7 @@ ul { list-style: none; }
   border-left: 3px solid var(--color-blue-panel);
   margin-bottom: 10px;
   background: var(--color-blue-muted);
-  border-radius: 0 8px 8px 0;
+  border-radius: 8px 8px 8px 8px;
   transition: border-color var(--transition), background var(--transition);
 }
 .pub-item:hover { border-color: var(--color-gold); background: #fff; box-shadow: var(--shadow-soft); }
