@@ -462,13 +462,13 @@ ul { list-style: none; }
   border-left: 1.5px solid var(--color-blue-panel);
   margin-bottom: 5px;
   background: var(--color-blue-muted);
-  border-radius: 8px;
+  border-radius: 0px 0px 0px 8px;
   text-decoration: none;
   transition: border-color var(--transition), background var(--transition);
 }
 .pub-item:hover {
   border-color: var(--color-gold);
-  background: #fff;
+  background: transparent;
   box-shadow: var(--shadow-soft);
 }
 
