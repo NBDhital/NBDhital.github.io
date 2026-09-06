@@ -12,8 +12,10 @@
   --color-navy:        #16324f;  /* secondary navy - links, hover states */
   --color-cream:       #f8fafc; /* main page background - cool near-white with a faint blue cast */
   --color-blue-muted:  #eef2f6;  /* cool pale blue-gray panel bg for "muted" sections */
+  --color-warm-bg:     #faf9f6;  /* warm cream for contrast against the cool palette */
   --color-blue-panel:  #e1e8ef;  /* deeper cool blue-gray panel - card/badge/border accents */
   --color-gold:        #c9a227;  /* primary gold accent - the one warm note against the cool palette */
+  --color-gold-dark:   #a98235;  /* darker gold */
   --color-gold-light:  #e6c565;  /* lighter gold for hover states */
   --color-text-dark:   #1c2b3a;  /* main body text on light bg */
   --color-text-light:  #f4f0e6;  /* reserved for any remaining dark surfaces */
@@ -21,6 +23,7 @@
   --color-border:      #d3dbe3;  /* cool neutral border tone */
   --color-aqi-bg:      #ffffff; /* background for AQI widget */
   --color-doi:         #c9a227; /* DOI link colour */
+
   --header-height: 72px;
 
   /* ---- FONTS ---- */
@@ -244,7 +247,7 @@ ul { list-style: none; }
   background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
   color: #c3ccd6;
   padding: 60px 0 60px;
-  border-bottom: 2px solid var(--color-gold);
+  border-bottom: 0px solid var(--color-gold);
 }
 .hero-wrap {
   display: grid;
@@ -655,7 +658,7 @@ form.contact-form textarea:focus {
   background: linear-gradient(155deg, var(--color-navy-dark) 0%, var(--color-navy) 100%);
   color: #c3ccd6;
   padding: 60px 0 26px;
-  border-top: 2px solid var(--color-gold);
+  border-top: 0px solid var(--color-gold);
 }
 .footer-wrap {
   display: grid;
@@ -725,7 +728,7 @@ form.contact-form textarea:focus {
   color: #c3ccd6;
   padding: 30px 0 30px;
   text-align: center;
-  border-bottom: 2px solid var(--color-gold);
+  border-bottom: 0px solid var(--color-gold);
 }
 .page-banner h1 { color: #fff; }
 .page-banner p { color: var(--color-gold-light); font-family: var(--font-heading); font-size: 1.1rem; }
@@ -778,7 +781,7 @@ form.contact-form textarea:focus {
 
   padding: 0 17px;
 
-  color: var(--color-gold);
+  color: var(--color-gold-dark);
   text-decoration: none;
 
   font-size: 0.95rem;
@@ -888,7 +891,7 @@ form.contact-form textarea:focus {
 .aqi-widget-wrap {
   padding: 0 0 10px;
   background: var(--color-aqi-bg);
-  border-top: 0.1px solid var(--color-gold);
+  border-top: 1px solid color-mix(in srgb, var(--color-gold-dark) 25%, transparent);
 }
 
 
