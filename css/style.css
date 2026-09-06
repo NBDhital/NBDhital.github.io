@@ -577,7 +577,7 @@ ul { list-style: none; }
   display: block;
   padding: 15px 10px;
   border-left: 1.5px solid var(--color-blue-panel);
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   background: var(--color-blue-muted);
   border-radius: 0px 0px 0px 20px;
   text-decoration: none;
