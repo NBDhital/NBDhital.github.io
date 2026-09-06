@@ -636,7 +636,6 @@ ul { list-style: none; }
   font-size: 0.78rem;
   color: var(--color-gold-dark);
   letter-spacing: 0.4px;
-  text-transform: uppercase;
   margin-bottom: 8px;
 }
 
