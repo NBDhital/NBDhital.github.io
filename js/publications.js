@@ -25,10 +25,9 @@
     var el = document.createElement('div');
     el.className = 'pub-entry';
     el.setAttribute('data-tags', tags);
-    var journalvolyear = entry.journal + ' ' + entry.volpp + ' (' + entry.year + ')';
 
     el.innerHTML =
-      '<div class="pub-entry__journal">' + journalvolyear + '</div>' +
+      '<div class="pub-entry__journal">' + entry.journal + ' ' + entry.volpp + ' (' + entry.year + ')' + '</div>' +
       '<a class="pub-entry__title" href="' + entry.url + '" target="_blank" rel="noopener">' + entry.title + '</a>' +
       '<div class="pub-entry__authors">' + renderAuthors(entry.authors) + '</div>' +
       '<div class="pub-entry__actions">' +
