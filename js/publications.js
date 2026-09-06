@@ -27,7 +27,7 @@
     el.setAttribute('data-tags', tags);
 
     el.innerHTML =
-      '<div class="pub-entry__journal">' + entry.journal + ' ' + entry.volpp + ' ' + ' (' + entry.year + ')</div>' +
+      '<div class="pub-entry__journal">' + entry.journal + </div>' +
       '<a class="pub-entry__title" href="' + entry.url + '" target="_blank" rel="noopener">' + entry.title + '</a>' +
       '<div class="pub-entry__authors">' + renderAuthors(entry.authors) + '</div>' +
       '<div class="pub-entry__actions">' +
