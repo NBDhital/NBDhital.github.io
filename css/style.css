@@ -633,7 +633,7 @@ ul { list-style: none; }
 .pub-entry__journal {
   font-family: var(--font-body);
   font-weight: 700;
-  font-size: 0.78rem;
+  font-size: 0.88rem;
   color: var(--color-gold-dark);
   letter-spacing: 0.4px;
   margin-bottom: 8px;
