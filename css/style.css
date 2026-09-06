@@ -704,7 +704,7 @@ ul { list-style: none; }
 .pub-entry__abstract {
   margin-top: 16px;
   padding: 16px 20px;
-  background: var(--color-blue-muted);
+  background: var(--color-warm-bg);
   border-left: 3px solid var(--color-gold);
   border-radius: 0 10px 10px 0;
   font-family: var(--font-body);
