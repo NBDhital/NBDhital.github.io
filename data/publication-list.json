@@ -1,0 +1,441 @@
+{
+  "journalArticles": [
+    {
+      "year": "2026",
+      "entries": [
+        {
+          "journal": "Environmental Science: Atmospheres 6, 853–866 (2026).",
+          "title": "Effects of an electrostatic precipitator on particle mass, composition, and number size distributions in residential wood combustion emissions",
+          "url": "https://doi.org/10.1039/D5EA00175G",
+          "authors": "**Dhital, N.B.***, Louhisalmi, J., Rinta-Kiikka, H., Väätäinen, S., Leskinen, J., Sippula, O., Tissari, J.",
+          "tags": [
+            "emission-characterization",
+            "indoor-air-pollution"
+          ],
+          "abstract": "Residential wood combustion (RWC) is an increasingly dominant source of particulate matter (PM) pollution in Europe. This study evaluated the effect of an electrostatic precipitator (ESP) on PM1, black carbon (BC), elemental carbon (EC), organic carbon (OC), and particle number size distributions from wood-fueled stoves under a wide range of upstream emission loads. The ESP achieved substantial reductions in PM1, EC, and OC, and reduced particle number concentrations (PNC) in the 0.13–2.5 µm size range. However, nucleation-mode PNC occasionally increased, suggesting possible new particle formation. Results indicate that organics-rich flue gas may contribute to increased PNC, highlighting the importance of controlling organic emissions."
+        },
+        {
+          "journal": "Emission Control Science and Technology 12, 5 (2026).",
+          "title": "Effectiveness of motorcycle idle-stop systems in mitigating real-world tailpipe emissions of air pollutants",
+          "url": "https://doi.org/10.1007/s40825-026-00286-x",
+          "authors": "**Dhital, N.B.**, Yang, H.H.*, Hsieh, T.J., Chen, H.W., Huang, S.W.",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Motorcycles are a common mode of transportation and a key source of air pollution in many Asian cities. This study evaluated the effectiveness of idle-stop (IS) systems in recent-model, in-use motorcycles in Taiwan under real-driving conditions. IS systems effectively reduced carbon dioxide (CO2) emissions and fuel consumption (FC), with breakeven times of 0–4 s. However, their effectiveness in reducing carbon monoxide (CO) and hydrocarbon (HC) emissions was uncertain due to high variability across motorcycle models. Real-world waiting times were generally too short for significant CO reductions, while HC reductions were possible under some conditions. These findings support policy development and technological improvements for motorcycle IS systems."
+        },
+        {
+          "journal": "Society & Natural Resources 39, 1167–1188 (2026).",
+          "title": "Forest fires in the central Himalayas: Causes and impacts on the availability of forest resources across different ecological zones",
+          "url": "https://doi.org/10.1080/08941920.2025.2605552",
+          "authors": "**Dhital, N.B.**, Sapkota, R.P.*, Pokhrel, C.P., Joshi, G.R., Rijal, K.",
+          "tags": [
+            "multidisciplinary"
+          ],
+          "abstract": "The Himalayan region has faced frequent and extensive wildfires in recent years. Despite this, drivers and livelihood impacts of fires have not been adequately studied. We investigated socioeconomic drivers and impacts of forest fires across Mountain, Mid-Hill, and Terai regions of the central Himalayas, Nepal. Through household surveys (n = 207) and key informant interviews (n = 11) we found that human actions, both deliberate and accidental, were major perceived causes of forest fires. Majority of respondents stated that fires promoted the growth of fodder grasses and wild edible mushrooms, but negatively affected fodder trees, timber, and medicinal plants. In the Mid-Hill region, we observed that abandoned farmland converts to shrubland and provides forest products to owners, thereby reducing dependence on community forests and affecting the sense of forest ownership. Our findings suggest an urgent need to integrate wildfire as a key issue in forest management policies in this region."
+        },
+        {
+          "journal": "Fuel 408, 137738 (2026).",
+          "title": "Particulate matter measurement in residential wood combustion: Method comparison and introduction of a novel approach",
+          "url": "https://doi.org/10.1016/j.fuel.2025.137738",
+          "authors": "Louhisalmi, J.*, Rinta-Kiikka, H., Väätäinen, S., Schön, C., Koponen, H., Sippula, O., **Dhital, N.B.**, Krpec, K., Fraboulet, I., Cea, B., Hartmann, H., Tissari, J.",
+          "tags": [
+            "emission-characterization",
+            "indoor-air-pollution"
+          ],
+          "abstract": "Residential wood combustion (RWC) is a major source of atmospheric particulate matter (PM). This study compared a dilution-based method, the heated filter method defined in EN 16510–1:2022, and a novel hybrid method for measuring PM emissions from RWC appliances. Results showed that appliance type, combustion phase, and organic matter (OM) content strongly influenced emission composition and method comparability. The dilution method generally yielded higher PM concentrations, except when OM content was low. Universal conversion factors between methods were not feasible due to the strong dependence on emission composition. The proposed hybrid method offers a more comprehensive assessment and potential for future regulatory use."
+        },
+        {
+          "journal": "Journal of the Air & Waste Management Association 76, 593–603 (2026).",
+          "title": "Effects of cabin ventilation on in-vehicle exposure to PM and VOCs in passenger cars",
+          "url": "https://doi.org/10.1080/10962247.2026.2655722",
+          "authors": "Yang, H.H., **Dhital, N.B.***, Chen, H.W., Hsieh, Y.S., Huang, S.W.",
+          "tags": [
+            "exposure-health-impact"
+          ],
+          "abstract": "This study evaluated the influence of different ventilation modes on in-cabin concentrations of volatile organic compounds (VOCs) and particulate matter (PM) under real-world driving conditions. Recirculation mode effectively reduced infiltration of ambient PM2.5 but resulted in inadequate ventilation and elevated cabin CO2 concentrations. Fresh air mode substantially increased ventilation rates and maintained low CO2 levels, but increased cabin concentrations of PM and VOCs. Several VOCs showed evidence of in-cabin sources, while others were primarily associated with outdoor sources. These findings highlight a trade-off between reducing exposure to ambient pollutants and maintaining adequate ventilation, emphasizing the need for optimized cabin ventilation strategies."
+        },
+        {
+          "journal": "The Lancet Respiratory Medicine 14, 233–255 (2026).",
+          "title": "Burden of chronic respiratory disease in Asia, 1990–2023: a systematic analysis for the Global Burden of Disease Study 2023",
+          "url": "https://doi.org/10.1016/S2213-2600(25)00404-7",
+          "authors": "GBD 2023 Asia Chronic Respiratory Disease Collaborators",
+          "tags": [
+            "exposure-health-impact"
+          ],
+          "abstract": "<strong>Background:</strong> Chronic respiratory diseases are an important global issue, particularly in Asia, where burden patterns vary widely across countries. With more than half the world's population living in Asia, understanding the national and regional burden of chronic respiratory diseases is essential; however, research on this area remains inadequate. We aimed to investigate the burden of chronic respiratory diseases in Asia at national and regional levels, and to identify key risk factors.<br><strong>Methods:</strong> The Global Burden of Diseases, Injuries, and Risk Factors Study 2023 provides estimates for assessing the burden of chronic respiratory diseases, including chronic obstructive pulmonary disease (COPD), asthma, pneumoconiosis, interstitial lung disease (ILD), and pulmonary sarcoidosis. We focused on 34 countries in Asia, encompassing the high-income Asia Pacific region and central, east, south, and southeast Asia. Estimates for age-standardised prevalence and disability-adjusted life-year (DALY) rates per 100 000 population, including 95% uncertainty intervals (UIs), were extracted by location, sex, year, and Socio-demographic Index (SDI). The average annual percentage change was calculated and presented as a percentage with 95% CIs. Estimates of modifiable attributable risk factors for DALYs and mortality were also included.<br><strong>Findings:</strong> In Asia, the age-standardised prevalence and DALY rates for chronic respiratory diseases generally declined from 1990 to 2023; however, the trend varied substantially by disease and country. In 2023, the age-standardised prevalence rate of COPD was highest in south Asia (3044·18 [95% UI 2748·67–3303·04] per 100 000 population), while the age-standardised asthma prevalence rate was highest in the high-income Asia Pacific region (4870·24 [4046·70–5962·78] per 100 000 population) and southeast Asia (4778·18 [3970·25–5735·61] per 100 000 population). Despite southeast Asia and the high-income Asia Pacific region having a similar age-standardised asthma prevalence rate, southeast Asia had a higher age-standardised DALY rate (508·67 [95% UI 394·89–669·92] per 100 000 population) compared with the high-income Asia Pacific region (204·40 [129·23–290·41] per 100 000 population). A decrease in the age-standardised DALY rate for chronic respiratory diseases was observed with increasing SDI, contrasting with its prevalence patterns. Age-standardised DALY rates of COPD decreased in all Asian countries except for Georgia (average annual percentage change 1·37 [95% CI 1·26–1·48]) and Kazakhstan (0·73 [0·55–0·93]), and age-standardised DALY rates of asthma decreased in all countries. Smoking and ambient particulate matter pollution were identified as leading attributable risk factors for chronic respiratory diseases across Asia. Household air pollution from solid fuels was a regionally pronounced risk factor for chronic respiratory diseases, particularly in south Asia (age-standardised DALY rate 657·58 [95% UI 485·04–880·45] per 100 000 population). Although smoking was a major risk factor in males, ambient particulate matter pollution and secondhand smoke emerged as important attributable risk factors for chronic respiratory diseases in females.<br><strong>Interpretation:</strong> Countries with lower SDI had markedly higher DALY rates, highlighting the need to address socioeconomic and health-care inequities. Household air pollution from solid fuels continues to impose a substantial but preventable burden in south Asia, calling for clean energy adoption and improved ventilation."
+        },
+        {
+          "journal": "Journal of Tropical Forest Science 38, 48–64 (2026).",
+          "title": "Spatial and temporal distribution of wildfires in Nepal Himalayas: A geospatial analysis of VIIRS satellite data",
+          "url": "https://doi.org/10.26525/jtfs2026.38.1.48",
+          "authors": "Budha, P.B.*, Bhattarai, D.R., Sapkota, R.P., **Dhital, N.B.**, Pokhrel, C.P., Khadka, U.R., Rijal, K.",
+          "tags": [
+            "multidisciplinary"
+          ],
+          "abstract": "Wildfires are common in Nepal during the pre-monsoon period (March to May), causing significant damage to forests and wildlife. Understanding their occurrence and distribution is crucial for effective forest management. This study analyses wildfire data from 2012 to 2021, obtained from the Visible Infrared Imaging Radiometer Suite (VIIRS). The active fire product of VIIRS was filtered to identify wildfires in forests, grasslands, and other wooded areas, and these incidents were geospatially analysed across Gandaki Province in the Nepal Himalaya. Wildfire locations were overlaid with environmental and topographic variables, including aspect, elevation, slope, land use and land cover, moisture, soil type, road proximity, and stream density. Nepal recorded 230,077 wildfire occurrences over the decade, with 16,860 in Gandaki Province. Nearly 75% of these fires occurred in March (21%) and April (54%). About 80% of incidents took place below 2000 m elevation, 55% on south to southeast-facing slopes, and 71% on slopes between 10° and 50°. Additionally, 73% of fires were within 500 m of a road, and 77% occurred in areas with drainage densities between 1 km/km² and 2 km/km². Wildfire frequency reached up to 4 events per km² in areas with population densities above 500 people per km², which is nearly four times higher than in sparsely populated regions. This study presents the first comprehensive spatiotemporal analysis of wildfire patterns in Gandaki Province using a decade of satellite data integrated with topographic, ecological, and human factors. The findings provide critical insight into wildfire risk areas and influencing factors, offering a data-driven foundation for risk assessment and targeted forest management. The results have direct implications for developing region-specific wildfire prevention and mitigation strategies, particularly in the vulnerable mid-hill landscapes of the Nepal Himalaya."
+        }
+      ]
+    },
+    {
+      "year": "2025",
+      "entries": [
+        {
+          "journal": "Global Ecology and Conservation 58, e03443 (2025).",
+          "title": "Forest fire impacts plant community assemblage in different ecological zones of central Himalaya, Nepal",
+          "url": "https://doi.org/10.1016/j.gecco.2025.e03443",
+          "authors": "Sapkota, R.P.*, **Dhital, N.B.**, Shrestha, A.K., Khadka, U.R., Pokhrel, C.P., Joshi, G.R., Rijal, K.",
+          "tags": [
+            "multidisciplinary"
+          ],
+          "abstract": "Forest fire frequency in Nepal has increased in recent years. Field-level assessments of fire impacts on plant community assemblage and postfire recovery dynamics across different ecological zones are limited in Nepal, creating a research gap in understanding the ecological processes affected due to wildfires. This study investigates the impacts of forest fire on woody species composition, diversity and regeneration potential in forest stands of central Himalaya, Nepal. Field assessments were carried out in Terai (Nawalpur), Mid-hill (Lamjung) and Mountain (Manang) ecological zones. Trees were sampled in 20 m × 20 m plots, whereas saplings and seedlings were sampled in two nested sub-plots of dimensions 5 m × 5 m and 1 m × 1 m, respectively. A total of 183 plots were laid for sampling trees, of which 89 plots were in the non-fire stands (no fire event in the past 15 years) and 94 plots in the fire stands (at least one fire event in the past 3 years). Similarly, each 183 sub-plots were used for saplings and seedlings assessment. We observed variability in the results caused by fire in the tree stratum. Considering the sapling and seedling layers, significantly higher densities were observed in the non-fire stands of Terai, Mid-hill and Mountain compared to the fire stands, except for the seedling density in Terai. Permutational MANOVA showed a difference in the woody plant species composition between the fire and non-fire stands, except the sapling and seedling composition in the fire and non-fire stands of Terai. We observed a higher diversity of trees in the non-fire sites of Terai compared to the fire sites. However, in Mid-hill and Mountain, significant differences were not observed for the tree species diversity. Woody species sapling diversity in non-fire sites was higher compared to fire sites across the studied ecological zones. Similarly, woody plant seedling diversity showed that non-fire sites of Mid-hill and Mountain have higher diversity compared to the fire sites, but not observed in Terai sites. This study highlights the importance of fire control in shaping plant community assemblage and recovery. Understanding the species-specific impact of forest fires and regional differences in such impacts is essential for developing successful fire management strategies."
+        },
+        {
+          "journal": "BMC Environmental Science 2, 13 (2025).",
+          "title": "Forest fire-induced air pollution events in the Himalayan region: Urgent need for regional collaboration and action",
+          "url": "https://doi.org/10.1186/s44329-025-00027-5",
+          "authors": "Mahapatra, P.S., **Dhital, N.B.***",
+          "tags": [
+            "ambient-air-pollution"
+          ],
+          "abstract": "Pre-monsoon forest fires in the Himalayan region contribute to severe air pollution episodes across the region. Based on the analysis of PM2.5 concentrations and forest fire events, we aim to highlight an urgent need for transboundary efforts to address the challenges posed by forest fire-induced air pollution episodes."
+        }
+      ]
+    },
+    {
+      "year": "2024",
+      "entries": [
+        {
+          "journal": "Atmospheric Pollution Research 15, 102175 (2024).",
+          "title": "Estimating potentially preventable ambient PM<sub>2.5</sub>-attributable adult deaths by improving air quality in Nepal",
+          "url": "https://doi.org/10.1016/j.apr.2024.102175",
+          "authors": "**Dhital, N.B.**, Sapkota, R.P., Sharjeel, A., Yang, H.H.*",
+          "tags": [
+            "ambient-air-pollution",
+            "exposure-health-impact"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Environmental Challenges 15, 100912 (2024).",
+          "title": "Comparing the characteristics of ambient fine particle pollution episodes across South Asian cities",
+          "url": "https://doi.org/10.1016/j.envc.2024.100912",
+          "authors": "**Dhital, N.B.***",
+          "tags": [
+            "ambient-air-pollution"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Environmental Challenges 17, 101054 (2024).",
+          "title": "In-vehicle air quality in public buses during real-world trips in Kathmandu Valley, Nepal",
+          "url": "https://doi.org/10.1016/j.envc.2024.101054",
+          "authors": "Shrestha, A., **Dhital, N.B.***",
+          "tags": [
+            "exposure-health-impact"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Scientific Reports 14, 31494 (2024).",
+          "title": "Evaluating the feasibility of estimating particulate mass emissions of older-model diesel vehicle using smoke opacity measurements",
+          "url": "https://doi.org/10.1038/s41598-024-83327-1",
+          "authors": "Yang, H.H., Kumar, A.*, **Dhital, N.B.**, Wang, L., Wu, C., Kamyab, H., Yusuf, M.",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Journal of Environment Sciences 10, 54–62 (2024).",
+          "title": "Waiting time countdown displays affect the idle-stopping behavior of motorcyclists at signalized traffic intersections",
+          "url": "https://doi.org/10.3126/jes.v10i1.66969",
+          "authors": "Bhandari, R., Lama, A., **Dhital, N.B.***",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        }
+      ]
+    },
+    {
+      "year": "2023",
+      "entries": [
+        {
+          "journal": "Environmental Monitoring and Assessment 195, 1485 (2023).",
+          "title": "Intermodal comparison of commuters' exposure to VOCs between public, private, and active transportation",
+          "url": "https://doi.org/10.1007/s10661-023-12125-5",
+          "authors": "Yang, H.H., **Dhital, N.B.***, Lai, Y.H., Chan, T.Y.",
+          "tags": [
+            "exposure-health-impact"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Environmental Monitoring and Assessment 195, 1337 (2023).",
+          "title": "Effect of lockdown and associated mobility changes amid COVID-19 on air quality in the Kathmandu Valley, Nepal",
+          "url": "https://doi.org/10.1007/s10661-023-11949-5",
+          "authors": "Bhandari, R.*, **Dhital, N.B.**, Rijal, K.",
+          "tags": [
+            "ambient-air-pollution"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Global Ecology and Conservation 48, e02705 (2023).",
+          "title": "Fire-mediated biomass loss of woody species seedlings causing demographic bottleneck in the Terai forests of central Nepal",
+          "url": "https://doi.org/10.1016/j.gecco.2023.e02705",
+          "authors": "Sapkota, R.P.*, **Dhital, N.B.**, Rijal, K.",
+          "tags": [
+            "multidisciplinary"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        }
+      ]
+    },
+    {
+      "year": "2022",
+      "entries": [
+        {
+          "journal": "Aerosol and Air Quality Research 22, 220201 (2022).",
+          "title": "Comparing the change in air quality during the COVID-19 lockdown between dry and wet seasons in Nepal",
+          "url": "https://doi.org/10.4209/aaqr.220201",
+          "authors": "**Dhital, N.B.**, Bhattarai, D.R., Sapkota, R.P., Rijal, K., Byanju, R.M., Yang, H.H.*",
+          "tags": [
+            "ambient-air-pollution"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Sustainable Environment Research 32, 35 (2022).",
+          "title": "Effects of the COVID-19 pandemic on public bus occupancy and real-world tailpipe emissions of gaseous pollutants per passenger kilometer traveled",
+          "url": "https://doi.org/10.1186/s42834-022-00146-7",
+          "authors": "**Dhital, N.B.**, Wang, L.C., Yang, H.H.*, Lee, C.H., Shih, W.H., Wu, C.S.",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Atmosphere 13, 766 (2022).",
+          "title": "Characterizing real-world particle-bound polycyclic aromatic hydrocarbon emissions from diesel-fueled construction machines",
+          "url": "https://doi.org/10.3390/atmos13050766",
+          "authors": "**Dhital, N.B.**, Wang, L.C., Yang, H.H.*, Cheruiyot, N.K., Lee, C.H.",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "ACS Earth and Space Chemistry 6, 2955–2971 (2022).",
+          "title": "Wintertime air quality across the Kathmandu Valley, Nepal: Concentration, composition, and sources of fine and coarse particulate matter",
+          "url": "https://doi.org/10.1021/acsearthspacechem.2c00243",
+          "authors": "**Dhital, N.B.**, Islam, M.R., Li, T., Mahata, K., Khanal, N., Werden, B., Giordano, M.R., Praveen Puppala, S., Gurung, A., Saikawa, E., Panday, A.K., Yokelson, R.J., DeCarlo, P.F., Stone, E.A.*",
+          "tags": [
+            "ambient-air-pollution"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Journal of Environment Sciences 8, 1–14 (2022).",
+          "title": "Vegetation assemblage and carbon stock in the sacred groves of Kathmandu Valley, Nepal",
+          "url": "https://doi.org/10.3126/jes.v8i1.53649",
+          "authors": "Sapkota, H., **Dhital, N.B.**, Manandhar, R., Sapkota, R.P.*",
+          "tags": [
+            "multidisciplinary"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        }
+      ]
+    },
+    {
+      "year": "2021",
+      "entries": [
+        {
+          "journal": "Environmental Pollution 286, 117292 (2021).",
+          "title": "Effects of driving behavior on real-world emissions of particulate matter, gaseous pollutants and particle-bound PAHs for diesel trucks",
+          "url": "https://doi.org/10.1016/j.envpol.2021.117292",
+          "authors": "**Dhital, N.B.**, Wang, S.X., Lee, C.H., Su, J., Tsai, M.Y., Jhou, Y.J., Yang, H.H.*",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Atmospheric Pollution Research 12, 101167 (2021).",
+          "title": "Effects of road grade on real-world tailpipe emissions of regulated gaseous pollutants and volatile organic compounds for a Euro 5 motorcycle",
+          "url": "https://doi.org/10.1016/j.apr.2021.101167",
+          "authors": "Yang, H.H., **Dhital, N.B.***, Cheruiyot, N.K., Wang, L.C., Wang, S.X.",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "ACS Earth and Space Chemistry 5, 226–238 (2021).",
+          "title": "Wintertime air quality in Lumbini, Nepal: Sources of fine particle organic carbon",
+          "url": "https://doi.org/10.1021/acsearthspacechem.0c00269",
+          "authors": "Islam, M.R., Li, T., Mahata, K., Khanal, N., Werden, B., Giordano, M.R., Praveen, P.S., **Dhital, N.B.**, Gurung, A., Panday, A.K., Joshi, I.B., Poudel, S.P., Wang, Y., Saikawa, E., Yokelson, R.J., DeCarlo, P.F., Stone, E.A.*",
+          "tags": [
+            "ambient-air-pollution"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Sustainable Environment Research 31, 3 (2020).",
+          "title": "Assessing air pollution tolerance of plant species in vegetation traffic barriers in Kathmandu Valley, Nepal",
+          "url": "https://doi.org/10.1186/s42834-020-00076-2",
+          "authors": "Shrestha, S., Baral, B., **Dhital, N.B.**, Yang, H.H.*",
+          "tags": [
+            "multidisciplinary"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        }
+      ]
+    },
+    {
+      "year": "2020",
+      "entries": [
+        {
+          "journal": "Atmospheric Pollution Research 11, 419–428 (2019).",
+          "title": "Effects of short-duration vehicular traffic control on volatile organic compounds in roadside atmosphere",
+          "url": "https://doi.org/10.1016/j.apr.2019.11.016",
+          "authors": "Yang, H.H., **Dhital, N.B.***, Wang, Y.F., Huang, S.C., Zhang, H.Y.",
+          "tags": [
+            "ambient-air-pollution"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Sustainable Environment Research 30, 28 (2020).",
+          "title": "Emission factor, relative ozone formation potential and relative carcinogenic risk assessment of VOCs emitted from manufacturing industries",
+          "url": "https://doi.org/10.1186/s42834-020-00068-2",
+          "authors": "Yang, H.H., Gupta, S.K.*, **Dhital, N.B.**",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Journal of Environmental Sciences 92, 245–255 (2020).",
+          "title": "Comparative investigation of coal- and oil-fired boilers based on emission factors, ozone and secondary organic aerosol formation potentials of VOCs",
+          "url": "https://doi.org/10.1016/j.jes.2020.02.024",
+          "authors": "Yang, H.H., Gupta, S.K.*, **Dhital, N.B.**, Wang, L.C., Elumalai, S.P.",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        }
+      ]
+    },
+    {
+      "year": "2019",
+      "entries": [
+        {
+          "journal": "Atmospheric Pollution Research 10, 1498–1506 (2019).",
+          "title": "VOCs emission characteristics in motorcycle exhaust with different emission control devices",
+          "url": "https://doi.org/10.1016/j.apr.2019.04.007",
+          "authors": "**Dhital, N.B.**, Yang, H.H.*, Wang, L.C., Hsu, Y.T., Zhang, H.Y., Young, L.H., Lu, J.H.",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Aerosol and Air Quality Research 19, 1439–1449 (2019).",
+          "title": "Chemical characterization of fine particulate matter in gasoline and diesel vehicle exhaust",
+          "url": "https://doi.org/10.4209/aaqr.2019.04.0191",
+          "authors": "Yang, H.H., **Dhital, N.B.***, Wang, L.C., Hsieh, Y.S., Lee, K.T., Hsu, Y.T., Huang, S.C.",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        },
+        {
+          "journal": "Energy & Fuels 33, 10878–10887 (2019).",
+          "title": "Establishment of indicatory metals for filterable and condensable PM<sub>2.5</sub> emitted from important stationary emission sources",
+          "url": "https://doi.org/10.1021/acs.energyfuels.9b02889",
+          "authors": "Yang, H.H., Gupta, S.K.*, **Dhital, N.B.**, Lee, K.T., Hsieh, Y.S., Huang, S.C.",
+          "tags": [
+            "emission-characterization"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        }
+      ]
+    },
+    {
+      "year": "2014",
+      "entries": [
+        {
+          "journal": "Nepal Journal of Environmental Science 2, 35–41 (2014).",
+          "title": "Air pollution inside public transport vehicles of Kathmandu Valley",
+          "url": "https://doi.org/10.3126/njes.v2i0.22739",
+          "authors": "**Dhital, N.B.***, Hung, W.T., Byanju, R.M.",
+          "tags": [
+            "exposure-health-impact",
+            "indoor-air-pollution"
+          ],
+          "abstract": "Abstract not available here yet — please see the full published article using the link above."
+        }
+      ]
+    }
+  ],
+  "conferencePresentations": [
+    {
+      "title": "Estimating potenitally preventable PM<sub>2.5</sub>-attributable premature deaths by improving air quality in Nepal",
+      "venue": "2023 IEEE 5<sup>th</sup> International Conference on Architecture, Construction, Environment and Hydraulics.",
+      "details": "Chaoyang University of Technology, Taichung City, Taiwan, 1–3 December 2023. (Oral/Online)"
+    },
+    {
+      "title": "Effects of driving behavior and route attributes on the real-world emissions of particulate and gaseous air pollutants from heavy-duty diesel trucks",
+      "venue": "27<sup>th</sup> International Conference on Aerosol Science and Technology and Conference on Fine Particulate Matter (PM<sub>2.5</sub>) and Air Quality Improvement, Taiwan Association for Aerosol Research.",
+      "details": "National Yunlin University of Science & Technology, Taiwan, 25–26 September 2020. (Oral)"
+    },
+    {
+      "title": "Real-world emission factors of particulate and gaseous air pollutants for the construction equipment operated in a typical brick factory",
+      "venue": "Air Pollution Control Technology Conference, Chinese Institute of Environmental Engineering.",
+      "details": "National Central University, Taoyuan, Taiwan, 27–28 November 2020. (Oral)"
+    },
+    {
+      "title": "Effects of short-duration vehicular traffic control on roadside concentrations of volatile organic compounds",
+      "venue": "Air Pollution Control Technology Conference, Chinese Institute of Environmental Engineering.",
+      "details": "Hungkuang University of Science and Technology, Taichung, Taiwan, 22–23 November 2019. (Poster)"
+    },
+    {
+      "title": "Air quality and drivers' health in public buses of Kathmandu Valley",
+      "venue": "Integrated Conference of Better Air Quality 2014 & Intergovernmental 8<sup>th</sup> Regional Environmentally Sustainable Transport Forum in Asia, Clean Air Asia.",
+      "details": "Bandaranaike Memorial International Conference Hall, Colombo, Sri Lanka, 19–21 September 2014. (Poster)"
+    }
+  ],
+  "invitedTalks": [
+    {
+      "title": "Pre-monsoon air pollution episodes in Nepal",
+      "venue": "Guest Lecture.",
+      "details": "Saptagandaki Multiple Campus, Chitwan, Nepal, 24 April 2026."
+    },
+    {
+      "title": "Air pollution and health impact in Nepal",
+      "venue": "Regional Workshop: Interlinkages between health impacts of air pollution and inclusivity. ICIMOD & Health Effects Institute (HEI).",
+      "details": "ICIMOD Headquarters, Lalitpur, Nepal, 15 August 2024.",
+      "link": {
+        "label": "Event link",
+        "url": "https://www.icimod.org/event/clean-air/interlinkages-between-health-impacts-of-air-pollution-and-inclusivity/"
+      }
+    },
+    {
+      "title": "Navigating the peer-reviewed literature",
+      "venue": "Workshop on Research Proposal Development & Research Management.",
+      "details": "Bishwa Shanti Chiran Milan Campus, Kathmandu, Nepal, 6 May 2023."
+    },
+    {
+      "title": "Public bus ridership and air pollutant emissions during COVID-19 pandemic",
+      "venue": "International Day of Clean Air for Blue Skies, iLEAPS.",
+      "details": "Online Seminar, 5 September 2022."
+    },
+    {
+      "title": "Intermodal comparison of commuters' exposure between active and motorized modes of transportation",
+      "venue": "Pralad Yonzon Conservation Forum-115, Resources Himalaya Foundation.",
+      "details": "Kathmandu, Nepal, 10 November 2022."
+    }
+  ]
+}
