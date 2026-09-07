@@ -1112,8 +1112,8 @@ a.card { display: block; color: inherit; text-decoration: none; }
   color: var(--ink-secondary);
 }
 .pub-entry__abstract {
-  width: 90%;       /* Spans the % width of the parent container */
-  max-width: 800px;  /* Preferred maximum width here */
+  width: 100%;       /* Spans the % width of the parent container */
+  max-width: 900px;  /* Preferred maximum width here */
 }
 .pub-entry__abstract.is-visible { display: block; }
 
