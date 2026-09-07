@@ -29,7 +29,7 @@
     el.className = 'pub-entry';
     el.setAttribute('data-tags', tags);
 
-    var citation = entry.journal + ' ' + entry.volpp + ' (' + entry.year + ').';
+    var citation = entry.journal + ' ' + entry.volpp + ' (' + entry.year + ')';
 
     el.innerHTML =
       '<div class="pub-entry__journal">' + citation + '</div>' +
