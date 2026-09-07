@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://narayandhital.com.np/sitemap.xml
