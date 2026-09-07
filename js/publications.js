@@ -1,22 +1,25 @@
 /**
  * publications.js
- * Renders the Publications, Conferences, and Invited Talks sections on
- * research.html from a single data source: /data/publication-list.json
+ * Renders the "Peer-Reviewed Journal Articles" list on research.html from
+ * a single data source: /data/publication-list.json
  *
- * To add, edit, or remove a publication, conference talk, or invited talk,
- * edit that JSON file only. Nothing here needs to change for routine updates.
+ * To add, edit, or remove a journal article, edit that JSON file only.
+ * Nothing here needs to change for routine updates.
+ *
+ * Conference Presentations and Invited Talks are NOT data-driven - they
+ * are plain bulleted lists (<ul class="pub-bullets">) directly in
+ * research.html, and are edited there.
  */
 (function () {
   'use strict';
 
   var DATA_URL = '/data/publication-list.json';
 
-  // Escape a raw string only where it must not be interpreted as HTML
-  // (titles/journal names are trusted content authored in the JSON file,
-  // consistent with how they were previously authored directly in HTML).
+  // "**Name**" -> <strong>Name</strong> (marks the site owner's own name).
+  // Titles/journal names are trusted content authored in the JSON file,
+  // consistent with how they were previously authored directly in HTML.
   function renderAuthors(str) {
     if (!str) return '';
-    // "**Name**" -> <strong>Name</strong> (marks the site owner's own name)
     return str.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   }
 
@@ -26,8 +29,10 @@
     el.className = 'pub-entry';
     el.setAttribute('data-tags', tags);
 
+    var citation = entry.journal + ' ' + entry.volpp + ' (' + entry.year + ').';
+
     el.innerHTML =
-      '<div class="pub-entry__journal">' + entry.journal + ' ' + entry.volpp + ' (' + entry.year + ')' + '</div>' +
+      '<div class="pub-entry__journal">' + citation + '</div>' +
       '<a class="pub-entry__title" href="' + entry.url + '" target="_blank" rel="noopener">' + entry.title + '</a>' +
       '<div class="pub-entry__authors">' + renderAuthors(entry.authors) + '</div>' +
       '<div class="pub-entry__actions">' +
@@ -65,34 +70,6 @@
     container.innerHTML = '';
     groups.forEach(function (group) {
       container.appendChild(buildYearGroup(group));
-    });
-  }
-
-  function buildPubItem(item) {
-    var el = document.createElement('p');
-    el.className = 'pub-item';
-
-    var metaParts = '';
-    if (item.venue) metaParts += item.venue + ' ';
-    if (item.details) metaParts += '<span class="pub-item__doi">' + item.details + '</span>';
-    if (item.link && item.link.url) {
-      metaParts += ' <a href="' + item.link.url + '" target="_blank" rel="noopener noreferrer">' +
-        (item.link.label || 'Link') + '</a>';
-    }
-
-    el.innerHTML =
-      '<span class="pub-item__title">' + item.title + '</span>' +
-      '<span class="pub-item__meta">' + metaParts + '</span>';
-
-    return el;
-  }
-
-  function renderPubItemList(containerId, items) {
-    var container = document.getElementById(containerId);
-    if (!container) return;
-    container.innerHTML = '';
-    (items || []).forEach(function (item) {
-      container.appendChild(buildPubItem(item));
     });
   }
 
@@ -158,11 +135,8 @@
   }
 
   function init() {
-    // Only fetch/render on pages that have the relevant containers.
-    var hasPubs = document.getElementById('publications-list');
-    var hasConferences = document.getElementById('conferences-list');
-    var hasInvitedTalks = document.getElementById('invited-talks-list');
-    if (!hasPubs && !hasConferences && !hasInvitedTalks) return;
+    var container = document.getElementById('publications-list');
+    if (!container) return; // Only fetch/render on pages that have the list.
 
     fetch(DATA_URL)
       .then(function (res) {
@@ -170,17 +144,13 @@
         return res.json();
       })
       .then(function (data) {
-        if (hasPubs) renderJournalArticles(data.journalArticles || []);
-        if (hasConferences) renderPubItemList('conferences-list', data.conferencePresentations || []);
-        if (hasInvitedTalks) renderPubItemList('invited-talks-list', data.invitedTalks || []);
+        renderJournalArticles(data.journalArticles || []);
         setupPublicationInteractions();
       })
       .catch(function (err) {
         console.error('publications.js:', err);
-        if (hasPubs) {
-          document.getElementById('publications-list').innerHTML =
-            '<p style="text-align:center;color:var(--color-text-muted);">Publications could not be loaded right now.</p>';
-        }
+        container.innerHTML =
+          '<p style="text-align:center;color:var(--color-text-muted);">Publications could not be loaded right now.</p>';
       });
   }
 
