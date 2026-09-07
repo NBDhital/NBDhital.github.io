@@ -1111,6 +1111,10 @@ a.card { display: block; color: inherit; text-decoration: none; }
   line-height: 1.65;
   color: var(--ink-secondary);
 }
+.pub-entry__abstract {
+  width: 90%;       /* Spans the % width of the parent container */
+  max-width: 800px;  /* Preferred maximum width here */
+}
 .pub-entry__abstract.is-visible { display: block; }
 
 .doi { font-size: var(--text-sm); color: var(--color-doi); }
