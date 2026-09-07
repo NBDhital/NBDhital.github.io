@@ -17,6 +17,7 @@
   --color-gold:        #c9a227;  /* primary gold accent - the one warm note against the cool palette */
   --color-gold-dark:   #a98235;  /* darker gold */
   --color-gold-light:  #e6c565;  /* lighter gold for hover states */
+  --color-gold-muted:  #c9a860;  /* muted, slightly deep gold panel background - used behind text blocks (research area); contrast-checked for dark text */
   --color-text-dark:   #1c2b3a;  /* main body text on light bg */
   --color-text-light:  #f4f0e6;  /* reserved for any remaining dark surfaces */
   --color-text-muted:  #52667a;  /* secondary / caption text */
@@ -410,87 +411,63 @@ ul { list-style: none; }
 .profile-links a.brand-scholar:hover { background: #fff; border-color: #4285F4; }
 
 /* ---------------------------------------------------------------------- */
-/* RESEARCH FOCUS (Research Area page — elegant editorial layout)        */
+/* RESEARCH FOCUS (Research Area page — elegant magazine-style layout)   */
+/* One continuous text column on the left (square-edged muted-gold       */
+/* panel, paragraphs flow together with no dividers), and a column of    */
+/* photos on the right (no panel background), with real whitespace       */
+/* between the two columns.                                              */
 /* ---------------------------------------------------------------------- */
-.research-focus-list {
+.research-focus {
   max-width: 1020px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: start;
+  gap: 25px;
+}
+
+.research-focus__body {
+  background: var(--color-gold-muted);
+  color: var(--color-text-dark);
+  border-radius: 8px;
+  padding: 44px 48px;
+}
+.research-focus__body p { margin-bottom: 22px; }
+.research-focus__body p:last-child { margin-bottom: 0; }
+.research-focus__body p strong {
+  display: inline;
+  color: var(--color-navy-dark);
+  font-family: var(--font-heading);
+}
+
+.research-focus__media {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
-
-.research-focus {
-  position: relative;
-  display: grid;
-  grid-template-columns: 0.92fr 1.08fr;
-  gap: 44px;
-  align-items: center;
-  background: #fff;
-  border: 1px solid var(--color-border);
-  border-radius: 18px;
-  padding: 36px 40px;
-  box-shadow: var(--shadow-soft);
-  overflow: hidden;
-  transition: box-shadow var(--transition), transform var(--transition);
-}
-.research-focus:hover {
-  box-shadow: var(--shadow-strong);
-  transform: translateY(-3px);
-}
-
-.research-focus--reverse .research-focus__media { order: 2; }
-.research-focus--reverse .research-focus__body  { order: 1; }
-
 .research-focus__media figure { margin: 0; }
 .research-focus__media img {
   width: 100%;
   display: block;
-  border-radius: 12px;
+  border-radius: 8px;
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--color-border);
   transition: transform var(--transition);
 }
-.research-focus:hover .research-focus__media img { transform: scale(1.015); }
+.research-focus__media figure:hover img { transform: scale(1.015); }
 
 .research-focus__media figcaption {
-  margin-top: 10px;
-  font-size: 0.82rem;
+  margin-top: 8px;
+  font-size: 0.8rem;
   font-style: italic;
   text-align: center;
   color: var(--color-text-muted);
 }
 .research-focus__media figcaption a { font-style: normal; }
 
-.research-focus__body { position: relative; z-index: 1; }
-.research-focus__body p { margin-bottom: 0; }
-.research-focus__body p strong {
-  display: inline;
-  color: var(--color-gold-dark);
-  font-family: var(--font-heading);
-}
-
-/* Decorative accent rule under each card */
-.research-focus::before {
-  content: "";
-  position: absolute;
-  left: 40px;
-  bottom: -18px;
-  width: 40px;
-  height: 3px;
-  background: var(--color-gold);
-  border-radius: 2px;
-}
-.research-focus:last-child::before { display: none; }
-
 @media (max-width: 860px) {
-  .research-focus {
-    grid-template-columns: 1fr;
-    padding: 28px 24px;
-    gap: 24px;
-  }
-  .research-focus--reverse .research-focus__media { order: 1; }
-  .research-focus--reverse .research-focus__body  { order: 2; }
+  .research-focus { grid-template-columns: 1fr; gap: 32px; }
+  .research-focus__body { padding: 32px 28px; }
 }
 
 /* Closing callout — collaboration invitation */
@@ -498,10 +475,10 @@ ul { list-style: none; }
   max-width: 1020px;
   margin: 30px auto 0;
   padding: 32px 40px;
-  text-align: center;
+  text-align: left;
   background: var(--color-warm-bg);
   border: 1px solid var(--color-border);
-  border-radius: 16px;
+  border-radius: 8px;
   box-shadow: var(--shadow-soft);
   position: relative;
 }
@@ -556,7 +533,7 @@ ul { list-style: none; }
 .timeline-item .org { color: var(--color-text-muted); font-style: italic; margin-bottom: 6px; }
 
 /* ---------------------------------------------------------------------- */
-/* PUBLICATIONS LIST                                                     */
+/* PUBLICATIONS LIST (Peer-Reviewed Journal Articles — year headings)    */
 /* ---------------------------------------------------------------------- */
 .pub-year {
   font-family: var(--font-heading);
@@ -564,51 +541,58 @@ ul { list-style: none; }
   font-size: 1.4rem;
   margin: 34px 0 14px;
   border-bottom: 1px solid var(--color-gold-light);
-  border-left: 0px solid var(--color-gold);
   padding-bottom: 6px;
   padding-left: 10px;
-  border-radius: 0px 0px 0px 0px;
 }
 .pub-year:first-of-type { margin-top: 0; }
 
-.pub-list { margin-bottom: 6px; }
-
-.pub-item {
-  display: block;
-  padding: 15px 10px;
-  border-left: 1.5px solid var(--color-blue-panel);
-  margin-bottom: 20px;
-  background: var(--color-blue-muted);
-  border-radius: 0px 0px 0px 20px;
-  text-decoration: none;
-  transition: border-color var(--transition), background var(--transition);
-}
-.pub-item:hover {
-  border-color: var(--color-gold);
-  background: transparent;
-  box-shadow: var(--shadow-soft);
+/* ---------------------------------------------------------------------- */
+/* BULLETED LIST (Conferences / Invited Talks - plain <ul> in the HTML,  */
+/* edited directly on the page, no JSON/JS involved)                     */
+/* ---------------------------------------------------------------------- */
+.pub-bullets {
+  max-width: 820px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
-.pub-item__title {
+.pub-bullets li {
+  position: relative;
+  padding-left: 24px;
+  line-height: 1.6;
+}
+.pub-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 9px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-gold);
+}
+
+.pub-bullets__title {
   display: block;
   color: var(--color-text-dark);
   font-weight: 600;
 }
 
-.pub-item__meta {
+.pub-bullets__meta {
   display: block;
   margin-top: 2px;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   color: var(--color-text-muted);
 }
-
-.pub-item__doi {
-  color: var(--color-doi);
-}
+.pub-bullets__meta .doi { color: var(--color-doi); }
+.pub-bullets__meta a { color: var(--color-navy); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.pub-bullets__meta a:hover { color: var(--color-gold); }
 
 /* ---------------------------------------------------------------------- */
 /* JOURNAL PUBLICATION ENTRIES (Peer-Reviewed Journal Articles)          */
-/* Distinct component from .pub-item (used by Conferences/Invited Talks) */
 /* ---------------------------------------------------------------------- */
 .pub-entries { margin-bottom: 6px; }
 
