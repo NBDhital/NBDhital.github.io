@@ -160,18 +160,50 @@
       <div class="section-eyebrow">Publications</div>
       <h2>Peer-Reviewed Journal Articles</h2>
       <div class="rule"></div>
-      <p style="max-width:640px;margin:0 auto;color:var(--color-text-muted)"><br>Listed most recent
-        first. * indicates corresponding author.</p>
+      <p style="max-width:640px;margin:0 auto;color:var(--color-text-muted); font-size:0.8em;"><br>
+        <i>Filter publications by selecting options in the dropdown menus. Listed most recent first.</i></p>
     </div>
 
     <div class="pub-filter reveal">
-      <div class="tabs" role="tablist" aria-label="Filter publications by category">
-        <button type="button" class="tab-btn active" data-tag="all">All</button>
-        <button type="button" class="tab-btn" data-tag="emission-characterization">Emissions</button>
-        <button type="button" class="tab-btn" data-tag="ambient-air-pollution">AAQ</button>
-        <button type="button" class="tab-btn" data-tag="indoor-air-pollution">IAQ</button>
-        <button type="button" class="tab-btn" data-tag="exposure-health-impact">Exposure &amp; Health</button>
-        <button type="button" class="tab-btn" data-tag="multidisciplinary">Multidisciplinary</button>
+      <div class="pub-filter__controls" role="group" aria-label="Filter publications">
+
+        <div class="pub-filter__field">
+          <label class="pub-filter__label" for="pub-filter-subject">Subject area</label>
+          <div class="pub-filter__select-wrap">
+            <select class="pub-filter__select" id="pub-filter-subject" data-filter="tag">
+              <option value="all">All</option>
+              <option value="emission-characterization">Emissions</option>
+              <option value="ambient-air-pollution">Ambient Air Quality</option>
+              <option value="indoor-air-pollution">Indoor Air Quality</option>
+              <option value="exposure-health-impact">Exposure &amp; Health</option>
+              <option value="multidisciplinary">Multidisciplinary</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="pub-filter__field">
+          <label class="pub-filter__label" for="pub-filter-role">Author role</label>
+          <div class="pub-filter__select-wrap">
+            <select class="pub-filter__select" id="pub-filter-role" data-filter="role">
+              <option value="all">All</option>
+              <option value="first">First author</option>
+              <option value="corresponding">Corresponding author</option>
+              <option value="last">Last author</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="pub-filter__field">
+          <label class="pub-filter__label" for="pub-filter-access">Access</label>
+          <div class="pub-filter__select-wrap">
+            <select class="pub-filter__select" id="pub-filter-access" data-filter="access">
+              <option value="all">All</option>
+              <option value="open-access">Open access</option>
+              <option value="subscription">Subscription</option>
+            </select>
+          </div>
+        </div>
+
       </div>
       <p class="pub-filter__count" id="pub-filter-count"></p>
     </div>
