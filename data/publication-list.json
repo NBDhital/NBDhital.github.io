@@ -1,8 +1,11 @@
 {
   "journalArticles": [
+
+
     {
       "year": "2026",
       "entries": [
+
         {
           "journal": "Environmental Science: Atmospheres",
           "volpp": "6, 853–866",
@@ -10,12 +13,12 @@
           "title": "Effects of an electrostatic precipitator on particle mass, composition, and number size distributions in residential wood combustion emissions",
           "url": "https://doi.org/10.1039/D5EA00175G",
           "authors": "**Dhital, N.B.***, Louhisalmi, J., Rinta-Kiikka, H., Väätäinen, S., Leskinen, J., Sippula, O., Tissari, J.",
-          "tags": [
-            "emission-characterization",
-            "indoor-air-pollution"
-          ],
+          "tags": ["emission-characterization"],
+          "authorRole": ["first", "corresponding"],
+          "access": "open-access",
           "abstract": "Residential wood combustion (RWC) is an increasingly dominant source of particulate matter (PM) pollution in Europe. Electrostatic precipitators (ESPs) are a promising technology for controlling particle mass emissions from RWC appliances, but their influence on particle number concentrations (PNC) is highly variable, as they may occasionally increase PNC. In this study, we evaluated the effect of an ESP on PM1, black carbon (BC), elemental carbon (EC), organic carbon (OC), and particle number size distributions in emissions from wood-fueled stoves commonly used in Finland, under conditions spanning a wide range of upstream emission loads. Experiments were conducted in a state-of-the-art small-scale combustion simulation and measurement facility. The emission reduction efficiencies of the ESP were 75.7% ± 4.7% for PM1, 83.2% ± 14.2% for EC, and 70.1% ± 12.6% for OC. The operation of ESP not only reduced PM1 concentrations but also influenced particle composition and optical properties with its differential collection efficiencies for EC and OC. Moreover, it reduced PNC within the size range of 0.13–2.5 µm, but nucleation-mode PNC occasionally increased, suggesting possible new particle formation. Additionally, the combustion conditions that showed negative efficiencies for PNC had higher upstream organic gaseous carbon concentrations and higher OC : EC ratios compared to those with positive efficiencies, suggesting that organics-rich flue gas may contribute to increased PNC when ESPs are used. These findings highlight the importance of controlling organic emissions to improve the overall emission reduction performance of ESPs."
         },
+
         {
           "journal": "Emission Control Science and Technology",
           "volpp": "12, 5",
@@ -23,11 +26,12 @@
           "title": "Effectiveness of motorcycle idle-stop systems in mitigating real-world tailpipe emissions of air pollutants",
           "url": "https://doi.org/10.1007/s40825-026-00286-x",
           "authors": "**Dhital, N.B.**, Yang, H.H.*, Hsieh, T.J., Chen, H.W., Huang, S.W.",
-          "tags": [
-            "emission-characterization"
-          ],
-          "abstract": "Motorcycles are a common mode of transportation and a key source of air pollution in many Asian cities. To mitigate idling emissions and fuel loss from motorcycles, idle-stop (IS) regulations have been implemented in Taiwan. However, the effectiveness of motorcycle IS systems under real-driving conditions remains controversial due to spikes in emissions during the engine restart phase. This study evaluated the effectiveness of IS systems in recent-model, in-use motorcycles in Taiwan using a miniature onboard emissions measurement system. Real-world emission factors with and without IS system activation were compared to determine breakeven idling times beyond which IS systems reduce emissions. Additionally, a city-wide CCTV survey of traffic intersections was conducted in Taichung City, Taiwan, to analyze real-world motorcycle idling times under different traffic conditions. Results showed that IS systems effectively reduced carbon dioxide (CO2) emissions and fuel consumption (FC). However, their effectiveness in reducing carbon monoxide (CO) and hydrocarbon (HC) emissions was uncertain due to high variability across motorcycle models. For CO, breakeven times ranged from 106 to 233 s, whereas the mean real-world waiting time was 50 s, suggesting that IS systems may not significantly reduce CO emissions. For HC, breakeven times ranged from 30 to 98 s, suggesting potential reductions under real-world conditions, but with considerable variability. In contrast, IS breakeven times for CO2 and FC ranged from 0 to 4 s, suggesting a strong potential to reduce CO2 emissions and FC. Our findings provide valuable evidence for policy development and technological improvements for motorcycle IS systems."
+          "tags": ["emission-characterization"],
+          "authorRole": ["first"],
+          "access": "subscription",
+          "abstract": "Motorcycles are a common mode of transportation and a key source of air pollution in many Asian cities. To mitigate idling emissions and fuel loss from motorcycles, idle-stop (IS) regulations have been implemented in Taiwan. However, the effectiveness of motorcycle IS systems under real-driving conditions remains controversial due to spikes in emissions during the engine restart phase. This study evaluated the effectiveness of IS systems in recent-model, in-use motorcycles in Taiwan using a miniature onboard emissions measurement system. Real-world emission factors with and without IS system activation were compared to determine breakeven idling times beyond which IS systems reduce emissions. Additionally, a city-wide CCTV survey of traffic intersections was conducted in Taichung City, Taiwan, to analyze real-world motorcycle idling times under different traffic conditions. Results showed that IS systems effectively reduced carbon dioxide (CO<sub>2</sub>) emissions and fuel consumption (FC). However, their effectiveness in reducing carbon monoxide (CO) and hydrocarbon (HC) emissions was uncertain due to high variability across motorcycle models. For CO, breakeven times ranged from 106 to 233 s, whereas the mean real-world waiting time was 50 s, suggesting that IS systems may not significantly reduce CO emissions. For HC, breakeven times ranged from 30 to 98 s, suggesting potential reductions under real-world conditions, but with considerable variability. In contrast, IS breakeven times for CO<sub>2</sub> and FC ranged from 0 to 4 s, suggesting a strong potential to reduce CO<sub>2</sub> emissions and FC. Our findings provide valuable evidence for policy development and technological improvements for motorcycle IS systems."
         },
+
         {
           "journal": "Society & Natural Resources",
           "volpp": "39, 1167–1188",
@@ -35,11 +39,25 @@
           "title": "Forest fires in the central Himalayas: Causes and impacts on the availability of forest resources across different ecological zones",
           "url": "https://doi.org/10.1080/08941920.2025.2605552",
           "authors": "**Dhital, N.B.**, Sapkota, R.P.*, Pokhrel, C.P., Joshi, G.R., Rijal, K.",
-          "tags": [
-            "multidisciplinary"
-          ],
+          "tags": ["multidisciplinary"],
+          "authorRole": ["first"],
+          "access": "subscription",
           "abstract": "The Himalayan region has faced frequent and extensive wildfires in recent years. Despite this, drivers and livelihood impacts of fires have not been adequately studied. We investigated socioeconomic drivers and impacts of forest fires across Mountain, Mid-Hill, and Terai regions of the central Himalayas, Nepal. Through household surveys (n = 207) and key informant interviews (n = 11) we found that human actions, both deliberate and accidental, were major perceived causes of forest fires. Majority of respondents stated that fires promoted the growth of fodder grasses and wild edible mushrooms, but negatively affected fodder trees, timber, and medicinal plants. In the Mid-Hill region, we observed that abandoned farmland converts to shrubland and provides forest products to owners, thereby reducing dependence on community forests and affecting the sense of forest ownership. Our findings suggest an urgent need to integrate wildfire as a key issue in forest management policies in this region."
         },
+
+        {
+          "journal": "Atmospheric Environment: X",
+          "volpp": "31, 100512",
+          "year": "2026",
+          "title": "Comparative assessment of emissions and performance of biomass cookstove technologies relevant to Nepal under controlled laboratory conditions",
+          "url": "https://doi.org/10.1016/j.aeaoa.2026.100512",
+          "authors": "Louhisalmi, J.*, Rinta-Kiikka, H., **Dhital, N.B.**, Oksala, A., Karjalainen, A., Koponen, H., Hyttinen, M., Lohani, S.P., Maskey, R., Sippula, O., Tissari, J.",
+          "tags": ["emission-characterization"],
+          "authorRole": [],
+          "access": "open-access",
+          "abstract": "Traditional biomass cooking remains a major source of household air pollution and climate-relevant emissions in South Asia, yet comparable emission data for commonly used cookstove technologies remain limited. This study evaluated the performance and emissions of eight biomass cookstove configurations representing gasifier, rocket, chimney, and traditional stove designs. Laboratory-based Water Boiling Tests (WBT) were conducted in Finland under controlled conditions using a partial-flow dilution system for particle sampling. Emissions were characterized with real-time gas analysers and extensive aerosol measurements, including fine particle mass (PM<sub>2.5</sub>), particle number (PN), alveolar-region lung-deposited surface area (ALV-LDSA), organic (OC) and elemental carbon (EC), equivalent black carbon (eBC), and polycyclic aromatic hydrocarbons (PAHs). Emission factors were calculated using WBT, carbon mass balance (CMB), and Finnish emission measurement standard-based methods to assess methodological consistency. The WBT and CMB methods produced largely consistent emission factors, indicating that simple CO<sub>2</sub>- and CO-based approaches provide reliable estimates for the main carbonaceous emissions. Stove performance and emissions varied substantially between technologies. The forced-draft gasifier showed the best performance and lowest emissions, whereas the chimney stove exhibited poor performance and high gaseous and particulate emissions, despite being classified as an improved stove. Phase-resolved analysis showed that refuelling periods produced transient emission peaks, especially for fan-assisted stoves. Tests without a cooking pot resulted in 40−96% lower emissions, demonstrating that stove–pot interaction strongly affected combustion conditions and emission formation. These findings underscore the need for integrated evaluation across performance indicators and multiple emission metrics to identify low-emission cooking technologies."
+        },
+
         {
           "journal": "Fuel",
           "volpp": "408, 137738",
@@ -47,12 +65,12 @@
           "title": "Particulate matter measurement in residential wood combustion: Method comparison and introduction of a novel approach",
           "url": "https://doi.org/10.1016/j.fuel.2025.137738",
           "authors": "Louhisalmi, J.*, Rinta-Kiikka, H., Väätäinen, S., Schön, C., Koponen, H., Sippula, O., **Dhital, N.B.**, Krpec, K., Fraboulet, I., Cea, B., Hartmann, H., Tissari, J.",
-          "tags": [
-            "emission-characterization",
-            "indoor-air-pollution"
-          ],
+          "tags": ["emission-characterization"],
+          "authorRole": [],
+          "access": "open-access",
           "abstract": "Residential wood combustion (RWC) is a major source of atmospheric particulate matter (PM). Yet, the diversity of PM emission measurement methods used for RWC appliances often leads to inconsistent and non-comparable results. This study compares two PM measurement techniques: a dilution-based method combining a porous tube diluter (PTD) and an ejector diluter (ED), and the heated filter method defined in EN 16510–1:2022 standard. A novel hybrid method was also introduced, integrating the EN standard with a PTD to separately quantify solid and condensable PM fractions. For the method comparison, emissions from six RWC appliances were measured across different combustion phases. Results show that both appliance type and combustion phase significantly affect emission composition, particularly the organic matter (OM) content, which in turn influences method comparability. The dilution method generally yielded higher PM concentrations, except when OM content was low. Due to the strong dependence on emission composition, universal conversion factors between methods were not feasible. The findings underscore the need for harmonized PM measurement protocols that account for condensable organic particles. The proposed hybrid method offers a more comprehensive assessment and is potential for future regulatory use."
         },
+
         {
           "journal": "Journal of the Air & Waste Management Association",
           "volpp": "76, 593–603",
@@ -60,11 +78,12 @@
           "title": "Effects of cabin ventilation on in-vehicle exposure to PM and VOCs in passenger cars",
           "url": "https://doi.org/10.1080/10962247.2026.2655722",
           "authors": "Yang, H.H., **Dhital, N.B.***, Chen, H.W., Hsieh, Y.S., Huang, S.W.",
-          "tags": [
-            "exposure-health-impact"
-          ],
-          "abstract": "This study simultaneously measured in-cabin and ambient air quality in a passenger car under real-world driving conditions to evaluate the influence of different ventilation modes (recirculation, fresh air, and open windows) on the cabin concentrations of volatile organic compounds (VOCs) and particulate matter (PM). A single passenger car was tested in order to control for confounding factors related to vehicle design. Ventilation efficiencies were quantitatively assessed using air changes per hour (ACH), estimated using the carbon dioxide (CO2) mass balance method. Results showed that the recirculation mode effectively suppressed the infiltration of ambient fine particles (PM2.5), with I/O ratios ranging from 0.10 to 0.13. However, due to inadequate ventilation (ACH ≈3.2–3.5 h− 1), cabin CO2 concentration surpassed 4000 ppm. In contrast, the fresh air mode significantly increased ACH to 55–66 h−1, keeping CO2 concentrations below 1000 ppm. However, both fresh air and open-window modes led to a pronounced increase in cabin concentrations of PM and VOCs. Of the detected VOCs, acetone, ethanol, and formaldehyde had I/O ratios >1, suggesting in-cabin sources, whereas benzene, ethylbenzene, xylenes, and MTBE had I/O <1, indicating the presence of their dominant sources outside the vehicle cabin. These findings indicate a trade-off between reducing exposure to ambient pollutants and maintaining adequate ventilation, highlighting the need for optimized cabin ventilation strategies that balance ventilation, occupant comfort, and cabin air quality."
+          "tags": ["exposure-health-impact", "indoor-air-pollution"],
+          "authorRole": ["corresponding"],
+          "access": "subscription",
+          "abstract": "This study simultaneously measured in-cabin and ambient air quality in a passenger car under real-world driving conditions to evaluate the influence of different ventilation modes (recirculation, fresh air, and open windows) on the cabin concentrations of volatile organic compounds (VOCs) and particulate matter (PM). A single passenger car was tested in order to control for confounding factors related to vehicle design. Ventilation efficiencies were quantitatively assessed using air changes per hour (ACH), estimated using the carbon dioxide (CO<sub>2</sub>) mass balance method. Results showed that the recirculation mode effectively suppressed the infiltration of ambient fine particles (PM<sub>2.5</sub>), with I/O ratios ranging from 0.10 to 0.13. However, due to inadequate ventilation (ACH ≈3.2–3.5 h<sup>−1</sup>), cabin CO<sub>2</sub> concentration surpassed 4000 ppm. In contrast, the fresh air mode significantly increased ACH to 55–66 h<sup>−1</sup>, keeping CO<sub>2</sub> concentrations below 1000 ppm. However, both fresh air and open-window modes led to a pronounced increase in cabin concentrations of PM and VOCs. Of the detected VOCs, acetone, ethanol, and formaldehyde had I/O ratios &gt; 1, suggesting in-cabin sources, whereas benzene, ethylbenzene, xylenes, and MTBE had I/O &lt; 1, indicating the presence of their dominant sources outside the vehicle cabin. These findings indicate a trade-off between reducing exposure to ambient pollutants and maintaining adequate ventilation, highlighting the need for optimized cabin ventilation strategies that balance ventilation, occupant comfort, and cabin air quality."
         },
+
         {
           "journal": "The Lancet Respiratory Medicine",
           "volpp": "14, 233–255",
@@ -72,11 +91,12 @@
           "title": "Burden of chronic respiratory disease in Asia, 1990–2023: a systematic analysis for the Global Burden of Disease Study 2023",
           "url": "https://doi.org/10.1016/S2213-2600(25)00404-7",
           "authors": "GBD 2023 Asia Chronic Respiratory Disease Collaborators",
-          "tags": [
-            "exposure-health-impact"
-          ],
+          "tags": ["exposure-health-impact"],
+          "authorRole": [],
+          "access": "subscription",
           "abstract": "Chronic respiratory diseases are an important global issue, particularly in Asia, where burden patterns vary widely across countries. With more than half the world's population living in Asia, understanding the national and regional burden of chronic respiratory diseases is essential; however, research on this area remains inadequate. We aimed to investigate the burden of chronic respiratory diseases in Asia at national and regional levels, and to identify key risk factors. Countries with lower SDI had markedly higher DALY rates, highlighting the need to address socioeconomic and health-care inequities. Household air pollution from solid fuels continues to impose a substantial but preventable burden in south Asia, calling for clean energy adoption and improved ventilation."
         },
+
         {
           "journal": "Journal of Tropical Forest Science",
           "volpp": "38, 48–64",
@@ -84,13 +104,15 @@
           "title": "Spatial and temporal distribution of wildfires in Nepal Himalayas: A geospatial analysis of VIIRS satellite data",
           "url": "https://doi.org/10.26525/jtfs2026.38.1.48",
           "authors": "Budha, P.B.*, Bhattarai, D.R., Sapkota, R.P., **Dhital, N.B.**, Pokhrel, C.P., Khadka, U.R., Rijal, K.",
-          "tags": [
-            "multidisciplinary"
-          ],
+          "tags": ["multidisciplinary"],
+          "authorRole": [],
+          "access": "open-access",
           "abstract": "Wildfires are common in Nepal during the pre-monsoon period (March to May), causing significant damage to forests and wildlife. Understanding their occurrence and distribution is crucial for effective forest management. This study analyses wildfire data from 2012 to 2021, obtained from the Visible Infrared Imaging Radiometer Suite (VIIRS). The active fire product of VIIRS was filtered to identify wildfires in forests, grasslands, and other wooded areas, and these incidents were geospatially analysed across Gandaki Province in the Nepal Himalaya. Wildfire locations were overlaid with environmental and topographic variables, including aspect, elevation, slope, land use and land cover, moisture, soil type, road proximity, and stream density. Nepal recorded 230,077 wildfire occurrences over the decade, with 16,860 in Gandaki Province. Nearly 75% of these fires occurred in March (21%) and April (54%). About 80% of incidents took place below 2000 m elevation, 55% on south to southeast-facing slopes, and 71% on slopes between 10° and 50°. Additionally, 73% of fires were within 500 m of a road, and 77% occurred in areas with drainage densities between 1 km/km² and 2 km/km². Wildfire frequency reached up to 4 events per km² in areas with population densities above 500 people per km², which is nearly four times higher than in sparsely populated regions. This study presents the first comprehensive spatiotemporal analysis of wildfire patterns in Gandaki Province using a decade of satellite data integrated with topographic, ecological, and human factors. The findings provide critical insight into wildfire risk areas and influencing factors, offering a data-driven foundation for risk assessment and targeted forest management. The results have direct implications for developing region-specific wildfire prevention and mitigation strategies, particularly in the vulnerable mid-hill landscapes of the Nepal Himalaya."
         }
       ]
     },
+
+
     {
       "year": "2025",
       "entries": [
@@ -101,11 +123,12 @@
           "title": "Forest fire impacts plant community assemblage in different ecological zones of central Himalaya, Nepal",
           "url": "https://doi.org/10.1016/j.gecco.2025.e03443",
           "authors": "Sapkota, R.P.*, **Dhital, N.B.**, Shrestha, A.K., Khadka, U.R., Pokhrel, C.P., Joshi, G.R., Rijal, K.",
-          "tags": [
-            "multidisciplinary"
-          ],
+          "tags": ["multidisciplinary"],
+          "authorRole": [],
+          "access": "open-access",
           "abstract": "Forest fire frequency in Nepal has increased in recent years. Field-level assessments of fire impacts on plant community assemblage and postfire recovery dynamics across different ecological zones are limited in Nepal, creating a research gap in understanding the ecological processes affected due to wildfires. This study investigates the impacts of forest fire on woody species composition, diversity and regeneration potential in forest stands of central Himalaya, Nepal. Field assessments were carried out in Terai (Nawalpur), Mid-hill (Lamjung) and Mountain (Manang) ecological zones. Trees were sampled in 20 m × 20 m plots, whereas saplings and seedlings were sampled in two nested sub-plots of dimensions 5 m × 5 m and 1 m × 1 m, respectively. A total of 183 plots were laid for sampling trees, of which 89 plots were in the non-fire stands (no fire event in the past 15 years) and 94 plots in the fire stands (at least one fire event in the past 3 years). Similarly, each 183 sub-plots were used for saplings and seedlings assessment. We observed variability in the results caused by fire in the tree stratum. Considering the sapling and seedling layers, significantly higher densities were observed in the non-fire stands of Terai, Mid-hill and Mountain compared to the fire stands, except for the seedling density in Terai. Permutational MANOVA showed a difference in the woody plant species composition between the fire and non-fire stands, except the sapling and seedling composition in the fire and non-fire stands of Terai. We observed a higher diversity of trees in the non-fire sites of Terai compared to the fire sites. However, in Mid-hill and Mountain, significant differences were not observed for the tree species diversity. Woody species sapling diversity in non-fire sites was higher compared to fire sites across the studied ecological zones. Similarly, woody plant seedling diversity showed that non-fire sites of Mid-hill and Mountain have higher diversity compared to the fire sites, but not observed in Terai sites. This study highlights the importance of fire control in shaping plant community assemblage and recovery. Understanding the species-specific impact of forest fires and regional differences in such impacts is essential for developing successful fire management strategies."
         },
+
         {
           "journal": "BMC Environmental Science",
           "volpp": "2, 13",
@@ -113,13 +136,15 @@
           "title": "Forest fire-induced air pollution events in the Himalayan region: Urgent need for regional collaboration and action",
           "url": "https://doi.org/10.1186/s44329-025-00027-5",
           "authors": "Mahapatra, P.S., **Dhital, N.B.***",
-          "tags": [
-            "ambient-air-pollution"
-          ],
+          "tags": ["ambient-air-pollution"],
+          "authorRole": ["last", "corresponding"],
+          "access": "open-access",
           "abstract": "Pre-monsoon forest fires in the Himalayan region contribute to severe air pollution episodes across the region. Based on the analysis of PM<sub>2.5</sub> concentrations and forest fire events, we demonstrate an urgent need for transboundary efforts to address the challenges posed by forest fire-induced air pollution episodes."
         }
       ]
     },
+
+
     {
       "year": "2024",
       "entries": [
@@ -130,12 +155,12 @@
           "title": "Estimating potentially preventable ambient PM<sub>2.5</sub>-attributable adult deaths by improving air quality in Nepal",
           "url": "https://doi.org/10.1016/j.apr.2024.102175",
           "authors": "**Dhital, N.B.**, Sapkota, R.P., Sharjeel, A., Yang, H.H.*",
-          "tags": [
-            "ambient-air-pollution",
-            "exposure-health-impact"
-          ],
-          "abstract": "Air pollution is an important global environmental health risk factor, with many Asian countries experiencing alarming levels in recent decades. Nepal, a South Asian country, has been facing severe degradation in air quality in recent years, where data are scarce on the health impact of air pollution, especially at sub-national levels. In this study, we investigated ambient fine particulate matter (PM2.5)-attributable adult (≥25 years) premature mortality in Nepal, analyzed its long-term trend, and estimated potentially preventable adult mortality under different improved air quality scenarios defined using the World Health Organization's (WHO) interim targets (IT) and the air quality goal (AQG). Leveraging an open-source high-resolution PM2.5 dataset and an age-specific population dataset, we employed the Global Exposure Mortality Model to estimate mean and 95% confidence intervals of PM2.5-attributable adult mortality using Monte Carlo simulations. We estimated the country-level NCD + LRI (non-communicable diseases and lower respiratory infections) adult deaths attributable to PM2.5 exposure as 48881 (95% CI: 37175−61470), and the PM2.5-attributable NCD + LRI adult mortality rate as 267 (95% CI: 203−335) per 100000 in 2019. The adult mortality burden consistently increased during 2000–2019. Moreover, improving air quality to the WHO ITs and AQG could prevent an estimated 9690 (95% CI: 7698−11812) to 39419 (95% CI: 30311−49277) premature adult deaths across the country in 2019. Our findings suggest that the adult mortality burden due to air pollution in Nepal is substantial, which offers an opportunity to prevent a considerable number of premature adult deaths by mitigating air pollution in the country."
+          "tags": ["ambient-air-pollution", "exposure-health-impact"],
+          "authorRole": ["first"],
+          "access": "subscription",
+          "abstract": "Air pollution is an important global environmental health risk factor, with many Asian countries experiencing alarming levels in recent decades. Nepal, a South Asian country, has been facing severe degradation in air quality in recent years, where data are scarce on the health impact of air pollution, especially at sub-national levels. In this study, we investigated ambient fine particulate matter (PM<sub>2.5</sub>)-attributable adult (≥25 years) premature mortality in Nepal, analyzed its long-term trend, and estimated potentially preventable adult mortality under different improved air quality scenarios defined using the World Health Organization's (WHO) interim targets (IT) and the air quality goal (AQG). Leveraging an open-source high-resolution PM<sub>2.5</sub> dataset and an age-specific population dataset, we employed the Global Exposure Mortality Model to estimate mean and 95% confidence intervals of PM<sub>2.5</sub>-attributable adult mortality using Monte Carlo simulations. We estimated the country-level NCD + LRI (non-communicable diseases and lower respiratory infections) adult deaths attributable to PM<sub>2.5</sub> exposure as 48881 (95% CI: 37175−61470), and the PM<sub>2.5</sub>-attributable NCD + LRI adult mortality rate as 267 (95% CI: 203−335) per 100000 in 2019. The adult mortality burden consistently increased during 2000–2019. Moreover, improving air quality to the WHO ITs and AQG could prevent an estimated 9690 (95% CI: 7698−11812) to 39419 (95% CI: 30311−49277) premature adult deaths across the country in 2019. Our findings suggest that the adult mortality burden due to air pollution in Nepal is substantial, which offers an opportunity to prevent a considerable number of premature adult deaths by mitigating air pollution in the country."
         },
+
         {
           "journal": "Environmental Challenges",
           "volpp": "15, 100912",
@@ -143,11 +168,12 @@
           "title": "Comparing the characteristics of ambient fine particle pollution episodes across South Asian cities",
           "url": "https://doi.org/10.1016/j.envc.2024.100912",
           "authors": "**Dhital, N.B.***",
-          "tags": [
-            "ambient-air-pollution"
-          ],
+          "tags": ["ambient-air-pollution"],
+          "authorRole": ["first", "corresponding"],
+          "access": "open-access",
           "abstract": "South Asia has been experiencing recurring severe air pollution episodes in recent years. While many previous studies investigated such episodes focusing on individual cities and specific events, limited information exists on episode characteristics across multiple cities in this region. This study presents a comparative analysis of the characteristics of ambient PM<sub>2.5</sub> pollution episodes in 12 South Asian cities across five countries during 2019−2023. Daily mean PM<sub>2.5</sub> mass concentrations were decomposed into trend, seasonal, and residual components, and episodes were identified through anomalies in residuals. Furthermore, pollution episodes were characterized using magnitude, frequency, duration, and a relative severity index. The cities exhibited annual mean PM<sub>2.5</sub> mass concentrations ranging from 20.6 ± 2.5 μg m<sup>−3</sup> (Colombo) to 116.6 ± 9.3 μg m<sup>−3</sup> (Lahore), with six out of 12 cities having annual mean PM<sub>2.5</sub> mass concentrations &gt; 50 μg m<sup>−3</sup>. Additionally, significant increasing trends (p &lt; 0.05) in PM<sub>2.5</sub> levels were observed for Dhaka, Chennai, Hyderabad, Kolkata, Islamabad, and Lahore (Sen's slope: 1.00−4.33 μg m<sup>−3</sup> y<sup>−1</sup>), whereas decreasing trends (p &lt; 0.05) were observed for Mumbai (−0.74 μg m<sup>−3</sup> y<sup>−1</sup>) and New Delhi (−2.00 μg m<sup>−3</sup> y<sup>−1</sup>). Mean PM<sub>2.5</sub> episode magnitudes varied in a wide range from 49.9 ± 6.1 μg m<sup>−3</sup> (Colombo) to 367.1 ± 17.9 μg m<sup>−3</sup> (Lahore) across the cities. Likewise, the mean episode frequency ranged from 1.6 y<sup>−1</sup> (Kathmandu) to 5.2 y<sup>−1</sup> (Dhaka), whereas duration ranged from 1.2 (Mumbai) to 2.6 (Kathmandu) days per episode. Based on the relative index of episode severity, Lahore, Dhaka, and New Delhi exhibited high episode severity, as well as high baseline PM<sub>2.5</sub> levels. In contrast, Karachi, Islamabad, Hyderabad, and Kathmandu showed moderate episode severity and moderate baseline PM<sub>2.5</sub> levels, whereas Colombo and Mumbai showed low episode severity with low to moderate baseline PM<sub>2.5</sub> levels. Moreover, annual PM<sub>2.5</sub> episode severity ranks among the cities changed dramatically during 2019−2023. The relative severity of baseline and episodic pollution levels presented in this study may help policymakers prioritize the control strategies targeting pollution episodes, long-term trends, or both, as well as protecting human health through mitigation, preparedness, and forecasting. The findings will also provide insights for formulating regional policies aimed at transboundary cooperation and collaboration to deal with air pollution challenges across South Asia."
         },
+
         {
           "journal": "Environmental Challenges",
           "volpp": "17, 101054",
@@ -155,11 +181,12 @@
           "title": "In-vehicle air quality in public buses during real-world trips in Kathmandu Valley, Nepal",
           "url": "https://doi.org/10.1016/j.envc.2024.101054",
           "authors": "Shrestha, A., **Dhital, N.B.***",
-          "tags": [
-            "exposure-health-impact"
-          ],
+          "tags": ["exposure-health-impact", "indoor-air-pollution"],
+          "authorRole": ["last", "corresponding"],
+          "access": "open-access",
           "abstract": "Urban air quality shows notable variability across various microenvironments. Transport-related microenvironments often have one of the highest air pollution levels, where commuters have significant exposure to air pollutants. In Kathmandu Valley (KV), Nepal, passengers’ exposure to air pollutants in such microenvironments remain a poorly understood issue. In this study, we analyzed cabin air quality and ventilation rates in public buses operated in KV. In-cabin and in-route ambient air pollution levels were monitored during real-world bus operations in 32 trips on a test route selected in the core city area. A CO<sub>2</sub> mass balance model was applied to estimate cabin ventilation rates. The mean in-cabin and outdoor PM<sub>2.5</sub> concentrations were 95.9 ± 40.4 (mean ± standard deviation) and 94.7 ± 32.4 μg/m<sup>3</sup>, respectively. Likewise, mean in-cabin and outdoor PM<sub>1</sub> concentrations were 72.5 ± 31.3 and 69.7 ± 25.3 μg/m<sup>3</sup>, respectively, with mean PM<sub>1</sub> to PM<sub>2.5</sub> ratio &gt;0.75, indicating that a majority of particle mass was in the sub-micron size range, which is often more health-hazardous. We estimated passengers’ inhalation dose for PM<sub>2.5</sub> and PM<sub>1</sub> as 5.65 ± 2.32 and 4.27 ± 1.79 μg/km, respectively. Among various factors considered, traffic hour significantly affected both in-cabin and ambient particulate matter concentrations. The trip-average in-cabin CO<sub>2</sub> concentration ranged from 513 to 1230 ppm, whereas cabin ventilation rates ranged from 8.0 to 72.4 L/s/person. Ventilation levels in a majority of bus trips were inadequate, especially considering the recommended thresholds to reduce the transmission risk of airborne diseases. Setting standards for ventilation and air conditioning systems in public buses is crucial to ensure thermal comfort, protect bus commuters from the harmful impacts of air pollution, and to improve public transport services in KV."
         },
+
         {
           "journal": "Scientific Reports",
           "volpp": "14, 31494",
@@ -167,11 +194,12 @@
           "title": "Evaluating the feasibility of estimating particulate mass emissions of older-model diesel vehicle using smoke opacity measurements",
           "url": "https://doi.org/10.1038/s41598-024-83327-1",
           "authors": "Yang, H.H., Kumar, A.*, **Dhital, N.B.**, Wang, L., Wu, C., Kamyab, H., Yusuf, M.",
-          "tags": [
-            "emission-characterization"
-          ],
+          "tags": ["emission-characterization"],
+          "authorRole": [],
+          "access": "open-access",
           "abstract": "AReal-world emissions of particulate matter (PM) and smoke opacity were studied for an older-model diesel pickup truck during four types of driving tests, namely fixed-point test, snap-acceleration test, road test, and hill road test (uphill/downhill). A portable emissions measurement system (PEMS) and an opacimeter were used to measure real-time concentrations of PM and smoke opacity, respectively, and simultaneously. Correlation analysis showed a significant positive association between PM and opacity, suggesting the feasibility of using an opacimeter to estimate PM mass emissions from diesel vehicles. Additionally, regression analyses were performed to evaluate the relationship between opacity and PM mass concentration. The results of this study indicate that PM emission concentrations from older-model diesel vehicles can be estimated with a reasonable accuracy by using a smoke opacimeter, which is a relatively simple and cost-effective method of emission testing, as an alternative to sophisticated PM measurement instruments."
         },
+
         {
           "journal": "Journal of Environment Sciences",
           "volpp": "10, 54–62",
@@ -179,13 +207,15 @@
           "title": "Waiting time countdown displays affect the idle-stopping behavior of motorcyclists at signalized traffic intersections",
           "url": "https://doi.org/10.3126/jes.v10i1.66969",
           "authors": "Bhandari, R., Lama, A., **Dhital, N.B.***",
-          "tags": [
-            "emission-characterization"
-          ],
+          "tags": ["multidisciplinary"],
+          "authorRole": ["last", "corresponding"],
+          "access": "open-access",
           "abstract": "Transportation is an important driving force behind the surging global energy demand and a key emission source of air pollutants and greenhouse gases. Turning off vehicle engines while waiting for extended periods at traffic intersections can help reduce transport sector fuel consumption and mitigate air pollution. However, idle-stopping is a personal choice and depends on behavior and awareness among drivers. In this study, we conducted a stated preference survey among motorcyclists in Kathmandu, Nepal, to examine the effect of installing traffic lights with waiting time countdown displays at signalized traffic intersections on idle-stopping behavior and investigated if the display of waiting time countdowns could encourage idle-stopping behavior among motorcyclists. Through logistic regression analysis, we found a significant effect of waiting times on idle-stopping choices (p < 0.001). The odds ratio for waiting time was 1.051 (95% CI: 1.046-1.057), suggesting that with a 1-second increase in waiting time, the odds of motorcyclists idle-stopping their motorcycle engines increase by 5.1%. Likewise, the most commonly perceived deterrent to idle-stopping choices was the uncertain waiting time. Therefore, our results suggest that installing waiting time countdown displays at signalized traffic intersections may offer an often overlooked benefit by reducing idling fuel consumption and tailpipe emissions from on-road vehicles. Our findings will provide valuable insights for policymakers in formulating evidence-based policies and city planners in improving transportation infrastructure, especially in cities in developing economies."
         }
       ]
     },
+
+
     {
       "year": "2023",
       "entries": [
@@ -196,11 +226,12 @@
           "title": "Intermodal comparison of commuters' exposure to VOCs between public, private, and active transportation",
           "url": "https://doi.org/10.1007/s10661-023-12125-5",
           "authors": "Yang, H.H., **Dhital, N.B.***, Lai, Y.H., Chan, T.Y.",
-          "tags": [
-            "exposure-health-impact"
-          ],
+          "tags": ["exposure-health-impact"],
+          "authorRole": ["corresponding"],
+          "access": "subscription",
           "abstract": "Urban populations are exposed to a multitude of traffic-related air pollutants during daily commutes. This study assessed commuters’ exposure to volatile organic compounds (VOCs) during bus, motorcycle, and bicycle commuting, and estimated the VOC inhalation dose. Benzene, toluene, ethylbenzene, and xylene (BTEX) were the main compounds detected, contributing 58 − 68% to ΣVOC (sum of the concentrations of all detected VOCs) in different travel modes. The mean ΣVOC exposure concentration was higher for motorcyclists than for cyclists and bus commuters. However, due to cyclists’ higher minute ventilation rates and longer exposure time, they had the highest ΣVOC inhalation dose based on both travel time (7.09 ± 2.36 μg min<sup>−1</sup>) and distance (32.9 ± 10.8 μg km<sup>−1</sup>). Among the three travel modes, bus commuters had the lowest ΣVOC inhalation dose based on travel time (2.33 ± 1.18 μg min<sup>−1</sup>) and distance (8.91 ± 4.91 μg km<sup>−1</sup>), while motorcyclists had a moderate ΣVOC inhalation dose based on travel time (5.08 ± 1.46 μg min<sup>−1</sup>) and distance (13.4 ± 5.5 μg km<sup>−1</sup>). Health impact assessment of VOCs showed that cyclists faced the highest carcinogenic and non-carcinogenic risks, while bus commuters experienced the lowest health risk associated with VOC exposure. Our findings underscore the need to consider air quality in transportation infrastructure design and prioritize interventions to safeguard urban commuters’ health, particularly cyclists, who are the most vulnerable to the adverse effects of traffic-related air pollutants."
         },
+
         {
           "journal": "Environmental Monitoring and Assessment",
           "volpp": "195, 1337",
@@ -208,11 +239,12 @@
           "title": "Effect of lockdown and associated mobility changes amid COVID-19 on air quality in the Kathmandu Valley, Nepal",
           "url": "https://doi.org/10.1007/s10661-023-11949-5",
           "authors": "Bhandari, R.*, **Dhital, N.B.**, Rijal, K.",
-          "tags": [
-            "ambient-air-pollution"
-          ],
-          "abstract": "The COVID-19 pandemic caused a setback for Nepal, leading to nationwide lockdowns. The study analyzed the impact of lockdown on air quality during the first and second waves of the COVID-19 pandemic in the Kathmandu Valley. We analyzed 5 years of ground-based air quality monitoring data (2017–2021) from March to July and April to June for the first and second wave lockdowns, respectively. A significant decrease in PM2.5 (particulate matter with an aerodynamic diameter ≤ 2.5 μm) concentrations was observed during the lockdowns. The highest rate of decline in PM2.5 levels was observed during May and July compared to the pre-pandemic year. The PM2.5 concentration during the lockdown period remained within the WHO guideline limit and NAAQS for the maximum number of days compared to the lockdown window in the pre-pandemic years (2017–2019). Likewise, lower PM2.5 levels were observed during the second wave lockdown, which was characterized by a targeted lockdown approach (smart lockdown). We found a significant correlation of PM2.5 concentration with community mobility changes (i.e., walking, driving, and using public transport) from the Spearman correlation analysis. Lockdown measures restricted human mobility that led to a lowering of PM2.5 concentrations. Our findings can be helpful in developing urban air quality control measures and management strategies, especially during high pollution episodes."
+          "tags": ["ambient-air-pollution"],
+          "authorRole": [],
+          "access": "subscription",
+          "abstract": "The COVID-19 pandemic caused a setback for Nepal, leading to nationwide lockdowns. The study analyzed the impact of lockdown on air quality during the first and second waves of the COVID-19 pandemic in the Kathmandu Valley. We analyzed 5 years of ground-based air quality monitoring data (2017–2021) from March to July and April to June for the first and second wave lockdowns, respectively. A significant decrease in PM<sub>2.5</sub> (particulate matter with an aerodynamic diameter ≤ 2.5 μm) concentrations was observed during the lockdowns. The highest rate of decline in PM<sub>2.5</sub> levels was observed during May and July compared to the pre-pandemic year. The PM<sub>2.5</sub> concentration during the lockdown period remained within the WHO guideline limit and NAAQS for the maximum number of days compared to the lockdown window in the pre-pandemic years (2017–2019). Likewise, lower PM<sub>2.5</sub> levels were observed during the second wave lockdown, which was characterized by a targeted lockdown approach (smart lockdown). We found a significant correlation of PM<sub>2.5</sub> concentration with community mobility changes (i.e., walking, driving, and using public transport) from the Spearman correlation analysis. Lockdown measures restricted human mobility that led to a lowering of PM<sub>2.5</sub> concentrations. Our findings can be helpful in developing urban air quality control measures and management strategies, especially during high pollution episodes."
         },
+
         {
           "journal": "Global Ecology and Conservation",
           "volpp": "48, e02705",
@@ -220,13 +252,15 @@
           "title": "Fire-mediated biomass loss of woody species seedlings causing demographic bottleneck in the Terai forests of central Nepal",
           "url": "https://doi.org/10.1016/j.gecco.2023.e02705",
           "authors": "Sapkota, R.P.*, **Dhital, N.B.**, Rijal, K.",
-          "tags": [
-            "multidisciplinary"
-          ],
+          "tags": ["multidisciplinary"],
+          "authorRole": [],
+          "access": "open-access",
           "abstract": "Forest fire produces varying ecological effects determining vegetation patterns in ecosystems. Plant community assemblages in forests are altered by fire influencing growth and development. Some plant communities are suppressed and some are encouraged to develop due to fire. Little empirical evidence exists revealing the condition of fire-mediated loss of small-sized individuals, and response of fire to demographic structure of woody plant species in Nepal. The aim of this research, therefore, is to quantify fire-mediated biomass loss of small-sized individuals of woody species (seedlings), and investigate the associated impacts on the demographic structure of plants in the Terai forests of central Nepal. Impacts on small-sized individuals of woody plant species were evaluated based on evidence from 25 sites with 50, 1 m × 1 m subplots for seedlings nested in 10 m × 10 m plots (n = 50) for saplings and adults. Of the 50 sampling plots, 25 represented fire-affected and the remaining 25 represented control plots. Mean density of resprouting and newly grown seedlings developed in one year after the surface fire was 46,800 ± 4071 inds. ha<sup>−1</sup>. <i>Shorea robusta</i> Gaertn. was the most abundant species regenerated with seedlings in the control forest sites. The estimated average yearly loss of above ground biomass (AGB) for woody plant seedlings in the forest due to surface fire was 1,651.5 ± 360.2 kg ha<sup>−1</sup>. Of the total fire-affected AGB of <i>S. robusta</i>, 700.0 kg ha<sup>−1</sup> was the immediate burnt loss and 322.5 kg ha<sup>−1</sup> was dead AGB left unburnt. Similarly, among the other most abundant species, higher proportion of immediate fresh AGB loss was observed for <i>Mallotus philippensis</i> (Lam.) Müll.-Arg. and <i>Casearia graveolens</i> Dalzell. compared to dead AGB left unburnt. The Weibull probability density function shows the existence of saplings recruitment bottleneck in the fire-prone forest sites, i.e., growth of seedlings to saplings was restricted. Surface fire impacted the development of DBH class &gt; 0–5 cm saplings. Surface fires are one of the potential environmental filters of the plant species regeneration and composition in the forests of lowland Terai Nepal. These demographic variations and bottlenecks should be considered while formulating management actions to conserve vegetation assemblages in fire-mediated ecosystems."
         }
       ]
     },
+
+
     {
       "year": "2022",
       "entries": [
@@ -237,11 +271,12 @@
           "title": "Comparing the change in air quality during the COVID-19 lockdown between dry and wet seasons in Nepal",
           "url": "https://doi.org/10.4209/aaqr.220201",
           "authors": "**Dhital, N.B.**, Bhattarai, D.R., Sapkota, R.P., Rijal, K., Byanju, R.M., Yang, H.H.*",
-          "tags": [
-            "ambient-air-pollution"
-          ],
-          "abstract": "In Nepal, a South Asian country located in the central Himalayan region, a countrywide lockdown was imposed from 24 March to 20 July 2020 to contain the spread of the SARS-CoV-2 virus during the first wave of the novel coronavirus disease (COVID-19) pandemic. This study used the rare incidence of countrywide lockdown to investigate the air quality change in Nepal and its topographically unique urban center, the Kathmandu Valley, during the lockdown period, segregated by dry (pre-monsoon) and wet (monsoon) seasons, based on satellite remote sensing and ground-based air quality monitoring data. Our analysis showed a remarkable improvement in air quality during the lockdown in the dry season over the country. The mean aerosol optical depth (AOD), nitrogen dioxide (NO2), and carbon monoxide (CO) levels over the entire country decreased by 27.7%, 12.7%, and 5.12%, respectively, compared to the pre-pandemic levels. Likewise, in the Kathmandu Valley, PM2.5 (particulate matter with diameter ≤ 2.5 µm), AOD, NO2, and CO levels decreased by 38.1%, 38.0%, 16.5%, and 6.03%, respectively, during the dry season segment of the lockdown. It is worth noting that the change in AOD and NO2 levels was notably higher in the Kathmandu Valley than in the entire country. However, during the wet season segment of the lockdown, relatively subtle changes in AOD (–7.41%), NO2 (–6.87%), and CO (–2.80%) levels were observed over the country. Since the lockdown restricted people's mobility and operation of many industries, it might have reduced emissions from transport and industrial sectors. Therefore, our findings provide insights into the potential improvement in air quality that could be achieved by controlling emissions from those sectors and can be useful in formulating urban air quality management strategies."
+          "tags": ["ambient-air-pollution"],
+          "authorRole": ["first"],
+          "access": "open-access",
+          "abstract": "In Nepal, a South Asian country located in the central Himalayan region, a countrywide lockdown was imposed from 24 March to 20 July 2020 to contain the spread of the SARS-CoV-2 virus during the first wave of the novel coronavirus disease (COVID-19) pandemic. This study used the rare incidence of countrywide lockdown to investigate the air quality change in Nepal and its topographically unique urban center, the Kathmandu Valley, during the lockdown period, segregated by dry (pre-monsoon) and wet (monsoon) seasons, based on satellite remote sensing and ground-based air quality monitoring data. Our analysis showed a remarkable improvement in air quality during the lockdown in the dry season over the country. The mean aerosol optical depth (AOD), nitrogen dioxide (NO<sub>2</sub>), and carbon monoxide (CO) levels over the entire country decreased by 27.7%, 12.7%, and 5.12%, respectively, compared to the pre-pandemic levels. Likewise, in the Kathmandu Valley, PM<sub>2.5</sub> (particulate matter with diameter ≤ 2.5 µm), AOD, NO<sub>2</sub>, and CO levels decreased by 38.1%, 38.0%, 16.5%, and 6.03%, respectively, during the dry season segment of the lockdown. It is worth noting that the change in AOD and NO<sub>2</sub> levels was notably higher in the Kathmandu Valley than in the entire country. However, during the wet season segment of the lockdown, relatively subtle changes in AOD (–7.41%), NO<sub>2</sub> (–6.87%), and CO (–2.80%) levels were observed over the country. Since the lockdown restricted people's mobility and operation of many industries, it might have reduced emissions from transport and industrial sectors. Therefore, our findings provide insights into the potential improvement in air quality that could be achieved by controlling emissions from those sectors and can be useful in formulating urban air quality management strategies."
         },
+
         {
           "journal": "Sustainable Environment Research",
           "volpp": "32, 35",
@@ -249,11 +284,12 @@
           "title": "Effects of the COVID-19 pandemic on public bus occupancy and real-world tailpipe emissions of gaseous pollutants per passenger kilometer traveled",
           "url": "https://doi.org/10.1186/s42834-022-00146-7",
           "authors": "**Dhital, N.B.**, Wang, L.C., Yang, H.H.*, Lee, C.H., Shih, W.H., Wu, C.S.",
-          "tags": [
-            "emission-characterization"
-          ],
-          "abstract": "Public buses typically have less emission per passenger kilometer traveled (PKT) than private cars and motorcycles, and the emission benefit of public buses increases with ridership. However, the drop in public bus usage during the novel coronavirus (COVID-19) pandemic could lead to an increase in air pollutant emissions per PKT, making the emission benefits of public buses questionable. This study investigated the effects of the COVID-19 pandemic on public bus occupancy rates in Taichung City, Taiwan, and also compared real-world emissions per PKT of carbon monoxide (CO), total hydrocarbons (THC), nitric oxide (NO), and carbon dioxide (CO2) of a public bus before and during the pandemic. Mean bus occupancy rates were 11–25% on different bus routes before the pandemic, indicating that only a fourth or less of the bus passenger capacity was utilized. During the pandemic, mean bus occupancy rates dropped to 4–15%. Moreover, the public bus was less polluting based on CO and THC emissions than the car and motorcycle, even at the low passenger occupancy rates observed during the pandemic. However, NO and CO2 emissions per PKT of the bus were remarkably higher during the pandemic than those of the car and motorcycle. Furthermore, we estimated the break-even passenger occupancy rate for buses as 15%, which was the minimum threshold occupancy rate below which the buses would be more polluting than cars and motorcycles in terms of CO, THC, and CO2 emissions per PKT. Our findings will help transport management authorities and policymakers to optimize bus route designs and frequencies and implement anti-pandemic measures to maximize the environmental benefits of the public bus transit systems."
+          "tags": ["emission-characterization", "multidisciplinary"],
+          "authorRole": ["first"],
+          "access": "open-access",
+          "abstract": "Public buses typically have less emission per passenger kilometer traveled (PKT) than private cars and motorcycles, and the emission benefit of public buses increases with ridership. However, the drop in public bus usage during the novel coronavirus (COVID-19) pandemic could lead to an increase in air pollutant emissions per PKT, making the emission benefits of public buses questionable. This study investigated the effects of the COVID-19 pandemic on public bus occupancy rates in Taichung City, Taiwan, and also compared real-world emissions per PKT of carbon monoxide (CO), total hydrocarbons (THC), nitric oxide (NO), and carbon dioxide (CO<sub>2</sub>) of a public bus before and during the pandemic. Mean bus occupancy rates were 11–25% on different bus routes before the pandemic, indicating that only a fourth or less of the bus passenger capacity was utilized. During the pandemic, mean bus occupancy rates dropped to 4–15%. Moreover, the public bus was less polluting based on CO and THC emissions than the car and motorcycle, even at the low passenger occupancy rates observed during the pandemic. However, NO and CO<sub>2</sub> emissions per PKT of the bus were remarkably higher during the pandemic than those of the car and motorcycle. Furthermore, we estimated the break-even passenger occupancy rate for buses as 15%, which was the minimum threshold occupancy rate below which the buses would be more polluting than cars and motorcycles in terms of CO, THC, and CO<sub>2</sub> emissions per PKT. Our findings will help transport management authorities and policymakers to optimize bus route designs and frequencies and implement anti-pandemic measures to maximize the environmental benefits of the public bus transit systems."
         },
+
         {
           "journal": "Atmosphere",
           "volpp": "13, 766",
@@ -261,23 +297,25 @@
           "title": "Characterizing real-world particle-bound polycyclic aromatic hydrocarbon emissions from diesel-fueled construction machines",
           "url": "https://doi.org/10.3390/atmos13050766",
           "authors": "**Dhital, N.B.**, Wang, L.C., Yang, H.H.*, Cheruiyot, N.K., Lee, C.H.",
-          "tags": [
-            "emission-characterization"
-          ],
+          "tags": ["emission-characterization"],
+          "authorRole": ["first"],
+          "access": "open-access",
           "abstract": "This study employed an onboard emission measurement system to measure the real-world emission factors of particulate matter (PM), particle-bound polycyclic aromatic hydrocarbons (PAHs), and gaseous air pollutants for different types of diesel-fueled non-road construction machines operated inside confined spaces within a brick manufacturing factory located in Taiwan. To the best knowledge of the authors, this is the first study that reports real-world PM, PAH, and gaseous pollutant emission factors for non-road engines in Taiwan. The mean real-world fuel-specific emission factors of PM, carbon monoxide, total hydrocarbons, and nitric oxide were 0.712–1.17, 8.27–17.9, 3.04–5.77, and 38.1–96.8 g/kg-fuel, respectively, for the test machines. Likewise, mean ΣPAHs emission factors ranged from 157 to 230 μg/kg-fuel for three types of test machines. Further, the average emission of particle-bound PAH per unit PM emission ranged from 213 to 384 μg-PAH/g-PM. Among the analyzed PAHs, the medium-molecular weight (3- and 4-ring) compounds contributed to the largest share of particle-bound PAH emissions. However, in terms of Benzo[a]pyrene equivalent (BaPeq) toxicity, the high-molecular weight (5- and 6-ring) PAHs were more important, as they had the highest BaPeq toxic emission factors. This study provides detailed composition and emission factors of particle-bound PAHs in non-road diesel construction machine emissions, which may be useful as a chemical fingerprint for source apportionment studies."
         },
+
         {
           "journal": "ACS Earth and Space Chemistry",
           "volpp": "6, 2955–2971",
           "year": "2022",
           "title": "Wintertime air quality across the Kathmandu Valley, Nepal: Concentration, composition, and sources of fine and coarse particulate matter",
           "url": "https://doi.org/10.1021/acsearthspacechem.2c00243",
-          "authors": "**Dhital, N.B.**, Islam, M.R., Li, T., Mahata, K., Khanal, N., Werden, B., Giordano, M.R., Praveen Puppala, S., Gurung, A., Saikawa, E., Panday, A.K., Yokelson, R.J., DeCarlo, P.F., Stone, E.A.*",
-          "tags": [
-            "ambient-air-pollution"
-          ],
+          "authors": "Islam, M.R., Li, T., Mahata, K., Khanal, N., Werden, B., Giordano, M.R., Puppala, S.P., **Dhital, N.B.**, Gurung, A., Saikawa, E., Panday, A.K., Yokelson, R.J., DeCarlo, P.F., Stone, E.A.*",
+          "tags": ["ambient-air-pollution"],
+          "authorRole": [],
+          "access": "open-access",
           "abstract": "The Kathmandu Valley in Nepal experiences poor air quality, especially in the dry winter season. In this study, we investigated the concentration, chemical composition, and sources of fine and coarse particulate matter (PM<sub>2.5</sub>, PM<sub>10</sub>, and PM<sub>10–2.5</sub>) at three sites within or near the Kathmandu Valley during the winter of 2018 as part of the second Nepal Ambient Monitoring and Source Testing Experiment (NAMaSTE 2). Daily PM<sub>2.5</sub> concentrations were very high throughout the study period, ranging 72–149 μg m<sup>–3</sup> at the urban Ratnapark site in Kathmandu, 88–161 μg m<sup>–3</sup> at the suburban Lalitpur site, and 40–74 μg m<sup>–3</sup> at rural Dhulikhel on the eastern rim of the Kathmandu Valley. Meanwhile, PM<sub>10</sub> ranged 194–309, 174–377, and 64–131 μg m<sup>–3</sup>, respectively. At the Ratnapark site, crustal materials from resuspended soil contributed an average of 11% of PM<sub>2.5</sub> and 34% of PM<sub>10</sub>. PM<sub>2.5</sub> was largely comprised of organic carbon (OC, 28–30% by mass) and elemental carbon (EC, 10–14% by mass). As determined by chemical mass balance source apportionment modeling, major PM<sub>2.5</sub> OC sources were garbage burning (15–21%), biomass burning (10–17%), and fossil fuel (14–26%). Secondary organic aerosol (SOA) contributions from aromatic volatile organic compounds (13–23% OC) were larger than those from isoprene (0.3–0.5%), monoterpenes (0.9–1.4%), and sesquiterpenes (3.6–4.4%). Nitro-monoaromatic compoundsof interest due to their light-absorbing properties and toxicityindicate the presence of biomass burning-derived SOA. Knowledge of primary and secondary PM sources can facilitate air quality management in this region."
         },
+
         {
           "journal": "Journal of Environment Sciences",
           "volpp": "8, 1–14",
@@ -285,13 +323,15 @@
           "title": "Vegetation assemblage and carbon stock in the sacred groves of Kathmandu Valley, Nepal",
           "url": "https://doi.org/10.3126/jes.v8i1.53649",
           "authors": "Sapkota, H., **Dhital, N.B.**, Manandhar, R., Sapkota, R.P.*",
-          "tags": [
-            "multidisciplinary"
-          ],
+          "tags": ["multidisciplinary"],
+          "authorRole": [],
+          "access": "open-access",
           "abstract": "Sacred groves (SG) play crucial roles in maintaining vegetation diversity and storing carbon. In Nepal, there is relatively little information about the carbon sequestration potential of SGs compared to other forest types. To address this research gap, this study analyzed the vegetation assemblage and carbon stock in three SGs, namely Bajrabarahi, Mhepi, and Swayambhu forests, located in the Kathmandu Valley. Systematically distributed square plots (15 m × 15 m) were used as sampling units. Above-ground tree biomass and below-ground tree biomass were estimated by using the allometric equation of trees, considering the diameter, height, and specific gravity of wood. A total of 479 individuals of woody species belonging to 37 species were recorded from the three SGs. Species diversity and species richness were relatively higher in Swayambhu SG. Based on the importance value index, Celtis australis, Schimawallichii, and Neolitseacuipala were dominant in Mhepi, Swayambhu, and Bajrabarahi SGs, respectively. Total biomass and carbon stock were highest in the Bajrabarahi Forest and lowest in the Swayambhu Forest. The average biomass and carbon stock in the three urban SGs were approximately 405 ton/ha and 191 ton/ha, respectively. The findings of the present study suggested that maintaining vegetation assemblage, biomass, and carbon stock in SGs might have important contributions to sequestering carbon, conserving biodiversity, and enhancing the aesthetic values of the religious areas."
         }
       ]
     },
+
+
     {
       "year": "2021",
       "entries": [
@@ -302,11 +342,12 @@
           "title": "Effects of driving behavior on real-world emissions of particulate matter, gaseous pollutants and particle-bound PAHs for diesel trucks",
           "url": "https://doi.org/10.1016/j.envpol.2021.117292",
           "authors": "**Dhital, N.B.**, Wang, S.X., Lee, C.H., Su, J., Tsai, M.Y., Jhou, Y.J., Yang, H.H.*",
-          "tags": [
-            "emission-characterization"
-          ],
+          "tags": ["emission-characterization"],
+          "authorRole": ["first"],
+          "access": "subscription",
           "abstract": "This study employed a portable emissions measurement system to investigate the effects of vehicle attributes, driving behavior, and road grade on real-world emissions of particulate matter (PM), regulated gaseous pollutants, and particle-bound polycyclic aromatic hydrocarbons (PAHs) for old-model diesel trucks (model year 1995–2006, 6.7–35.0 metric ton) with little to no tailpipe emission control. The rated power of engines was a major determinant of the distance-specific emission factors of PM, particle-bound PAHs, and most gaseous pollutants. However, the engine size was unrelated to the total hydrocarbon emission factor and the benzo[a]pyrene equivalent (BaP<sub>eq</sub>) emission factor of PAHs. Aggressive (AG) and normal (NR) driving behaviors were quantitatively defined with a relative positive acceleration. The emission factors of PM, CO<sub>2</sub>, and THC were significantly different (p &lt; 0.05) between the AG and NR driving modes. AG driving caused an average increase in emissions of PM, CO<sub>2</sub>, NO<sub>x</sub>, and particle-bound PAHs by 122%, 56%, 15%, and 128%, respectively, compared to the respective emissions under the NR mode. The BaP<sub>eq</sub> emission factor of PAHs in the AG mode was more than 10 times that in the NR mode. The road gradient (ranging from −9.3% to 9.0% over the test route) had significant impacts on the emissions of PM, CO<sub>2</sub>, and NO<sub>x</sub>. PM, CO<sub>2</sub>, and NO<sub>x</sub> emission factors increased by 109%, 168%, and 160%, respectively, in the &gt;6% grade bin and decreased by 95%, 91%, and 90%, respectively, in the equivalent negative-grade bin, implying that the decrease in emissions on negative road slopes may not compensate for the increase in emissions on the equivalent positive road slopes despite the road slope being compensated. The findings of this study will be valuable for developing air quality management strategies and furthering scientific knowledge on the complex interplay of different variables that affect real-world emissions of on-road vehicles."
         },
+
         {
           "journal": "Atmospheric Pollution Research",
           "volpp": "12, 101167",
@@ -314,11 +355,12 @@
           "title": "Effects of road grade on real-world tailpipe emissions of regulated gaseous pollutants and volatile organic compounds for a Euro 5 motorcycle",
           "url": "https://doi.org/10.1016/j.apr.2021.101167",
           "authors": "Yang, H.H., **Dhital, N.B.***, Cheruiyot, N.K., Wang, L.C., Wang, S.X.",
-          "tags": [
-            "emission-characterization"
-          ],
-          "abstract": "Road grade is an important variable that affects engine power demand and hence the fuel consumption and tailpipe emissions of vehicles. However, no prior works have evaluated the effects of road grade on tailpipe volatile organic compound (VOC) emissions of motorcycles. This study investigated the effects of road grade on real-world tailpipe emissions of carbon monoxide (CO), carbon dioxide (CO2), total hydrocarbons (THC), nitric oxide (NO), and speciated VOCs for a Euro 5 motorcycle. Real-world emissions of CO, CO2, THC, and NO were measured in real-time using a miniature portable emissions measurement system (mini-PEMS), while VOCs were measured in integrated exhaust samples collected during real-world driving. PEMS tests (n = 20) were conducted on urban (UR), suburban (SU), uphill (UH), and downhill (DH) routes. The road grade range encountered in this study was approximately −14 % to +14 %. The mean UH emission factors of CO, THC, and ΣVOC were 9890 ± 1619, 101.0 ± 6.7, and 18.81 ± 4.31 mg/km, respectively. Likewise, the DH emission factors were 202 ± 197 mg/km for CO, 10.3 ± 2.9 mg/km for THC, and 1.49 ± 0.68 mg/km for ΣVOC. The emission factors of all measured pollutants on the UH route were significantly higher than the DH and baseline (mean of UR and SU) emission factors. The results of the present study may help identify emission hotspots along the roads and formulate traffic air pollution control strategies."
+          "tags": ["emission-characterization"],
+          "authorRole": ["corresponding"],
+          "access": "subscription",
+          "abstract": "Road grade is an important variable that affects engine power demand and hence the fuel consumption and tailpipe emissions of vehicles. However, no prior works have evaluated the effects of road grade on tailpipe volatile organic compound (VOC) emissions of motorcycles. This study investigated the effects of road grade on real-world tailpipe emissions of carbon monoxide (CO), carbon dioxide (CO<sub>2</sub>), total hydrocarbons (THC), nitric oxide (NO), and speciated VOCs for a Euro 5 motorcycle. Real-world emissions of CO, CO<sub>2</sub>, THC, and NO were measured in real-time using a miniature portable emissions measurement system (mini-PEMS), while VOCs were measured in integrated exhaust samples collected during real-world driving. PEMS tests (n = 20) were conducted on urban (UR), suburban (SU), uphill (UH), and downhill (DH) routes. The road grade range encountered in this study was approximately −14 % to +14 %. The mean UH emission factors of CO, THC, and ΣVOC were 9890 ± 1619, 101.0 ± 6.7, and 18.81 ± 4.31 mg/km, respectively. Likewise, the DH emission factors were 202 ± 197 mg/km for CO, 10.3 ± 2.9 mg/km for THC, and 1.49 ± 0.68 mg/km for ΣVOC. The emission factors of all measured pollutants on the UH route were significantly higher than the DH and baseline (mean of UR and SU) emission factors. The results of the present study may help identify emission hotspots along the roads and formulate traffic air pollution control strategies."
         },
+
         {
           "journal": "ACS Earth and Space Chemistry",
           "volpp": "5, 226–238",
@@ -326,11 +368,12 @@
           "title": "Wintertime air quality in Lumbini, Nepal: Sources of fine particle organic carbon",
           "url": "https://doi.org/10.1021/acsearthspacechem.0c00269",
           "authors": "Islam, M.R., Li, T., Mahata, K., Khanal, N., Werden, B., Giordano, M.R., Praveen, P.S., **Dhital, N.B.**, Gurung, A., Panday, A.K., Joshi, I.B., Poudel, S.P., Wang, Y., Saikawa, E., Yokelson, R.J., DeCarlo, P.F., Stone, E.A.*",
-          "tags": [
-            "ambient-air-pollution"
-          ],
-          "abstract": "The Indo-Gangetic Plains (IGP) experience high levels of airborne particulate matter (PM), especially during the dry season. Contributing to PM are natural and anthropogenic emissions and the atmospheric transformation of gases to form particles. Regional smog events occur frequently during wintertime and provide an atmospheric medium for aerosol processing. Here, we investigate the chemical composition and sources of PM at a representative site in the northern IGP during the second Nepal Ambient Monitoring and Source Testing Experiment (NAMaSTE 2). In Lumbini, Nepal, the 24 h average PM2.5 and PM10 concentrations ranged 48–295 and 60–343 μg m–3, respectively, from December 20, 2017, to January 1, 2018. On average (± standard deviation), PM2.5 was composed of 39 ± 7% organic carbon (OC), 5 ± 2% elemental carbon (EC), and 20 ± 6% secondary inorganic ions (ammonium, nitrate, and sulfate), 2.0% chloride, and 1.3% potassium. Biomass burning was a major PM source, indicated by a median levoglucosan concentration of 3.5 μg m–3. Secondary organic aerosol (SOA) derived from biomass burning was indicated by high concentrations of nitromonoaromatic compounds (e.g., 4-nitrocatechol peaking at 435 ng m–3). During periods of fog, characterized by high relative humidity (RH) and relatively low solar radiation, nitroaromatic concentrations dropped despite levoglucosan remaining high, indicating that their formation was suppressed. Chemical signatures of SOA indicated that volatile organic compound (VOC) precursors were primarily combustion-derived, with small contributions from biogenic VOC. Through molecular markers and chemical mass balance (CMB) modeling, sources of PM2.5 OC were identified as cow dung burning (24 ± 16%), other biomass burning (20 ± 7%), plastic/garbage burning (4.7 ± 3.2%), vehicle emissions (3.1 ± 1.4%), coal combustion (0.3 ± 0.2%), and SOA from monoaromatic VOC (4.1 ± 0.8%), diaromatic VOC (8.9 ± 4.0%), cresol (0.3 ± 0.4%), isoprene (0.4 ± 0.2%), monoterpenes (1.5 ± 0.6%), and sesquiterpenes (3.2 ± 0.7%). Understanding the levels of PM in Lumbini, along with its chemical composition and sources of OC, contributes to a better understanding of regional air quality episodes in the IGP."
+          "tags": ["ambient-air-pollution"],
+          "authorRole": [],
+          "access": "open-access",
+          "abstract": "The Indo-Gangetic Plains (IGP) experience high levels of airborne particulate matter (PM), especially during the dry season. Contributing to PM are natural and anthropogenic emissions and the atmospheric transformation of gases to form particles. Regional smog events occur frequently during wintertime and provide an atmospheric medium for aerosol processing. Here, we investigate the chemical composition and sources of PM at a representative site in the northern IGP during the second Nepal Ambient Monitoring and Source Testing Experiment (NAMaSTE 2). In Lumbini, Nepal, the 24 h average PM<sub>2.5</sub> and PM<sub>10</sub> concentrations ranged 48–295 and 60–343 μg m<sup>–3</sup>, respectively, from December 20, 2017, to January 1, 2018. On average (± standard deviation), PM<sub>2.5</sub> was composed of 39 ± 7% organic carbon (OC), 5 ± 2% elemental carbon (EC), and 20 ± 6% secondary inorganic ions (ammonium, nitrate, and sulfate), 2.0% chloride, and 1.3% potassium. Biomass burning was a major PM source, indicated by a median levoglucosan concentration of 3.5 μg m<sup>–3</sup>. Secondary organic aerosol (SOA) derived from biomass burning was indicated by high concentrations of nitromonoaromatic compounds (e.g., 4-nitrocatechol peaking at 435 ng m<sup>–3</sup>). During periods of fog, characterized by high relative humidity (RH) and relatively low solar radiation, nitroaromatic concentrations dropped despite levoglucosan remaining high, indicating that their formation was suppressed. Chemical signatures of SOA indicated that volatile organic compound (VOC) precursors were primarily combustion-derived, with small contributions from biogenic VOC. Through molecular markers and chemical mass balance (CMB) modeling, sources of PM<sub>2.5</sub> OC were identified as cow dung burning (24 ± 16%), other biomass burning (20 ± 7%), plastic/garbage burning (4.7 ± 3.2%), vehicle emissions (3.1 ± 1.4%), coal combustion (0.3 ± 0.2%), and SOA from monoaromatic VOC (4.1 ± 0.8%), diaromatic VOC (8.9 ± 4.0%), cresol (0.3 ± 0.4%), isoprene (0.4 ± 0.2%), monoterpenes (1.5 ± 0.6%), and sesquiterpenes (3.2 ± 0.7%). Understanding the levels of PM in Lumbini, along with its chemical composition and sources of OC, contributes to a better understanding of regional air quality episodes in the IGP."
         },
+
         {
           "journal": "Sustainable Environment Research",
           "volpp": "31, 3",
@@ -338,13 +381,15 @@
           "title": "Assessing air pollution tolerance of plant species in vegetation traffic barriers in Kathmandu Valley, Nepal",
           "url": "https://doi.org/10.1186/s42834-020-00076-2",
           "authors": "Shrestha, S., Baral, B., **Dhital, N.B.**, Yang, H.H.*",
-          "tags": [
-            "multidisciplinary"
-          ],
-          "abstract": "Vegetation traffic barriers along roads can be an effective structure to improve roadside air quality and to reduce human exposure to traffic air pollutants. However, the selection of the plant species should be considered as an important design parameter for vegetation traffic barriers because different plant species demonstrate different levels of tolerance to air pollutants. This study compares the air pollution tolerance of different plant species found in the vegetation traffic barriers in the Kathmandu valley. Four biochemical parameters (relative water content, leaf extract pH, total chlorophyll and ascorbic acid) and the dust-capturing potential of plants were analyzed. Out of the nine selected species, Cinnamomum camphora showed the highest tolerance to air pollution based on the air pollution tolerance index. Similarly, Schefflera pueckleri, Psidium guajava and Ficus benjamina were found to be the sensitive species, while Ficus sp., Nerium oleander, Thuja sp., Dypsis lutescens and Albizia julibrissin were found to have a moderate level of tolerance to air pollution. N. oleander had the highest dust-capturing potential. Considering both air pollution tolerance index and dust-capturing potential, C. camphora, N. oleander and A. julibrissin were found to be the most suitable species for the roadside plantation. The findings of this study might have important implications for plant species selection for vegetation traffic barriers."
+          "tags": ["multidisciplinary"],
+          "authorRole": [],
+          "access": "open-access",
+          "abstract": "Vegetation traffic barriers along roads can be an effective structure to improve roadside air quality and to reduce human exposure to traffic air pollutants. However, the selection of the plant species should be considered as an important design parameter for vegetation traffic barriers because different plant species demonstrate different levels of tolerance to air pollutants. This study compares the air pollution tolerance of different plant species found in the vegetation traffic barriers in the Kathmandu valley. Four biochemical parameters (relative water content, leaf extract pH, total chlorophyll and ascorbic acid) and the dust-capturing potential of plants were analyzed. Out of the nine selected species, <i>Cinnamomum camphora</i> showed the highest tolerance to air pollution based on the air pollution tolerance index. Similarly, <i>Schefflera pueckleri</i>, <i>Psidium guajava</i> and <i>Ficus benjamina</i> were found to be the sensitive species, while <i>Ficus</i> sp., <i>Nerium oleander</i>, <i>Thuja</i> sp., <i>Dypsis lutescens</i> and <i>Albizia julibrissin</i> were found to have a moderate level of tolerance to air pollution. <i>N. oleander</i> had the highest dust-capturing potential. Considering both air pollution tolerance index and dust-capturing potential, <i>C. camphora</i>, <i>N. oleander</i> and <i>A. julibrissin</i> were found to be the most suitable species for the roadside plantation. The findings of this study might have important implications for plant species selection for vegetation traffic barriers."
         }
       ]
     },
+
+
     {
       "year": "2020",
       "entries": [
@@ -355,11 +400,12 @@
           "title": "Effects of short-duration vehicular traffic control on volatile organic compounds in roadside atmosphere",
           "url": "https://doi.org/10.1016/j.apr.2019.11.016",
           "authors": "Yang, H.H., **Dhital, N.B.***, Wang, Y.F., Huang, S.C., Zhang, H.Y.",
-          "tags": [
-            "ambient-air-pollution"
-          ],
+          "tags": ["ambient-air-pollution"],
+          "authorRole": ["corresponding"],
+          "access": "subscription",
           "abstract": "Traffic air pollution control is an important aspect of air quality management in urban areas. In this study, we investigated whether short-duration vehicular traffic control could be applied as a temporary tool to improve the roadside air quality based on concentrations of roadside volatile organic compounds (VOCs). Experiments were conducted targeting a 30-min “no-vehicle” event observed on 30th May 2019 (13:30–14:00) in Central Taiwan. Although the event was not imposed for air quality management, it provided an excellent opportunity to evaluate it as a potential tool of air quality management. Roadside air samples were collected before, during and after the no-vehicle event from two locations in Central Taiwan. Samples were analyzed for a total of 87 target VOCs. Results showed that alkanes, aromatics and oxygenated organics were the major contributors of roadside VOCs. Mean concentrations of the sum of detected VOCs (∑VOCs) were about 8%–24% lower during the no-vehicle event compared to those before or after the event. Correlation analysis showed that a total of 20 VOCs were related to traffic emissions. During-event concentrations of the sum of those traffic related VOCs were less than pre- or post-event concentrations by 40.77%–83.20%. Diagnostic ratios among VOCs revealed a notable impact of no-vehicle event on the composition and concentrations of the roadside VOCs. Although the short-duration vehicular traffic control had only a limited impact on ∑VOCs due to the presence of multiple emission sources, it had significant impact on the traffic related VOCs."
         },
+
         {
           "journal": "Sustainable Environment Research",
           "volpp": "30, 28",
@@ -367,11 +413,12 @@
           "title": "Emission factor, relative ozone formation potential and relative carcinogenic risk assessment of VOCs emitted from manufacturing industries",
           "url": "https://doi.org/10.1186/s42834-020-00068-2",
           "authors": "Yang, H.H., Gupta, S.K.*, **Dhital, N.B.**",
-          "tags": [
-            "emission-characterization"
-          ],
-          "abstract": "Manufacturing industries are one of the important emission sectors of anthropogenic volatile organic compounds (VOCs). In this study, VOC emission factors, relative ozone formation potential (ROFP) and relative carcinogenic risk (RCR) were estimated for manufacturing industries (n = 13) located in central Taiwan. Emission samples were collected in stainless steel canisters and were analyzed with a system of gas chromatography-mass spectroscopy. Higher emission factors of total VOCs (∑VOCs) were observed for stencil printing (423 mg-VOC kg− 1) compared to other emission industries. Alkanes constituted the most prominent group of VOCs for steel foundry (42%), aluminum foundry (25%) and synthetic resin industries (25%). Oxygenated VOCs were the most abundant group in the organic solvent (80%), polyester resin (80%) and polyurethane (75%) industries. Moreover, emissions from acrylic resin manufacturing had a major contribution from aromatic compounds (> 95%). Toluene was the topmost compound in terms of its contribution to ∑VOCs in plastic tape manufacturing (44%), aluminum foundry (40%), steel foundry (12%), plastic coating (64%) and stencil printing (35%). Analysis of ozone formation potentials showed that the metal product and machinery acrylic resin manufacturing and stencil printing had a higher normalized relative ozone formation potential (ROFP) index and belonged to Level-I emission sources. However, in terms of the relative carcinogenic risk (RCR), integrated iron and steel manufacturing had the highest normalized RCR index that belonged to level-I emission sources. Level-I represents the most important VOC emission sources. This study provides a reactivity- and carcinogenicity-based approach to identify high-priority VOC emission sources. The results of this study would help formulate emission reduction policies and strategies for manufacturing industries."
+          "tags": ["emission-characterization"],
+          "authorRole": ["last"],
+          "access": "open-access",
+          "abstract": "Manufacturing industries are one of the important emission sectors of anthropogenic volatile organic compounds (VOCs). In this study, VOC emission factors, relative ozone formation potential (ROFP) and relative carcinogenic risk (RCR) were estimated for manufacturing industries (n = 13) located in central Taiwan. Emission samples were collected in stainless steel canisters and were analyzed with a system of gas chromatography-mass spectroscopy. Higher emission factors of total VOCs (∑VOCs) were observed for stencil printing (423 mg-VOC kg<sup>−1</sup>) compared to other emission industries. Alkanes constituted the most prominent group of VOCs for steel foundry (42%), aluminum foundry (25%) and synthetic resin industries (25%). Oxygenated VOCs were the most abundant group in the organic solvent (80%), polyester resin (80%) and polyurethane (75%) industries. Moreover, emissions from acrylic resin manufacturing had a major contribution from aromatic compounds (> 95%). Toluene was the topmost compound in terms of its contribution to ∑VOCs in plastic tape manufacturing (44%), aluminum foundry (40%), steel foundry (12%), plastic coating (64%) and stencil printing (35%). Analysis of ozone formation potentials showed that the metal product and machinery acrylic resin manufacturing and stencil printing had a higher normalized relative ozone formation potential (ROFP) index and belonged to Level-I emission sources. However, in terms of the relative carcinogenic risk (RCR), integrated iron and steel manufacturing had the highest normalized RCR index that belonged to level-I emission sources. Level-I represents the most important VOC emission sources. This study provides a reactivity- and carcinogenicity-based approach to identify high-priority VOC emission sources. The results of this study would help formulate emission reduction policies and strategies for manufacturing industries."
         },
+
         {
           "journal": "Journal of Environmental Sciences",
           "volpp": "92, 245–255",
@@ -379,13 +426,15 @@
           "title": "Comparative investigation of coal- and oil-fired boilers based on emission factors, ozone and secondary organic aerosol formation potentials of VOCs",
           "url": "https://doi.org/10.1016/j.jes.2020.02.024",
           "authors": "Yang, H.H., Gupta, S.K.*, **Dhital, N.B.**, Wang, L.C., Elumalai, S.P.",
-          "tags": [
-            "emission-characterization"
-          ],
-          "abstract": "Volatile organic compounds (VOCs) are the important precursors of the tropospheric ozone (O3) and secondary organic aerosols (SOA), both of which are known to harm human health and disrupt the earth's climate system. In this study, VOC emission factors, O3 and SOA formation potentials were estimated for two types of industrial boilers: coal-fired boilers (n = 3) and oil-fired boilers (n = 3). Results showed that ∑VOCs concentrations were more than nine times higher for oil-fired boilers compared to those for coal-fired boilers. Emission factors of ∑VOCs were found to be higher for oil-fired boilers (9.26–32.83 mg-VOC/kg) than for coal-fired boilers (1.57–4.13 mg-VOC/kg). Alkanes and aromatics were obtained as the most abundant groups in coal-fired boilers, while oxygenated organics and aromatics were the most contributing groups in oil-fired boilers. Benzene, n-hexane and o-ethyl toluene were the abundant VOC species in coal-fired boiler emissions, whereas toluene was the most abundant VOC species emitted from oil-fired boilers. O3 and SOA formation potentials were found 12 and 18 times, respectively, higher for oil-fired than for coal-fired boilers. Total OFP ranged from 3.99 to 11.39 mg-O3/kg for coal-fired boilers. For oil-fired boilers, total OFP ranged from 36.16 to 131.93 mg-O3/kg. Moreover, total secondary organic aerosol potential (SOAP) ranged from 65.4 to 122.5 mg-SOA/kg and 779.9 to 2252.5 mg-SOA/kg for the coal-fired and oil-fired boilers, respectively."
+          "tags": ["emission-characterization"],
+          "authorRole": [],
+          "access": "subscription",
+          "abstract": "Volatile organic compounds (VOCs) are the important precursors of the tropospheric ozone (O<sub>3</sub>) and secondary organic aerosols (SOA), both of which are known to harm human health and disrupt the earth's climate system. In this study, VOC emission factors, O<sub>3</sub> and SOA formation potentials were estimated for two types of industrial boilers: coal-fired boilers (n = 3) and oil-fired boilers (n = 3). Results showed that ∑VOCs concentrations were more than nine times higher for oil-fired boilers compared to those for coal-fired boilers. Emission factors of ∑VOCs were found to be higher for oil-fired boilers (9.26–32.83 mg-VOC/kg) than for coal-fired boilers (1.57–4.13 mg-VOC/kg). Alkanes and aromatics were obtained as the most abundant groups in coal-fired boilers, while oxygenated organics and aromatics were the most contributing groups in oil-fired boilers. Benzene, <i>n</i>-hexane and <i>o</i>-ethyl toluene were the abundant VOC species in coal-fired boiler emissions, whereas toluene was the most abundant VOC species emitted from oil-fired boilers. O<sub>3</sub> and SOA formation potentials were found 12 and 18 times, respectively, higher for oil-fired than for coal-fired boilers. Total OFP ranged from 3.99 to 11.39 mg-O<sub>3</sub>/kg for coal-fired boilers. For oil-fired boilers, total OFP ranged from 36.16 to 131.93 mg-O<sub>3</sub>/kg. Moreover, total secondary organic aerosol potential (SOAP) ranged from 65.4 to 122.5 mg-SOA/kg and 779.9 to 2252.5 mg-SOA/kg for the coal-fired and oil-fired boilers, respectively."
         }
       ]
     },
+
+
     {
       "year": "2019",
       "entries": [
@@ -396,11 +445,12 @@
           "title": "VOCs emission characteristics in motorcycle exhaust with different emission control devices",
           "url": "https://doi.org/10.1016/j.apr.2019.04.007",
           "authors": "**Dhital, N.B.**, Yang, H.H.*, Wang, L.C., Hsu, Y.T., Zhang, H.Y., Young, L.H., Lu, J.H.",
-          "tags": [
-            "emission-characterization"
-          ],
+          "tags": ["emission-characterization"],
+          "authorRole": ["first"],
+          "access": "subscription",
           "abstract": "Speciated VOCs and regulated air pollutant emissions (CO, HC, and NO) of carburetor (CB) and fuel injection (FI) motorcycles were evaluated based on engine dynamometer tests. The effects of engine loads and emission control systems were evaluated. CB was equipped with an oxidation catalytic converter (OCC) and a secondary air system (SAS), while FI had a three-way catalytic converter (TWC) and an oxygen sensor (OS). Under normal operation of the control devices, the emissions of regulated pollutants and the sum of detected VOCs (ΣVOC) were higher in the CB than in the FI motorcycle. Alkanes and aromatics had the highest concentrations, contributing approximately 90% to the ΣVOC, while xylene and toluene were the most abundant among the BTEX compounds in both motorcycles. Emissions of all regulated pollutants and ΣVOC increased with increasing engine load. The emission control devices showed differential efficiencies across different VOC groups. The average emission reduction efficiencies of OCC with SAS (CB motorcycle) were 45.4% (ΣVOC) and 48.6% (BTEX), and those of TWC with OS (FI motorcycle) were 74.4% (ΣVOC) and 88.0% (BTEX). Without SAS, the efficiency of OCC dropped to 30.2% (ΣVOC) and 34.9% (BTEX) in the CB motorcycle. Similarly, the efficiency of TWC decreased to 69.0% (ΣVOC) and 85.2% (BTEX) when the OS was blocked in the FI motorcycle. The ozone formation potentials of VOCs ranged from 500 mg-O<sub>3</sub>/m<sup>3</sup> (FI motorcycle with TWC and OS, TO 20%) to 2218 mg-O<sub>3</sub>/m<sup>3</sup> (CB motorcycle without a control system, TO 30%)."
         },
+
         {
           "journal": "Aerosol and Air Quality Research",
           "volpp": "19, 1439–1449",
@@ -408,11 +458,12 @@
           "title": "Chemical characterization of fine particulate matter in gasoline and diesel vehicle exhaust",
           "url": "https://doi.org/10.4209/aaqr.2019.04.0191",
           "authors": "Yang, H.H., **Dhital, N.B.***, Wang, L.C., Hsieh, Y.S., Lee, K.T., Hsu, Y.T., Huang, S.C.",
-          "tags": [
-            "emission-characterization"
-          ],
+          "tags": ["emission-characterization"],
+          "authorRole": ["corresponding"],
+          "access": "open-access",
           "abstract": "This study investigated the chemical composition (carbonaceous species, water-soluble ions and metal elements) of fine particulate matter (PM<sub>2.5</sub>) emitted by gasoline and diesel vehicles. The emission factors of PM<sub>2.5</sub>, total hydrocarbons (THC), carbon monoxide (CO) and oxides of nitrogen (NO<sub>x</sub>) were also determined. The emission measurements were performed for four gasoline and four diesel vehicles on a dynamometer with a constant volume sampling system. Vehicles having larger engines and higher accumulated mileages had higher emission factors of gaseous pollutants. Moreover, the average emission factor of NO<sub>x</sub> was about 30 times higher for diesel vehicles than for gasoline vehicles. The average PM<sub>2.5</sub> emission factors for gasoline and diesel vehicles were 1.57 mg km<sup>–1</sup> and 57.8 mg km<sup>–1</sup>, respectively. The ratio of organic carbon to elemental carbon (OC/EC) was found to be a good indicator of gasoline vehicle emissions (OC/EC &gt; 1) and diesel vehicle emissions (OC/EC &lt; 1). Among water-soluble ions, Ca<sup>2+</sup> and SO<sub>4</sub><sup>2–</sup> had the highest contribution to PM<sub>2.5</sub> emitted by gasoline vehicles, while NO<sub>3</sub><sup>–</sup>, SO<sub>4</sub><sup>2–</sup> and Ca<sup>2+</sup> had the highest contribution to PM<sub>2.5</sub> emitted by diesel vehicles. Na, Ca, Fe and Zn were the top four metal elements in terms of their contributions to PM<sub>2.5</sub> mass for both types of the vehicles, while Cd, Cr, Pb and Sb were some of the toxic metal elements detected in PM<sub>2.5</sub>."
         },
+
         {
           "journal": "Energy & Fuels",
           "volpp": "33, 10878–10887",
@@ -420,13 +471,15 @@
           "title": "Establishment of indicatory metals for filterable and condensable PM<sub>2.5</sub> emitted from important stationary emission sources",
           "url": "https://doi.org/10.1021/acs.energyfuels.9b02889",
           "authors": "Yang, H.H., Gupta, S.K.*, **Dhital, N.B.**, Lee, K.T., Hsieh, Y.S., Huang, S.C.",
-          "tags": [
-            "emission-characterization"
-          ],
+          "tags": ["emission-characterization"],
+          "authorRole": [],
+          "access": "subscription",
           "abstract": "This study investigated indicatory metals in the filterable (FPM<sub>2.5</sub>) and condensable (CPM) particulate matter emitted from six different types of stationary stacks (based on fuels and raw materials, n = 33), namely, coal boiler (COL), heavy oil boiler (HOL), wood boiler (WOD), diesel boiler (DSL), natural gas boiler (NGS), and incinerator (INR). FPM<sub>2.5</sub> and CPM samples were collected following U.S. EPA Method 201A and Method 202, respectively. The samples were analyzed for mass concentrations and metal compositions. Results showed that the concentration of CPM was higher than that of the FPM<sub>2.5</sub> for all types of stacks except WOD. Comparability analysis of FPM<sub>2.5</sub>, CPM, and TPM<sub>2.5</sub> (FPM<sub>2.5</sub> + CPM) metal profiles assessed by using the coefficient of divergence (COD) showed a heterogeneous (COD = 0.32–0.99) relationship among six groups of emission stacks. However, FPM<sub>2.5</sub>, CPM, and TPM<sub>2.5</sub> metal profiles within a group of stack revealed homogeneous (COD = 0.19) to heterogeneous (COD = 0.79) relations. Indicatory metals for COL were found to be Ca, Ba, V (FPM<sub>2.5</sub>), Se, Cd, and Co (CPM) and V, Se, and Co (TPM<sub>2.5</sub>). Similarly, indicatory metals for HOL included Ca, V, Ni (FPM<sub>2.5</sub>), V, Se, and Cd (CPM) and V, Co, and As (TPM<sub>2.5</sub>). Ca, Ni, Ba (FPM<sub>2.5</sub>), Se, V, and Cd (CPM) and V, Cd, and As (TPM<sub>2.5</sub>) were recognized as indicatory metals for WOD boilers. Similarly, K and Ca were found to be indicatory metals for DSL, NGS, and INR. The indicatory metals for different emission sources and for different particle fractions (FPM<sub>2.5</sub> and CPM) reflect the differences in fuel types, combustion temperatures, and particle formation mechanisms. The results of the present study are expected to provide valuable information for source apportionment modeling and to better assess the contributions of the aforementioned emission sources to the ambient concentrations of PM<sub>2.5</sub> and metal elements."
         }
       ]
     },
+
+
     {
       "year": "2014",
       "entries": [
@@ -437,11 +490,10 @@
           "title": "Air pollution inside public transport vehicles of Kathmandu Valley",
           "url": "https://doi.org/10.3126/njes.v2i0.22739",
           "authors": "**Dhital, N.B.***, Hung, W.T., Byanju, R.M.",
-          "tags": [
-            "exposure-health-impact",
-            "indoor-air-pollution"
-          ],
-          "abstract": "Owing to widespread road widening activities and the growing vehicular traffic, air quality of Kathmandu Valley has been a matter of grave concern. In this study, we monitored air quality inside public vehicles of Kathmandu Valley which would help assess the exposure of public transport users to air pollution. Problem of particulate pollution, especially PM10, was found severe inside the buses. Carbon monoxide and total volatile organic compounds were mostly within acceptable levels but benzene exceeded guidelines in few samples. Benzene, toluene, ethylbenzene and xylene (BTEX) were dominant among all detected volatile organic compounds. There was high degree of correlation among BTEX. Similarly, significant correlation was found between carbon monoxide and total volatile organic compounds. PM10 and PM2.5 were also significantly correlated suggesting common source of emission. Gaseous pollutants had significant negative correlation with traffic speed suggesting that traffic congestion (responsible for low traffic speed and high traffic density) is causing higher emission."
+          "tags": ["exposure-health-impact", "indoor-air-pollution"],
+          "authorRole": ["first", "corresponding"],
+          "access": "open-access",
+          "abstract": "Owing to widespread road widening activities and the growing vehicular traffic, air quality of Kathmandu Valley has been a matter of grave concern. In this study, we monitored air quality inside public vehicles of Kathmandu Valley which would help assess the exposure of public transport users to air pollution. Problem of particulate pollution, especially PM<sub>10</sub>, was found severe inside the buses. Carbon monoxide and total volatile organic compounds were mostly within acceptable levels but benzene exceeded guidelines in few samples. Benzene, toluene, ethylbenzene and xylene (BTEX) were dominant among all detected volatile organic compounds. There was high degree of correlation among BTEX. Similarly, significant correlation was found between carbon monoxide and total volatile organic compounds. PM<sub>10</sub> and PM<sub>2.5</sub> were also significantly correlated suggesting common source of emission. Gaseous pollutants had significant negative correlation with traffic speed suggesting that traffic congestion (responsible for low traffic speed and high traffic density) is causing higher emission."
         }
       ]
     }
