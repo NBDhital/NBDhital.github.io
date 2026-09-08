@@ -346,7 +346,27 @@ figcaption {
   min-height: var(--header-height);
 }
 
+/* `position: relative` + `z-index: 0` gives .site-header its own stacking
+   context so the ::before background layer below can sit at z-index: -1
+   and stay contained behind it. This is what lets us keep .site-header
+   ITSELF free of `backdrop-filter`/`filter`/`transform` — any of those
+   properties on an ancestor of `.nav-links` (the fixed-position mobile
+   menu) creates a new CSS containing block for fixed descendants, so the
+   menu's `inset: var(--header-height) 0 0 0` would resolve against the
+   header's own small box instead of the viewport once scrolled, collapsing
+   it to a sliver that only fit the first link. See .site-header::before
+   below for the actual scrolled/blur treatment. */
 .site-header {
+  position: relative;
+  z-index: 0;
+}
+
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
   background: var(--paper-raised);
   border-bottom: 1px solid var(--line-soft);
   transition:
@@ -357,14 +377,14 @@ figcaption {
 
 /* Scrolled: translucent, blurred, softer edge. Height and padding never
    change, so the header cannot jump between states. */
-.site-header.is-scrolled {
+.site-header.is-scrolled::before {
   background: rgba(251, 252, 252, 0.88);
   border-bottom-color: transparent;
   box-shadow: var(--shadow-header);
 }
 
 @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
-  .site-header.is-scrolled {
+  .site-header.is-scrolled::before {
     background: rgba(251, 252, 252, 0.74);
     -webkit-backdrop-filter: saturate(1.4) blur(14px);
     backdrop-filter: saturate(1.4) blur(14px);
@@ -462,6 +482,12 @@ figcaption {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   cursor: pointer;
+  /* Isolates the icon's compositing from the blurred .site-header::before
+     layer behind it once scrolled — without this, some mobile browsers
+     (notably iOS Safari) can leave a faint ghost of the fading middle bar
+     painted where the backdrop-filter layer meets its opacity-animated
+     layer, turning the closed "X" into an X with a stray line through it. */
+  isolation: isolate;
   transition: border-color var(--dur-ui) var(--ease-out),
               background-color var(--dur-ui) var(--ease-out);
 }
@@ -477,7 +503,10 @@ figcaption {
 }
 
 .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
-.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+/* Collapsing the middle bar's width (not just fading its opacity) means
+   there is no residual geometry for a backdrop-filter layer to show a
+   seam against — it's gone, not just transparent. */
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
 
 @media (max-width: 900px) {
