@@ -25,9 +25,13 @@
 
   function buildJournalEntry(entry) {
     var tags = (entry.tags || []).join(' ');
+    var roles = (entry.authorRole || []).join(' ');
+    var access = entry.access || '';
     var el = document.createElement('div');
     el.className = 'pub-entry';
     el.setAttribute('data-tags', tags);
+    el.setAttribute('data-role', roles);
+    el.setAttribute('data-access', access);
 
     var citation = entry.journal + ' ' + entry.volpp + ' (' + entry.year + ')';
 
@@ -94,18 +98,41 @@
     var filterBar = document.querySelector('.pub-filter');
     if (!filterBar) return;
 
-    var buttons = filterBar.querySelectorAll('.tab-btn');
+    var selects = filterBar.querySelectorAll('.pub-filter__select');
     var countEl = document.getElementById('pub-filter-count');
     var allEntries = document.querySelectorAll('.pub-entry');
     var yearGroups = document.querySelectorAll('.pub-year-group');
     var totalCount = allEntries.length;
 
-    function applyFilter(tag) {
-      var visibleCount = 0;
+    // A publication is shown only if it matches every active dropdown
+    // (subject area AND author role AND access) - "all" always matches.
+    function matches(entry, field, value) {
+      if (value === 'all') return true;
+      var raw = (entry.getAttribute('data-' + field) || '').split(' ');
+      return raw.indexOf(value) !== -1;
+    }
 
+    function activeLabels() {
+      var labels = [];
+      selects.forEach(function (select) {
+        if (select.value === 'all') return;
+        var opt = select.options[select.selectedIndex];
+        labels.push(opt.textContent.trim());
+      });
+      return labels;
+    }
+
+    function applyFilters() {
+      var values = {};
+      selects.forEach(function (select) {
+        values[select.getAttribute('data-filter')] = select.value;
+      });
+
+      var visibleCount = 0;
       allEntries.forEach(function (entry) {
-        var tags = (entry.getAttribute('data-tags') || '').split(' ');
-        var show = tag === 'all' || tags.indexOf(tag) !== -1;
+        var show = matches(entry, 'tags', values.tag) &&
+                   matches(entry, 'role', values.role) &&
+                   matches(entry, 'access', values.access);
         entry.style.display = show ? '' : 'none';
         if (show) visibleCount++;
       });
@@ -115,23 +142,17 @@
         group.style.display = hasVisible ? '' : 'none';
       });
 
-      if (tag === 'all') {
-        countEl.textContent = visibleCount + ' of ' + totalCount + ' articles shown';
-      } else {
-        var label = filterBar.querySelector('.tab-btn[data-tag="' + tag + '"]').textContent.trim();
-        countEl.textContent = visibleCount + ' of ' + totalCount + ' articles shown under category "' + label + '"';
-      }
+      var labels = activeLabels();
+      countEl.textContent = labels.length === 0
+        ? visibleCount + ' of ' + totalCount + ' articles displayed'
+        : visibleCount + ' of ' + totalCount + ' articles displayed \u2014 ' + labels.join(', ');
     }
 
-    buttons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        buttons.forEach(function (b) { b.classList.remove('active'); });
-        btn.classList.add('active');
-        applyFilter(btn.getAttribute('data-tag'));
-      });
+    selects.forEach(function (select) {
+      select.addEventListener('change', applyFilters);
     });
 
-    applyFilter('all');
+    applyFilters();
   }
 
   function init() {
