@@ -560,12 +560,12 @@ figcaption {
 
 .page-banner {
   padding-block: clamp(var(--space-7), 5vw, var(--space-5)) var(--space-5);
-  background: var(--paper);
+  background: var(--haze-deep);
   border-bottom: 1px solid var(--line-soft);
   text-align: center;
 }
 
-.page-banner h1 { margin-bottom: var(--space-3); color: var(--ink); }
+.page-banner h1 { margin-bottom: var(--space-3); color: var(--brass-deep); }
 
 .page-banner p {
   max-width: 56ch;
