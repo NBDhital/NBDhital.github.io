@@ -23,7 +23,7 @@
   <div class="container">
     <div class="breadcrumb"><a href="/index.html">Home</a> &rsaquo; Air Quality</div>
     <h1>Air Quality Status</h1>
-    <p>Check live air quality data at your selected locations.</p>
+    <p>Check modeled air quality data from CAMS at your selected locations.</p>
   </div>
 </section>
 
@@ -59,7 +59,7 @@
 
       <!-- Live concentration readings -->
       <div class="aqi-overview__concentrations">
-        <div class="aqi-overview__conc-heading">Live Concentration Readings</div>
+        <div class="aqi-overview__conc-heading">Concentrations</div>
 
         <div class="grid grid--4 aqi-overview__grid">
           <div class="card aqi-stat-card">
@@ -188,17 +188,16 @@
 
     <div class="reveal" style="max-width:980px;margin:0 auto 18px;">
       <p style="text-align:left;">
-        The live readings displayed above come from the 
+        The AQI and concentrations displayed above come from 
         <strong><a href="https://open-meteo.com/en/docs/air-quality-api" target="_blank" rel="noopener">
           Open-Meteo</a></strong> air quality API,
-        which uses outputs from atmospheric models, such as the Copernicus
-        Atmosphere Monitoring Service, to estimate air pollutant 
-        concentrations at any location, updated hourly. Please note that it is a
-        modeled estimate, not a direct observation. Accuracy is not guaranteed.
+        which reports modeled concentrations from the Copernicus
+        Atmosphere Monitoring Service (CAMS), updated hourly. Please note that it is a
+        modeled estimate, not a direct observation.
         Visit the 
         <a href="https://open-meteo.com/en/docs/air-quality-api" target="_blank" rel="noopener">
           <strong>webpage of Open-Meteo</strong>
-        </a> for more information about the data source.
+        </a> for more information.
         
       </p>
     </div>
