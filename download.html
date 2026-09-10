@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="/js/analytics.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Downloads | Narayan Babu Dhital</title>
+<meta name="description" content="Downloadable lecture notes shared by Narayan Babu Dhital, Department of Environmental Science, Patan Multiple Campus, Tribhuvan University.">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+
+<style>
+  /* Page-scoped styles for the download list. */
+  #notes-list{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .note-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+    padding:16px 20px;
+    border:1px solid var(--color-border, #e2ddd3);
+    border-radius:12px;
+    background:var(--color-surface, #fff);
+  }
+  .note-info{
+    display:flex;
+    flex-direction:column;
+    gap:2px;
+  }
+  .note-level{
+    font-size:0.75rem;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.05em;
+    color:var(--color-gold, #b9863f);
+  }
+  .note-course{
+    font-weight:600;
+    color:var(--color-text, #2b2a27);
+  }
+  .note-meta{
+    font-size:0.88rem;
+    color:var(--color-text-muted, #6b6459);
+  }
+  .dl-btn{
+    display:inline-flex;
+    align-items:center;
+    padding:8px 18px;
+    border:none;
+    border-radius:999px;
+    background:var(--color-gold, #b9863f);
+    color:#fff;
+    font-weight:600;
+    font-size:0.86rem;
+    cursor:pointer;
+    white-space:nowrap;
+    transition:opacity .15s ease;
+  }
+  .dl-btn:hover{
+    opacity:0.85;
+  }
+  .notes-empty{
+    color:var(--color-text-muted, #6b6459);
+  }
+  .notes-note{
+    color:var(--color-text-muted, #6b6459);
+    font-size:0.9rem;
+    margin-top:16px;
+  }
+
+  /* Access-code modal (replaces the browser's default prompt box) */
+  .code-modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(20,18,14,0.45);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:1000;
+    padding:16px;
+  }
+  .code-modal{
+    background:var(--color-surface, #fff);
+    border-radius:14px;
+    padding:22px 24px;
+    width:100%;
+    max-width:400px;
+    box-shadow:0 12px 32px rgba(0,0,0,0.18);
+    text-align:center;
+  }
+  .code-modal__label{
+    font-size:0.92rem;
+    color:var(--color-text, #2b2a27);
+    margin:0 0 14px;
+    line-height:1.4;
+  }
+  .code-modal__label strong{
+    color:var(--color-text, #2b2a27);
+  }
+  .code-modal__input{
+    width:30ch;
+    max-width:100%;
+    padding:8px 10px;
+    font-size:1rem;
+    text-align:center;
+    letter-spacing:.05em;
+    border:1px solid var(--color-border, #cfc8ba);
+    border-radius:8px;
+    margin:0 auto 16px;
+    display:block;
+  }
+  .code-modal__input:focus{
+    outline:2px solid var(--color-gold, #b9863f);
+    outline-offset:1px;
+  }
+  .code-modal__actions{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+  }
+  .code-modal__btn{
+    padding:7px 16px;
+    border-radius:999px;
+    font-size:0.86rem;
+    font-weight:600;
+    border:1px solid transparent;
+    cursor:pointer;
+  }
+  .code-modal__btn--submit{
+    background:var(--color-gold, #b9863f);
+    color:#fff;
+  }
+  .code-modal__btn--submit:hover{
+    opacity:0.85;
+  }
+  .code-modal__btn--cancel{
+    background:transparent;
+    border-color:var(--color-border, #cfc8ba);
+    color:var(--color-text-muted, #6b6459);
+  }
+  .code-modal__btn--cancel:hover{
+    background:var(--color-surface-alt, #f7f4ee);
+  }
+</style>
+
+
+
+
+</head>
+<body data-page="download">
+
+<div id="site-header-placeholder"></div>
+
+<main id="main">
+
+<section class="page-banner">
+  <div class="container">
+    <div class="breadcrumb"><a href="/index.html">Home</a> / Downloads</div>
+    <h1>Downloads</h1>
+  </div>
+</section>
+
+<section class="section" id="notes">
+  <div class="container">
+    <div class="section-heading reveal">
+      <p>A unique access key is required to download the files listed below.</p>
+      <div class="rule"></div>
+    </div>
+
+    <div class="card reveal">
+      <div id="notes-list">
+        <p class="notes-empty">Loading&hellip;</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ============================== QUICK LINKS STRIP ============================== -->
+<section class="section section--muted">
+  <div class="container">
+    <div class="section-heading reveal">
+      <div class="section-eyebrow">Explore</div>
+      <h2>More About My Work</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="grid grid--3" style="max-width: 1000px; margin: 0 auto;">
+      <a class="card card--center reveal" href="/professional-journey.html" style="color:inherit;">
+        <h3>Education &amp; Affiliations</h3>
+        <p>Education, experience, scholarly service, honors &amp; awards</p>
+      </a>
+      <a class="card card--center reveal" href="/research.html" style="color:inherit;">
+        <h3>Research &amp; Publications</h3>
+        <p>Projects, peer reviewed publications, conference presentations, invited talks</p>
+      </a>
+      <a class="card card--center reveal" href="/blog.html" style="color:inherit;">
+        <h3>Blog</h3>
+        <p>Nepali literary writing &ndash; stories and travel notes</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div id="site-footer-placeholder"></div>
+
+<script src="/js/include.js"></script>
+<script src="/js/script.js"></script>
+<script src="/js/download.js"></script>
+</body>
+</html>
