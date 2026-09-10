@@ -1,0 +1,103 @@
+{
+  "_readme": "EDIT GUIDE — read this, then edit only the link1..link10 entries below. The real file URL is split into three parts: base + key + suffix. base and suffix live here in this JSON; the key (the middle part) is what you hand out to students separately — never put the key in this file. Each semester: 1) Get your real Google Drive share link and change its sharing to 'Anyone with the link'. 2) Pick a short chunk of characters somewhere in the middle of that URL/ID to be the 'key' (about 6-10 characters is a good length). 3) Put everything BEFORE that chunk into 'base', and everything AFTER it into 'suffix'. 4) Give the removed middle chunk to students as the access code. 5) Fill in level/semester/course/year for the label shown on the page, and set 'active' to true. When the course period ends, set 'active' to false or blank out 'base'/'suffix' — do this instead of leaving the real file link sitting in a public JSON file. Example: real id '1AbCdEfGhIjKlMnOpQrStUvWxYz0123456' -> base ends '...GhIj', key given to students is 'KlMnOpQrSt', suffix starts 'UvWxYz0123456'.",
+
+  "link1": {
+    "level": "M.Sc. | Environmental Science | TU",
+    "semester": "SEM1",
+    "course": "ENV-513: Atmospheric Thermodynamics",
+    "year": "2027",
+    "base": "https://docs.google.com/document/d/1gg92MjHxx8CFpI1NVAsZ0zfq3jX9bp",
+    "suffix": "7Q/edit?usp=drive_link",
+    "active": true
+  },
+
+  "link2": {
+    "level": "M.Sc. | Environmental Science | TU",
+    "semester": "SEM3",
+    "course": "ENV-602: Research Design",
+    "year": "2027",
+    "base": "https://docs.google.com/document/d/1gg92MjHxx8CFpI1NVAsZ0zfq3jX9bp",
+    "suffix": "7Q/edit?usp=drive_link",
+    "active": true
+  },
+
+  "link3": {
+    "level": "M.Sc. | Environmental Science | TU",
+    "semester": "SEM3",
+    "course": "ENV-6xx: Air Polluion Control Technologies",
+    "year": "2027",
+    "base": "https://docs.google.com/document/d/1gg92MjHxx8CFpI1NVAsZ0zfq3jX9bp",
+    "suffix": "7Q/edit?usp=drive_link",
+    "active": true
+  },
+
+  "link4": {
+    "level": "B.Sc. | Environmental Science | TU",
+    "semester": "Y4",
+    "course": "ENV: Air Pollution Control Technologies",
+    "year": "2027",
+    "base": "https://docs.google.com/document/d/1gg92MjHxx8CFpI1NVAsZ0zfq3jX9bp",
+    "suffix": "7Q/edit?usp=drive_link",
+    "active": true
+  },
+
+  "link5": {
+    "level": "B.Sc. | Environmental Science | TU",
+    "semester": "Y3",
+    "course": "Aerosol & Air Pollution",
+    "year": "2027",
+    "base": "https://docs.google.com/document/d/1gg92MjHxx8CFpI1NVAsZ0zfq3jX9bp",
+    "suffix": "7Q/edit?usp=drive_link",
+    "active": true
+  },
+
+  "link6": {
+    "level": "",
+    "semester": "",
+    "course": "",
+    "year": "",
+    "base": "https://docs.google.com/document/d/1gg92MjHxx8CFpI1NVAsZ0zfq3jX9bp",
+    "suffix": "7Q/edit?usp=drive_link",
+    "active": false
+  },
+
+  "link7": {
+    "level": "",
+    "semester": "",
+    "course": "",
+    "year": "",
+    "base": "https://docs.google.com/document/d/1gg92MjHxx8CFpI1NVAsZ0zfq3jX9bp",
+    "suffix": "7Q/edit?usp=drive_link",
+    "active": false
+  },
+
+  "link8": {
+    "level": "",
+    "semester": "",
+    "course": "",
+    "year": "",
+    "base": "https://docs.google.com/document/d/1gg92MjHxx8CFpI1NVAsZ0zfq3jX9bp",
+    "suffix": "7Q/edit?usp=drive_link",
+    "active": false
+  },
+
+  "link9": {
+    "level": "",
+    "semester": "",
+    "course": "",
+    "year": "",
+    "base": "https://docs.google.com/document/d/1gg92MjHxx8CFpI1NVAsZ0zfq3jX9bp",
+    "suffix": "7Q/edit?usp=drive_link",
+    "active": false
+  },
+
+  "link10": {
+    "level": "",
+    "semester": "",
+    "course": "",
+    "year": "",
+    "base": "https://docs.google.com/document/d/1gg92MjHxx8CFpI1NVAsZ0zfq3jX9bp",
+    "suffix": "7Q/edit?usp=drive_link",
+    "active": false
+  }
+}
