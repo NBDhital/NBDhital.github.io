@@ -25,8 +25,9 @@
   /* ------------------------------------------------------------------
      Mobile menu. Adds what the previous version was missing: the
      button's expanded state for screen readers, a scroll lock on the
-     body, Escape to close, and a close on resize past the breakpoint
-     (without which the body stayed scroll-locked after a rotate).
+     body, Escape to close, a close on resize past the breakpoint
+     (without which the body stayed scroll-locked after a rotate), and
+     a close on tap/click outside the open menu.
      ------------------------------------------------------------------ */
   function initMobileNav() {
     var toggle = document.getElementById('navToggle');
@@ -58,6 +59,19 @@
       if (toggle.getAttribute('aria-expanded') !== 'true') return;
       close();
       toggle.focus();
+    });
+
+    // Close on a tap/click anywhere outside the open menu and its toggle
+    // button. Listening on 'click' (not 'touchstart') means this fires
+    // consistently on touch and mouse alike and won't double-fire with
+    // the toggle's own click handler above — the toggle's listener runs
+    // first, then this one sees the already-updated aria-expanded state
+    // and, since the click originated inside the toggle, bails out via
+    // the toggle.contains(event.target) check below.
+    document.addEventListener('click', function (event) {
+      if (toggle.getAttribute('aria-expanded') !== 'true') return;
+      if (links.contains(event.target) || toggle.contains(event.target)) return;
+      close();
     });
 
     var resizeTimer;
