@@ -27,11 +27,13 @@
     var tags = (entry.tags || []).join(' ');
     var roles = (entry.authorRole || []).join(' ');
     var access = entry.access || '';
+    var indexing = (entry.indexing || []).join(' ');
     var el = document.createElement('div');
     el.className = 'pub-entry';
     el.setAttribute('data-tags', tags);
     el.setAttribute('data-role', roles);
     el.setAttribute('data-access', access);
+    el.setAttribute('data-indexing', indexing)
 
     var citation = entry.journal + ' ' + entry.volpp + ' (' + entry.year + ')';
 
@@ -132,7 +134,8 @@
       allEntries.forEach(function (entry) {
         var show = matches(entry, 'tags', values.tag) &&
                    matches(entry, 'role', values.role) &&
-                   matches(entry, 'access', values.access);
+                   matches(entry, 'access', values.access) && 
+                   matches(entry, 'indexing', values.indexing);
         entry.style.display = show ? '' : 'none';
         if (show) visibleCount++;
       });
