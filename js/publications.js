@@ -9,6 +9,16 @@
  * Conference Presentations and Invited Talks are NOT data-driven - they
  * are plain bulleted lists (<ul class="pub-bullets">) directly in
  * research.html, and are edited there.
+ * 
+ * To include "Access" field: update this section
+ * allEntries.forEach(function (entry) {
+        var show = matches(entry, 'tags', values.tag) &&
+                   matches(entry, 'role', values.role) &&
+                   matches(entry, 'access', values.access) && 
+                   matches(entry, 'indexing', values.indexing);
+        entry.style.display = show ? '' : 'none';
+        if (show) visibleCount++;
+      });
  */
 (function () {
   'use strict';
@@ -134,7 +144,6 @@
       allEntries.forEach(function (entry) {
         var show = matches(entry, 'tags', values.tag) &&
                    matches(entry, 'role', values.role) &&
-                   matches(entry, 'access', values.access) && 
                    matches(entry, 'indexing', values.indexing);
         entry.style.display = show ? '' : 'none';
         if (show) visibleCount++;
@@ -184,4 +193,3 @@
     init();
   }
 })();
-
