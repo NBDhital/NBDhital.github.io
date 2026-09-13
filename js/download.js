@@ -84,7 +84,7 @@ function askForCode(courseLabel) {
     overlay.className = 'code-modal-overlay';
     overlay.innerHTML = `
       <div class="code-modal" role="dialog" aria-modal="true" aria-label="Enter access code">
-        <p class="code-modal__label">${courseLabel ? 'Enter access key (case-sensitive) provided for<br>' + escapeHtml(courseLabel) + '': 'Enter access code'}</p>
+        <p class="code-modal__label">${courseLabel ? 'Enter the access key (case-sensitive) provided for<br>' + escapeHtml(courseLabel) + '': 'Enter access code'}</p>
         <input type="text" class="code-modal__input" maxlength="24" size="10" autocomplete="off" autocapitalize="off" spellcheck="false" />
         <div class="code-modal__actions">
           <button type="button" class="code-modal__btn code-modal__btn--cancel">Cancel</button>
