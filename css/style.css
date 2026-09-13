@@ -1098,6 +1098,7 @@ a.card { display: block; color: inherit; text-decoration: none; }
   text-transform: uppercase;
   color: var(--brass-deep);
   text-align: left;
+  padding: 15px;
 }
 
 .pub-filter__select-wrap {
