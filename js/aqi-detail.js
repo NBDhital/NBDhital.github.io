@@ -232,11 +232,20 @@
       return;
     }
 
-    map = L.map(mapEl, { scrollWheelZoom: false }).setView([KATHMANDU.lat, KATHMANDU.lon], 8);
+    const WORLD_BOUNDS = L.latLngBounds([-90, -180], [90, 180]);
+
+    map = L.map(mapEl, {
+      scrollWheelZoom: false,
+      maxBounds: WORLD_BOUNDS,
+      maxBoundsViscosity: 1.0,
+      worldCopyJump: false,
+      minZoom: 2
+    }).setView([KATHMANDU.lat, KATHMANDU.lon], 8);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "&copy; <a href=\"https://www.openstreetmap.org/copyright\" target=\"_blank\" rel=\"noopener\">OpenStreetMap</a> contributors",
-      maxZoom: 18
+      maxZoom: 18,
+      noWrap: true
     }).addTo(map);
 
     marker = L.marker([KATHMANDU.lat, KATHMANDU.lon]).addTo(map);
