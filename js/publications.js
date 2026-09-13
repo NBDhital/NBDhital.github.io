@@ -157,7 +157,7 @@
       var labels = activeLabels();
       countEl.textContent = labels.length === 0
         ? visibleCount + ' of ' + totalCount + ' articles displayed'
-        : visibleCount + ' of ' + totalCount + ' articles displayed \u2014 ' + labels.join(' AND ');
+        : visibleCount + ' of ' + totalCount + ' articles displayed — "' + labels.join('" AND "') + '"';
     }
 
     selects.forEach(function (select) {
