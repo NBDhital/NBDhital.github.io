@@ -1,10 +1,22 @@
 {
   "journalArticles": [
 
-
     {
       "year": "2026",
       "entries": [
+        
+        {
+          "journal": "Journal of the Air & Waste Management Association",
+          "volpp": "(In Press)",
+          "year": "2026",
+          "title": "On-road exposure to black carbon and particulate matter in Nepal: Effects of route attributes and travel modes",
+          "url": "https://doi.org/1080/10962247.2026.2754932",
+          "authors": "**Dhital, N.B.***, Rinta-Kiikka, H., Louhisalmi, J., Tissari, J.",
+          "tags": ["exposure-health-impact"],
+          "authorRole": ["first", "corresponding"],
+          "access": "open-access", "indexing":["wos", "scopus"],
+          "abstract": "Road transport emissions and associated human exposure are a significant public health concern in rapidly urbanizing regions. In Nepal, however, exposure to air pollution in road transportation microenvironments, especially black carbon (BC), remains poorly understood. This study investigated on-road exposure of equivalent BC (eBC) and particulate matter (PM) across road types with different service functions, infrastructure characteristics, and road gradients. The grand mean on-road eBC concentration was 45.7 ± 32.5 μg/m3, approximately 11 times higher than the background level. On average, eBC accounted for 51% of on-road PM2.5 and 75% of on-road PM1 concentrations, indicating the substantial contribution of traffic exhaust emissions to roadside particulate pollution. Concentrations increased from residential streets to urban roads, orbital highways, and intercity highways. Comparison of old and recently upgraded orbital highway segments in the Kathmandu Valley showed lower PM2.5 and PM10 concentrations on the upgraded segment, whereas eBC and PM1 concentrations did not differ significantly, suggesting that infrastructure improvements reduced resuspended road dust but had limited effects on exhaust-related pollutants. Road gradient was also an important determinant of exposure, with high-gradient highway segments (4.5%) showing notably higher median eBC concentrations (86.7 μg/m3) than low-gradient segments (0.6%; 41.5 μg/m3). Among transport modes, motorcycle trips had the highest eBC exposure, followed by non-air-conditioned and air-conditioned buses. These findings provide evidence to support strategies combining infrastructure development and travel mode choice to reduce exposure to traffic-related air pollution in transport microenvironments."
+        },
 
         {
           "journal": "Environmental Science: Atmospheres",
