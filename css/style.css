@@ -2182,3 +2182,82 @@ form.contact-form textarea:focus {
   .footer-social a:hover,
   #back-to-top:hover { transform: none; }
 }
+
+
+/* ---------------------------------------------------------------------
+   Conference photo slideshow (auto-advancing, cross-fade)
+--------------------------------------------------------------------- */
+.slideshow {
+  width: 100%;
+  max-width: 860px;
+  margin: 2.5rem auto 0;      /* centred within the container */
+}
+.slideshow__stage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: var(--haze-deep);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.slideshow__slide {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+.slideshow__slide.is-active { opacity: 1; }
+.slideshow__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.slideshow__slide figcaption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 1.6rem 1rem .7rem;
+  font-size: .85rem;
+  color: #fff;
+  background: linear-gradient(to top, rgba(26,39,48,.75), rgba(26,39,48,0));
+}
+.slideshow__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: .75rem;
+}
+.slideshow__toggle {
+  font: inherit;
+  font-size: .8rem;
+  padding: .3rem .8rem;
+  color: var(--slate-deep);
+  background: var(--slate-wash);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.slideshow__toggle:hover { background: var(--haze); }
+.slideshow__toggle:focus-visible { outline: 2px solid var(--slate); outline-offset: 2px; }
+.slideshow__dots { display: flex; gap: .4rem; }
+.slideshow__dots span {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--line-strong);
+  transition: background .2s;
+}
+.slideshow__dots span.is-active { background: var(--brass); }
+
+@media (max-width: 640px) {
+  .slideshow { margin-top: 1.75rem; }
+  .slideshow__stage { aspect-ratio: 4 / 3; border-radius: 4px; }
+  .slideshow__slide figcaption { font-size: .78rem; padding: 1.2rem .75rem .55rem; }
+  .slideshow__bar { flex-direction: column-reverse; gap: .6rem; }
+  .slideshow__toggle { min-height: 44px; min-width: 96px; font-size: .9rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slideshow__slide { transition: none; }
+}
