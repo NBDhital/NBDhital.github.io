@@ -101,7 +101,64 @@
        header as current. Nothing was setting this before.
        ------------------------------------------------------------------ */
     initSectionSpy();
+
+    /* ------------------------------------------------------------------
+       Photo slideshows: <div data-slideshow data-interval="1000">.
+       Advances automatically every data-interval ms (default 1000),
+       pauses on hover/focus, when the tab is hidden, or via the button.
+       ------------------------------------------------------------------ */
+    document.querySelectorAll('[data-slideshow]').forEach(initSlideshow);
   });
+
+  function initSlideshow(root) {
+    var slides = Array.prototype.slice.call(root.querySelectorAll('.slideshow__slide'));
+    if (slides.length < 2) return;
+
+    var interval = parseInt(root.getAttribute('data-interval'), 10) || 1000;
+    var dotsWrap = root.querySelector('.slideshow__dots');
+    var toggle = root.querySelector('.slideshow__toggle');
+    var index = 0, timer = null, userPaused = false, hoverPaused = false;
+
+    var dots = slides.map(function () {
+      var d = document.createElement('span');
+      if (dotsWrap) dotsWrap.appendChild(d);
+      return d;
+    });
+
+    function show(i) {
+      index = (i + slides.length) % slides.length;
+      slides.forEach(function (s, n) { s.classList.toggle('is-active', n === index); });
+      dots.forEach(function (d, n) { d.classList.toggle('is-active', n === index); });
+    }
+
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    function start() {
+      stop();
+      if (userPaused || hoverPaused || document.hidden) return;
+      timer = setInterval(function () { show(index + 1); }, interval);
+    }
+
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        userPaused = !userPaused;
+        toggle.textContent = userPaused ? 'Play' : 'Pause';
+        toggle.setAttribute('aria-label', userPaused ? 'Play slideshow' : 'Pause slideshow');
+        start();
+      });
+    }
+    // Hover-pause for mouse only; on touch screens a tap would otherwise
+    // leave the slideshow stuck paused.
+    root.addEventListener('pointerenter', function (e) {
+      if (e.pointerType === 'mouse') { hoverPaused = true; start(); }
+    });
+    root.addEventListener('pointerleave', function (e) {
+      if (e.pointerType === 'mouse') { hoverPaused = false; start(); }
+    });
+    document.addEventListener('visibilitychange', start);
+
+    show(0);
+    start();
+  }
 
   function initSectionSpy() {
     var nav = document.querySelector('.page-nav');
