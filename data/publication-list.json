@@ -84,6 +84,19 @@
         },
 
         {
+          "journal": "Atmospheric Pollution Research",
+          "volpp": "(In Press)",
+          "year": "2026",
+          "title": "Real-world particle-bound PAH emissions from inland diesel sightseeing vessels: Impacts of diesel particulate filter retrofit",
+          "url": "https://doi.org/10.1016/j.apr.2026.103291",
+          "authors": "Yang, H.H., **Dhital, N.B.***, Huang, S.W., Hsieh, Y.S., Chen, H.W., Shi, Y.A., Chang, Y.C.",
+          "tags": ["emission-characterization"],
+          "authorRole": ["corresponding"],
+          "access": "subscription", "indexing":["wos", "scopus"],
+          "abstract": "This study characterized real-world air pollutant emissions from diesel-powered inland sightseeing vessels using an onboard emissions measurement system and evaluated the emission reduction efficiency of a retrofitted combined diesel oxidation catalyst and diesel particulate filter (DOC+DPF) system. Emissions of particulate matter (PM), gaseous pollutants (NO<sub>x</sub>, CO, and HC) and polycyclic aromatic hydrocarbons (PAHs) were measured from two vessels. The results showed that both particulate and gaseous pollutant emissions were notably affected by operational modes. The mean emission factors of PM, NO<sub>x</sub>, CO, and HC without DOC+DPF were 1.03−1.40, 38.8−42.5, 7.63−16.3, and 1.02−2.08 g/kg-fuel, respectively. Likewise, the mean total PAH (ΣPAHs) emission factors ranged from 183 to 362 μg/kg-fuel. With the DOC+DPF retrofit, PM emissions were reduced by 93%–96%, and CO emissions by 97%–98%, whereas NOx emissions showed no significant change. The HC removal efficiency was relatively low (27%–38%), plausibly due to low exhaust temperatures. The mean emission control efficiency for ΣPAHs was 98%−99%, with most high-molecular-weight PAHs reduced to levels below the detection limit. These findings highlight the strong potential of fleet-wide DOC+DPF retrofits for inland diesel sightseeing vessels to achieve substantial reductions in PM, CO, and particle-bound PAH emissions."
+        },
+
+        {
           "journal": "Journal of the Air & Waste Management Association",
           "volpp": "76, 593–603",
           "year": "2026",
